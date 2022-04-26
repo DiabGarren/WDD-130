@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Water+Brush&display=swap');
+
+nav {
+    background-color: aqua;
+    padding: 10px;
+    text-align: center;
+}
+
+.button {
+    margin-inline: 40px;
+}
+
+body {
+    padding: 10px;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    font-family: 'Water Brush', 'Brush Script MT', sans-serif;
+    color: #000;
+}
+
+.content{
+    /*border: 1px solid black;*/
+    height: 295px;
+    padding: 10px;
+}
+div.digger{
+    /*border: 1px solid black;*/
+    position: absolute;
+    top: 59px;
+    right: 16px;
+    left: 50%;
+}
+
+img.digger{
+    position: relative;
+    left: 25%;
+    width: 50%;
+}
+
+footer {
+    background-color: steelblue;
+    color: white;
+    text-align: center;
+    line-height: 1.5;
+}
