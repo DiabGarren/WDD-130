@@ -55,6 +55,8 @@ hr {
   background: var(--accent1-color);
 }
 header {
+  position: sticky;
+  top: 0;
   padding: 1em;
   text-align: center;
   color: var(--paragraph-color-on-color);
