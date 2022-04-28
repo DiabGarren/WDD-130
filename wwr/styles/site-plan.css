@@ -70,6 +70,11 @@ p {
   color: var(--paragraph-color);
   padding: 1em;
 }
+ul{
+  text-align: left;
+  margin-inline: 50px;
+  line-height: 1.5em;
+}
 .colors {
   width: 100%;
   min-width: 350px;
