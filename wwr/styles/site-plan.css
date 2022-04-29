@@ -8,8 +8,8 @@ Fonts are separated by a | */
 :root {
   /* change the values below to your colors from your palette */
   --primary-color: #4477b3   ;
-  --secondary-color: #d4ca0d ;
-  --accent1-color: #146e0f;
+  --secondary-color: #d9b207 ;
+  --accent1-color: #084e04;
   --accent2-color: white;
 
   /* change the values below to your chosen font(s) */
@@ -23,10 +23,10 @@ Fonts are separated by a | */
   --paragraph-color-on-white: var(--primary-color); /* paragraph text on a white background */ 
   --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
   --paragraph-background-color: var(--primary-color)  ;
-  --nav-link-color: white;
-  --nav-background-color: #D4AC0D;
-  --nav-hover-link-color: var(--accent1-color);
-  --nav-hover-background-color: var(--secondary-color);
+  --nav-link-color: var(--accent1-color);
+  --nav-background-color: var(--secondary-color);
+  --nav-hover-link-color: white;
+  --nav-hover-background-color: var(--primary-color);
   --highlight-background-color: var(--secondary-color);
   --highlight-text-color: var(--accent1-color);
 }
@@ -114,27 +114,20 @@ p.colored {
   color: var(--paragraph-color-on-color);
 }
 nav {
-  font-family: var(--nav-font-family);
-  /* background-color: var(--nav-background-color); */
-  color: var(--paragraph-color-on-color);
-  line-height: 3em;
-  /* text-align: center; */
+  background-color: var(--nav-background-color);
+  line-height: 2.5em;
+  text-align: center;
   font-size: 1.2em;
 }
-/* nav  {
+nav  {
   list-style-type: none;
-  display: flex;
-} */
-nav ul{
+  display: grid-row;
+}
+nav a {
   padding:1em;
   min-width: 120px;
   text-decoration: none;
   padding: 10px;
-  list-style: none;
-  text-align: center;
-}
-nav ul li{
-  display: inline-block;
   margin-inline: 40px;
 }
 nav a:link, nav a:visited {
