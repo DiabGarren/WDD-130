@@ -5,30 +5,73 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/styles.css">
-    <title>MainPage</title>
+    <!-- <link rel="stylesheet" href="styles/site-plan.css"> -->
+    <title>River Rafting Home</title>
 </head>
 
 <body>
     <header>
+        <a id="logo-link" href="index.html">
+            <img class="logo" src="images/logo.png" alt="River Rafting Logo" />
+        </a>
         <nav>
-            <a href="page2.html" class="button"><span>Page 2</span></a>
-            <a href="about-us.html" class="button"><span>About Us</span></a>
-            <a href="site-plan.html" class="button"><span>Site Plan</span></a>
+            <a href="index.html">Home</a>
+            <a href="book.html"><span>Book Now</span></a>
+            <a href="site-plan.html"><span>Site Plan</span></a>
+            <a href="about-us.html"><span>About Us</span></a>
         </nav>
     </header>
-
-    <div class="content">
-        <h1>MainPage</h1>
-        <p>There's nothing to display here yet.</p>
-
-        <div class="digger">
-            <img class="digger" src="images/digger.png">
+    <div id="hero">
+        <div id="hero-box">
+            <img id="hero-img" src="images/hero.png" alt="People enjoying rafting">
         </div>
+        <section id="hero-msg">
+            <h1 class="home-title">Have an adventure</h1>
+            <h4>Make memories while River Rafting</h4>
+            <div class="button-box">
+                <a class="book" href="book.html">Book Now</a>
+            </div>
+        </section>
     </div>
-
+    <main class="home-grid">
+        <section class="river-card">
+            <img class="card-img" src="images/rivers.jpg" alt="river in forest">
+            <img class="icon" src="images/river_icon.png" alt="river icon">
+            <h2>Rivers</h2>
+        </section>
+        <section class="camping-card">
+            <img class="card-img" src="images/camping.jpg" alt="tent in mountains">
+            <img class="icon" src="images/fire_icon.png" alt="fire logo">
+            <h2>Camping</h2>
+        </section>
+        <section class="rapids-card">
+            <img class="card-img" src="images/rapids.jpg" alt="rafting boat">
+            <img class="icon" src="images/oars.png" alt="oars icon">
+            <h2>Rapids</h2>
+        </section>
+        <img class="mountains" src="images/mountains.jpg" alt="Misty mountains">
+        <section class="msg">
+            <h2>More Than Just The Thrill</h2>
+            <p>Enjoy the breathtaking scenery. From valleys, meadows, canyons, and high peaks; It's way more than just
+                the rapids. It's a great way to get away from it all and relax amongst all the beauty of the great
+                outdoors.</p>
+        </section>
+    </main>
     <footer>
-        <p>Garren Diab<br>WDD 130</p>
+        <h3>River Rafting &copy; 2022 - Garren Diab</h3>
+        <h3><a href="site-plan.html">Site Plan</a></h3>
+        <h3><a href="about-us.html">About Us</a></h3>
+        <div class="social">
+            <a href="https://facebook.com">
+                <img src="images/facebook.png" alt="fb icon">
+            </a>
+            <a href="https://twitter.com">
+                <img src="images/twitter.png" alt="twitter icon">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram.png" alt="instagram icon">
+            </a>
+        </div>
     </footer>
 </body>
 
