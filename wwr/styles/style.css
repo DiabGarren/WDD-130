@@ -7,9 +7,17 @@
     --accent1-color: #084e04;
     --accent2-color: white;
 
-    --heading-font: "Fredoka One";
-    --nav-font: "Fredoka One";
+    --heading-font: "Fredoka One", Lato, Helvetica, sans-serif;
+    --nav-font: "Noto Sans JP", Lato, Helvetica, sans-serif;
     --paragraph-font: "Noto Sans JP", Lato, Helvetica, sans-serif;
+}
+
+body {
+    background-color: var(--accent2-color);
+    font-family: var(--paragraph-font);
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
 }
 
 #content {
@@ -22,16 +30,31 @@
     color: var(--accent1-color);
 }
 
-.logo {
-    width: 80px;
+header {
+    background-color: var(--primary-color);
+    text-align: center;
 }
 
+.logo {
+    width: 200px;
+    padding: 5px 0px 0px 7px;
+    text-decoration: none;
+}
+
+nav {
+    text-align: center;
+    background-color: var(--secondary-color);
+    padding: 10px;
+}
 nav a {
     text-align: center;
     background-color: var(--secondary-color);
     color: var(--accent1-color);
     text-decoration: none;
-    /* font-family: var(--nav-font); */
+    font-family: var(--nav-font);
+    padding: 10px 15px;
+    margin: 0px 16px;
+    border-radius: 5px;
 }
 
 nav a:hover {
@@ -39,46 +62,41 @@ nav a:hover {
     color: white;
 }
 
+#hero {
+    border: 5px solid var(--primary-color);
+    border-top: 0px solid var(--secondary-color);
+    padding-bottom: 30px;
+}
+
 #hero-img {
     width: 100%;
 }
 
-#hero-msg h1,
-#hero-msg h4 {
+#hero-msg {
     text-align: center;
     color: var(--primary-color);
     font-family: var(--heading-font);
 }
 
+#hero-msg h1 {
+    font-size: 56px;
+}
+
+#hero-msg h4 {
+    font-size: 24px
+}
+
 .button-box {
     text-align: center;
-}
-
-main section {
-    text-align: center;
-}
-
-#background {
-    height: 725px;
-    background-color: var(--accent1-color)
-}
-
-body {
-    background-color: var(--accent2-color);
-}
-
-header {
-    background-color: var(--primary-color);
-}
-
-.home-title {
-    color: var(--accent1-color);
+    font-family: var(--nav-font);
 }
 
 .book {
     background-color: var(--secondary-color);
     color: var(--accent1-color);
     text-decoration: none;
+    border-radius: 5px;
+    padding: 10px;
 }
 
 .book:hover {
@@ -86,12 +104,41 @@ header {
     color: white;
 }
 
+main section {
+    text-align: center;
+}
+
+.river-card {
+    margin: 200px 0px;
+}
+
+.camping-card {
+    margin: 200px 0px;
+}
+
+.rapids-card {
+    margin: 200px 0px;
+}
+
+.card-img {
+    border: 5px solid var(--accent1-color);
+}
+
 .icon {
     width: 80px;
 }
-.msg{
+
+#background {
+    height: 725px;
+    background-color: var(--accent1-color);
+    margin: 100px 0px;
+}
+
+.msg {
     background-color: var(--primary-color);
     color: white;
+    padding: 10px;
+    margin: 100px 0px;
 }
 
 .msg h2 {
@@ -101,34 +148,57 @@ header {
 }
 
 .msg p {
-    font-family: var(--paragraph-font)
+    font-family: var(--paragraph-font);
+    font-size: 20px;
 }
 
 .msg a {
     background-color: var(--secondary-color);
     color: var(--accent1-color);
     text-decoration: none;
+    border-radius: 5px;
+    padding: 5px;
+    /* margin: 10px; */
 }
 
-.msg a:hover{
+.msg a:hover {
     background-color: var(--primary-color);
     color: white;
 }
 
+footer {
+    background-color: var(--primary-color);
+    padding: 0px 0px 10px 10px;
+    margin-top: 200px;
+}
+
 footer h3 {
-    color: var(--primary-color);
+    color: white;
     font-family: var(--heading-font);
+    letter-spacing: 2px;
+    padding-top: 10px
 }
 
 footer a {
     background-color: var(--secondary-color);
+    font-family: var(--nav-font);
     color: var(--accent1-color);
     text-decoration: none;
-    font-family: var(--paragraph-font)
+    padding: 5px;
+    margin: 0px 0px 0px 10px;
+    border-radius: 7px;
 }
 
 footer a:hover {
     background-color: var(--primary-color);
     color: white;
-    text-decoration: underline;
+}
+
+.social a {
+    background-color: var(--secondary-color);
+    padding: 50px 5px 5px 5px;
+    margin: 0px 10px;
+}
+.social a:hover{
+    background-color: white;
 }
