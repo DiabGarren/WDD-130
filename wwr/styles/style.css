@@ -108,6 +108,10 @@ main section {
     text-align: center;
 }
 
+main section img {
+    box-sizing: border-box;
+}
+
 .river-card {
     margin: 200px 0px;
 }
