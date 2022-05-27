@@ -14,10 +14,30 @@
 
 body {
     background-color: var(--accent2-color);
-    font-family: var(--paragraph-font);
-    font-size: 22px;
     margin: 0;
     padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--primary-color);
+    font-family: var(--heading-font);
+    font-size: 1.75em;
+    line-height: 1.1em;
+    padding: 20px;
+    text-align: center;
+}
+
+p {
+    color: white;
+    font-family: var(--paragraph-font);
+    font-size: 1.25em;
+    line-height: 1.25em;
+    padding: 20px
 }
 
 #content {
@@ -44,14 +64,15 @@ header {
 nav {
     text-align: center;
     background-color: var(--secondary-color);
+    font-family: var(--nav-font);
+    text-decoration: none;
     padding: 10px;
 }
+
 nav a {
     text-align: center;
     background-color: var(--secondary-color);
     color: var(--accent1-color);
-    text-decoration: none;
-    font-family: var(--nav-font);
     padding: 10px 15px;
     margin: 0px 16px;
     border-radius: 5px;
@@ -74,8 +95,6 @@ nav a:hover {
 
 #hero-msg {
     text-align: center;
-    color: var(--primary-color);
-    font-family: var(--heading-font);
 }
 
 #hero-msg h1 {
@@ -91,20 +110,22 @@ nav a:hover {
     font-family: var(--nav-font);
 }
 
-.book {
+.book,
+.join {
     background-color: var(--secondary-color);
-    color: var(--accent1-color);
     text-decoration: none;
     border-radius: 5px;
     padding: 10px;
 }
 
-.book:hover {
+.book:hover,
+.join:hover {
     background-color: var(--primary-color);
     color: white;
 }
 
-main section {
+main,
+section {
     text-align: center;
 }
 
@@ -112,14 +133,8 @@ main section img {
     box-sizing: border-box;
 }
 
-.river-card {
-    margin: 200px 0px;
-}
-
-.camping-card {
-    margin: 200px 0px;
-}
-
+.river-card,
+.camping-card,
 .rapids-card {
     margin: 200px 0px;
 }
@@ -133,54 +148,61 @@ main section img {
 }
 
 #background {
-    height: 725px;
+    height: auto;
     background-color: var(--accent1-color);
     margin: 100px 0px;
 }
 
 .msg {
     background-color: var(--primary-color);
-    color: white;
-    padding: 10px;
+    padding: 55px;
     margin: 100px 0px;
 }
 
-.msg h2 {
-    font-family: var(--heading-font);
-    /* font-size: 2em; */
+.msg h2,
+.msg p {
+    color: white;
+}
+
+.msg h2{
     letter-spacing: 2px;
 }
 
-.msg p {
-    font-family: var(--paragraph-font);
-    font-size: 20px;
-}
-
-.msg a {
-    background-color: var(--secondary-color);
-    color: var(--accent1-color);
-    text-decoration: none;
-    border-radius: 5px;
-    padding: 5px;
-    /* margin: 10px; */
+.mountains {
+    width: 725px;
+    margin: 25px;
+    box-shadow: 3px 6px 12px black;
 }
 
 .msg a:hover {
-    background-color: var(--primary-color);
-    color: white;
+    background-color: white;
+    color: var(--primary-color);
+}
+
+#info {
+    font-size: 1em;
+}
+
+.social-media {
+    padding: 12px;
+}
+
+.icons {
+    width: 45px;
+    height: 45px;
+    /* box-shadow: 2px 60px 12px black; */
+    /* background-color: var(--secondary-color); */
+    padding: 5px;
+    /* margin: 200px 100px 0 0; */
 }
 
 footer {
     background-color: var(--primary-color);
-    padding: 0px 0px 10px 10px;
-    margin-top: 200px;
-}
-
-footer h3 {
-    color: white;
-    font-family: var(--heading-font);
-    letter-spacing: 2px;
-    padding-top: 10px
+    display: grid;
+    grid-template-columns: max-content repeat(3, max-content);
+    align-items: center;
+    justify-content: center;
+    line-height: 1.75em;
 }
 
 footer a {
@@ -189,20 +211,21 @@ footer a {
     color: var(--accent1-color);
     text-decoration: none;
     padding: 5px;
-    margin: 0px 0px 0px 10px;
-    border-radius: 7px;
+    margin: 8px 0 0 32px;
+    border-radius: 5px;
 }
 
 footer a:hover {
-    background-color: var(--primary-color);
-    color: white;
+    background-color: white;
+    color: var(--primary-color);
+    box-shadow: 2px 60px 120px rgba(0, 0, 0, 0.75);
 }
 
 .social a {
-    background-color: var(--secondary-color);
     padding: 50px 5px 5px 5px;
-    margin: 0px 10px;
+    margin: 0px 50px;
 }
-.social a:hover{
+
+.social a:hover {
     background-color: white;
 }
