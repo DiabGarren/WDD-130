@@ -37,25 +37,26 @@ img {
     height: 200px;
 }
 
-/* .outer-grid {
+.outer-grid {
     display: flex;
     flex-wrap: wrap;
     max-width: 1600px;
     margin: 0 auto;
-} */
+}
 
-.outer-grid {
+/* .outer-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 20px;
     justify-content: center;
     max-width: 1600px;
     margin: 0 auto;
-}
+} */
 
 .product-box {
     padding: 5px;
     margin: 15px 15px;
+    max-width: 340px;
     height: auto;
     border: 2px solid black;
     background-color: white;
