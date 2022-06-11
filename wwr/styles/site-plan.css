@@ -33,9 +33,6 @@ Fonts are separated by a | */
 
 /*  Look around below...but DON'T CHANGE ANYTHING! */
 
-.bn-wireframe {
-  width: 1600px;
-}
 body {
   max-width: 960px;
   margin: 0 auto;
@@ -182,4 +179,9 @@ nav a:hover {
   grid-area: right;
   border-top: 1px solid;
   border-right: 1px solid;
+}
+
+.bn-wireframe {
+  max-width: 960px;
+  margin-top: 200px;
 }
