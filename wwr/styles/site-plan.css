@@ -33,6 +33,9 @@ Fonts are separated by a | */
 
 /*  Look around below...but DON'T CHANGE ANYTHING! */
 
+.bn-wireframe {
+  width: 1600px;
+}
 body {
   max-width: 960px;
   margin: 0 auto;
