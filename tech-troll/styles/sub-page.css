@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Genos:wght@500&family=Orbitron&display=swap');
+
+
+body {
+    background-color: #f5f2da;
+    font-family: Orbitron;
+    font-size: 17px;
+}
+
+::selection {
+    color: white;
+    background-color: #293df2;
+}
+
+header {
+    position: sticky;
+    top: 0;
+}
+
+#logo {
+    position: absolute;
+    max-height: 160px;
+}
+
+nav {
+    text-align: center;
+    background-color: #ff1100;
+    padding: 10px;
+}
+
+nav a {
+    text-align: center;
+    background-color: #ff1100;
+    color: white;
+    padding: 10px 15px;
+    margin: 0px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #293df2;
+}
+
+.pages {
+    background-color: #ff1100;
+}
+
+img {
+    /* width: 200px; */
+    height: 200px;
+}
+
+.outer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    justify-content: center;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.product-box {
+    padding: 5px;
+    margin: 15px 15px;
+    max-width: 340px;
+    height: auto;
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 5px;
+    text-align: center;
+    font-family: Genos, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.product-name {
+    min-height: 80px;
+    height: auto;
+}
+
+.price {
+    font-size: 25px;
+}
+
+.button {
+    background-color: #f23729;
+    border-radius: 5px;
+    padding: 20px 10px;
+    margin: 25px 5px 5px 5px;
+    font-family: Orbitron;
+    font-size: 17px;
+}
+
+.button:hover {
+    background-color: #293df2;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #ff1100;
+    color: white;
+    text-align: left;
+    margin-top: 10px; 
+    padding: 15px 0.5em;
+}
+
+#info {
+    font-size: 20px;
+    padding-left: 50px;
+}
+
+@media screen and (max-width: 900px) {
+
+    header {
+        position: relative;
+    }
+
+    #logo {
+        position: absolute;
+        top: 375px;
+    }
+
+    .pages {
+        position: sticky;
+        top: 0;
+        height: 40px;
+        padding-top:0;
+    }
+    .pages a {
+        height: 20px;
+    }
+
+    nav,
+    footer {
+        flex-direction: column;
+    }
+
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+
+    .outer-grid {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 900px;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    footer {
+        margin-top: 25px;
+    }
+}
