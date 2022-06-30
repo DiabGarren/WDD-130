@@ -59,6 +59,7 @@ nav a:hover {
 
 .dropdown-content a{
     display: block;
+    margin: 0 15px;
 }
 
 .dropbtn:hover .dropdown-content {
