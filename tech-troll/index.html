@@ -23,10 +23,12 @@
                 </div>
             </div>
             <a href="site-plan.html">Site Plan</a>
+            <a OnClick="document.getElementById('user_name').scrollIntoView();">Contact us</a>
         </nav>
     </header>
 
     <main>
+        <button onclick="topScrollFunction()" id="topBtn" title="Go to top">↑</button>
         <div id="hero">
             <div id="hero-box">
                 <img src="images/hero.jpg" alt="Home computer setup" id="hero-img">
@@ -93,7 +95,7 @@
     </main>
 
     <footer>
-        <p id="info">Tech Troll &copy; 2022 - Garren Diab</p>
+        <p id="info">Tech Troll &copy; 2022 - Garren Diab - WDD130-14</p>
     </footer>
 
     <script>
@@ -105,6 +107,29 @@
         const noMsg = document.getElementById('no-msg');
         // Get the form so we can read what was entered in it.
         const formElement = document.forms[0];
+
+        // Add the button.
+        topButton = document.getElementById('topBtn');
+
+        // When the user scrolls down, show the button.
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        // Funcion to show the button.
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                topButton.style.display = "block"
+            } else {
+                topButton.style.display = "none"
+            }
+        }
+
+        // Function to scroll up when the button is clicked
+        function topScrollFunction() {
+            document.body.scrollTop = 0; // For Safari 
+            document.documentElement.scrollTop = 0;
+        }
 
         /* 
         Add a 'listener' to wait for a submission of our form.
@@ -144,7 +169,7 @@
                         document.getElementById('user_msg').focus();
                         // Hide the response.
                         response.style.display = "none";
-                    // If none of the above are true.
+                        // If none of the above are true.
                     } else {
                         // Hide the prompt to enter a message.
                         noMsg.style.display = "none";
@@ -153,7 +178,7 @@
                         // Set the text of the response message.
                         response.innerHTML = 'Hello ' + formElement.user_name.value + '! Thank\
                     you for your message. We will get back to you as soon as possible!';
-                        
+
                         // Clear the form fields
                         formElement.user_name.value = '';
                         formElement.user_email.value = '';

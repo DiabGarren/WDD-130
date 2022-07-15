@@ -23,12 +23,14 @@
                 </div>
             </div>
             <a href="site-plan.html">Site Plan</a>
+            <a href="index.html#info">Contact us</a>
         </nav>
         <a href="index.html">
             <img id="logo" src="images/logo.png" alt="logo">
         </a>
     </header>
     <main>
+        <button onclick="topScrollFunction()" id="topBtn" title="Go to top">↑</button>
         <nav class="pages">
             <a href="memory_page=2.html">Next Page</a>
         </nav>
@@ -711,8 +713,33 @@
         </nav>
     </main>
     <footer>
-        <p id="info">Tech Troll &copy; 2022 - Garren Diab</p>
+        <p id="info">Tech Troll &copy; 2022 - Garren Diab - WDD130-14</p>
     </footer>
+
+    <script>
+        // Add the button.
+        topButton = document.getElementById('topBtn');
+
+        // When the user scrolls down, show the button.
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        // Funcion to show the button.
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                topButton.style.display = "block"
+            } else {
+                topButton.style.display = "none"
+            }
+        }
+
+        // Function to scroll up when the button is clicked
+        function topScrollFunction() {
+            document.body.scrollTop = 0; // For Safari 
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
 </body>
 
 </html>
