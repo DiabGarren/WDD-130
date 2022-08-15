@@ -25,13 +25,11 @@ header {
     width: 100px;
 }
 
-.controls {
-    margin-top: -20px;
-}
 
 nav {
     text-align: center;
     background-color: #ff1100;
+    color: white;
     padding: 10px;
     min-height: 23px;
 }
@@ -75,6 +73,27 @@ nav a:hover {
     display: block;
 }
 
+div.controls {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+    margin-top: -20px;
+    padding-bottom: 5px;
+}
+
+.dis-drp {
+    grid-column: 1;
+}
+
+.search {
+    grid-column: 2;
+    text-align: right;
+}
+
+#search-btn {
+    font-family: Orbitron;
+}
+
 #topBtn {
     display: none;
     position: fixed;
@@ -104,7 +123,8 @@ img {
     height: 200px;
 }
 
-.outer-grid, .outer-grid-compare {
+.outer-grid,
+.outer-grid-compare {
     display: flex;
     /* grid-template-columns: repeat(4, 1fr); */
     /* grid-gap: 20px; */
@@ -137,7 +157,7 @@ img {
     font-size: 25px;
 }
 
-.button{
+.button {
     background-color: #f23729;
     color: white;
     border: none;
@@ -149,7 +169,7 @@ img {
     font-size: 17px;
 }
 
-.button:hover{
+.button:hover {
     background-color: #293df2;
 }
 
