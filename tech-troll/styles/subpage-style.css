@@ -16,19 +16,24 @@ body {
 }
 
 header {
-    position: sticky;
-    top: 0;
+    text-align: center;
+    margin: 0 auto;
 }
 
 #logo {
-    position: absolute;
-    max-height: 160px;
+    height: 100px;
+    width: 100px;
+}
+
+.controls {
+    margin-top: -20px;
 }
 
 nav {
     text-align: center;
     background-color: #ff1100;
     padding: 10px;
+    min-height: 23px;
 }
 
 nav a {
@@ -52,7 +57,8 @@ nav a:hover {
 .dropdown-content {
     background-color: #ff1100;
     display: none;
-    border-bottom-left-radius: 15px; border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
     position: absolute;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     margin: 10px 0;
@@ -60,7 +66,7 @@ nav a:hover {
     z-index: 1;
 }
 
-.dropdown-content a{
+.dropdown-content a {
     display: block;
     margin: 5px 15px;
 }
@@ -98,10 +104,11 @@ img {
     height: 200px;
 }
 
-.outer-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 20px;
+.outer-grid, .outer-grid-compare {
+    display: flex;
+    /* grid-template-columns: repeat(4, 1fr); */
+    /* grid-gap: 20px; */
+    flex-wrap: wrap;
     justify-content: center;
     max-width: 1600px;
     margin: 0 auto;
@@ -110,12 +117,13 @@ img {
 .product-box {
     padding: 5px;
     margin: 15px 15px;
-    max-width: 340px;
+    width: 350px;
     height: auto;
     border: 2px solid black;
     background-color: white;
     border-radius: 5px;
     text-align: center;
+    align-content: center;
     font-family: Genos, Helvetica, sans-serif;
     font-size: 20px;
 }
@@ -129,16 +137,19 @@ img {
     font-size: 25px;
 }
 
-.button {
+.button{
     background-color: #f23729;
+    color: white;
+    border: none;
+    min-width: 95%;
     border-radius: 5px;
-    padding: 20px 10px;
+    padding: 20px 0;
     margin: 25px 5px 5px 5px;
     font-family: Orbitron;
     font-size: 17px;
 }
 
-.button:hover {
+.button:hover{
     background-color: #293df2;
 }
 
@@ -151,55 +162,11 @@ footer {
     background-color: #ff1100;
     color: white;
     text-align: left;
-    margin-top: 10px; 
+    margin-top: 10px;
     padding: 15px 0.5em;
 }
 
 #info {
     font-size: 16px;
     padding-left: 50px;
-}
-
-@media screen and (max-width: 900px) {
-
-    header {
-        position: relative;
-    }
-
-    #logo {
-        position: absolute;
-        top: 375px;
-    }
-
-    .pages {
-        position: sticky;
-        top: 0;
-        height: 40px;
-        padding-top:0;
-    }
-    .pages a {
-        height: 20px;
-    }
-
-    nav,
-    footer {
-        flex-direction: column;
-    }
-
-    nav a {
-        display: block;
-        padding: 15px;
-    }
-
-    .outer-grid {
-        display: flex;
-        flex-wrap: wrap;
-        max-width: 900px;
-        justify-content: center;
-        margin: 0 auto;
-    }
-
-    footer {
-        margin-top: 25px;
-    }
 }
