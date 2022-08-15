@@ -260,6 +260,21 @@ footer {
         margin: 0 auto;
     }
 
+    form {
+        margin: 0 auto;
+        max-width: 400px;
+        padding: 1em;
+        border: 1px solid #CCC;
+        border-radius: 1em;
+    }
+
+    input, textarea {
+        font: 1em sans-serif;
+        max-width: 300px;
+        box-sizing: border-box;
+        border: 1px solid #999;
+    }
+
     footer {
         margin-top: 25px;
     }
