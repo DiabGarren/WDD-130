@@ -77,21 +77,40 @@ div.controls {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr, 1fr;
-    margin-top: -20px;
+    grid-template-rows: repeat(5, 1fr);
     padding-bottom: 5px;
 }
 
+.logo {
+    grid-row: 1/6;
+    padding-top: 10px;
+}
+
+#logo {
+    aspect-ratio: 1/1;
+    height: 100%;
+    width: 20%;
+}
+
 .dis-drp {
-    grid-column: 1;
+    grid-column: 2;
+    grid-row: 2;
+    text-align: right;
+    margin-top: 15px;
 }
 
 .search {
     grid-column: 2;
+    grid-row: 3;
     text-align: right;
+    padding: 5px 0;
 }
 
-div.filter-price p{
-    display: inline;
+.filter-price {
+    grid-column: 2;
+    grid-row: 4;
+    text-align: right;
+    padding-bottom: 5px;
 }
 
 .filter-bar {
@@ -99,6 +118,18 @@ div.filter-price p{
 }
 
 #search-btn {
+    font-family: Orbitron;
+}
+
+.clear {
+    grid-column: 2;
+    grid-row: 5;
+    text-align: right;
+    padding-bottom: 5px;
+}
+
+#clear-btn {
+    width: 15%;
     font-family: Orbitron;
 }
 
@@ -220,31 +251,55 @@ footer {
     }
 
     div.controls {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr repeat(4, 35px);
         margin-top: 10px;
     }
 
-    .dis-drp {
+    .logo {
+        grid-column: 1;
         grid-row: 1;
         text-align: center;
-        padding-bottom: 10px;
+        padding: 0 10px 0 10px;
     }
-    .search {
+    
+    .dis-drp {
         grid-column: 1;
         grid-row: 2;
         text-align: center;
-        padding-bottom: 10px;
+        padding: 0;
+        margin: 0;
     }
-
-    .filter-price {
+    .search {
+        grid-column: 1;
+        grid-row: 3;
         text-align: center;
+        padding: 0;
+        margin: 0;
     }
-
-    div.filter-price p{
-        display: none;
+    
+    .filter-price {
+        grid-column: 1;
+        grid-row: 4;
+        text-align: center;
+        padding: 0;
+        margin: 0;
     }
-
+    
     .filter-bar {
         width: 15%;
+    }
+    
+    .clear {
+        grid-column: 1;
+        grid-row: 5;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    #clear-btn {
+        width: 50%;
     }
 
     .outer-grid {
