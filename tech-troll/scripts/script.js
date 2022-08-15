@@ -21,11 +21,11 @@ function onPageLoad() {
 function stealData() {
     const content = document.querySelector(".content");
     const docHTML = content.innerHTML.split("\n");
-    
+
     var i = 1;
     var productsPos = 0;
     // Loop through the html and store the data relevant to the products
-    while (i < docHTML.length-1) {
+    while (i < docHTML.length - 1) {
         i += 3;
         let image = docHTML[i].split("\"")[1];
         i += 2;
@@ -36,7 +36,7 @@ function stealData() {
         let link = docHTML[i].split("\"")[3].split("\n")[0];
         i += 3;
         let availability = docHTML[i].substr(24);
-        products [productsPos] = name + "#" + price + "#" + availability + "#" + image + "#" + link;
+        products[productsPos] = name + "#" + price + "#" + availability + "#" + image + "#" + link;
         i += 4;
         // console.log(products[productsPos]);
         productsPos++;
@@ -46,23 +46,23 @@ function stealData() {
 
 function displayData() {
     const content = document.querySelector(".content");
-    
+
     // Initialize the display content
     var newText = '';
     const productInfo = [];
     const item = [];
     var displayItems = 0;
     var displayLength = 0;
-    
-    
+
+
     // Split at each new line
-    
+
     // Get the number of items to display to determine the number of times the loop runs
     switch (numItems) {
         case "12":
             displayItems = 12;
             break;
-            case "24":
+        case "24":
             displayItems = 24;
             break;
         case "36":
@@ -215,48 +215,116 @@ function searchPage() {
     var searchBar = document.querySelector('#search-bar');
     var numItems = document.querySelector('#display-list');
     const keyword = searchBar.value;
-    var productInfo, productName, newText = '', startPage = '', endPage = '</div>'; 
+    var productInfo, productName, newText = '',
+        startPage = '',
+        endPage = '</div>';
 
-    if (keyword == ''){
+    if (keyword == '') {
         numItems.value = "12";
         pos = 0;
         displayData();
         return;
-    }else{
-        for (let i = 0; i < products.length; i++) {
-            productInfo = products[i].split('#');
-            productName = productInfo[NAME_INEDX].toLowerCase();
-            if (productName.includes(keyword.toLowerCase())) {
-                newText += '<div class="product-box">';
-                newText += '<a href="' + productInfo[LINK_INEDX] + '" target="_blank">';
-                newText += '<img src="' + productInfo[IMAGE_INEDX] + '" alt="' + productInfo[NAME_INEDX] + '">';
-                newText += '</a>';
-                newText += '<p class="product-name">' + productInfo[NAME_INEDX] + '</p>';
-                newText += '<p class="price">Price: R' + productInfo[PRICE_INEDX] + '</p>';
-                newText += '<a class="link" href="' + productInfo[LINK_INEDX] + '" target="_blank">';
-                newText += '<div class="button">';
-                newText += productInfo[AVAILABLE_INDEX];
-                newText += '</div>';
-                newText += '</a>';
-                newText += '<div id="' + productInfo[NAME_INEDX] + '">';
-                newText += '<button onclick="addCompare(\'' + productInfo[NAME_INEDX] + '\', \'' + productInfo[PRICE_INEDX] + '\', \'' + productInfo[AVAILABLE_INDEX] + '\', \'' + productInfo[IMAGE_INEDX] + '\', \'' + productInfo[LINK_INEDX].substr(0, productInfo[LINK_INEDX].length - 1) + '\')" class="button" title="Compare">Compare</button>';
-                newText += '</div>'
-                newText += '</div>';
-                numItems.value = 'max';
-            }
-        }
-        if (newText == '') {
-            newText += '<p>No result for search: ' + keyword + "</p>";
-        }
-        startPage += '<nav class="pages">';
-        startPage += 'Search: ' + keyword;
-        startPage += '</nav>';
-        endPage += startPage;
-        startPage += '<div class="outer-grid">';
-        newText = startPage + newText + endPage;
-        content.innerHTML = newText;
     }
+    for (let i = 0; i < products.length; i++) {
+        productInfo = products[i].split('#');
+        productName = productInfo[NAME_INEDX].toLowerCase();
+        if (productName.includes(keyword.toLowerCase())) {
+            newText += '<div class="product-box">';
+            newText += '<a href="' + productInfo[LINK_INEDX] + '" target="_blank">';
+            newText += '<img src="' + productInfo[IMAGE_INEDX] + '" alt="' + productInfo[NAME_INEDX] + '">';
+            newText += '</a>';
+            newText += '<p class="product-name">' + productInfo[NAME_INEDX] + '</p>';
+            newText += '<p class="price">Price: R' + productInfo[PRICE_INEDX] + '</p>';
+            newText += '<a class="link" href="' + productInfo[LINK_INEDX] + '" target="_blank">';
+            newText += '<div class="button">';
+            newText += productInfo[AVAILABLE_INDEX];
+            newText += '</div>';
+            newText += '</a>';
+            newText += '<div id="' + productInfo[NAME_INEDX] + '">';
+            newText += '<button onclick="addCompare(\'' + productInfo[NAME_INEDX] + '\', \'' + productInfo[PRICE_INEDX] + '\', \'' + productInfo[AVAILABLE_INDEX] + '\', \'' + productInfo[IMAGE_INEDX] + '\', \'' + productInfo[LINK_INEDX].substr(0, productInfo[LINK_INEDX].length - 1) + '\')" class="button" title="Compare">Compare</button>';
+            newText += '</div>'
+            newText += '</div>';
+            numItems.value = 'max';
+        }
+    }
+    if (newText == '') {
+        newText += '<p>No result for search: ' + keyword + "</p>";
+    }
+    startPage += '<nav class="pages">';
+    startPage += 'Search: ' + keyword;
+    startPage += '</nav>';
+    endPage += startPage;
+    startPage += '<div class="outer-grid">';
+    newText = startPage + newText + endPage;
+    content.innerHTML = newText;
+
 
 
     searchBar.value = '';
+}
+
+function filterPrice() {
+    const content = document.querySelector(".content");
+    var priceLowBar = document.querySelector('#price-low-bar');
+    var priceHighBar = document.querySelector('#price-high-bar');
+    var numItems = document.querySelector('#display-list');
+    var priceLow = priceLowBar.value,
+        priceHigh = priceHighBar.value;
+    var productInfo, productPrice, newText = '',
+        startPage = '',
+        endPage = '</div>';
+
+    if (priceLow == '' && priceHigh == '') {
+        numItems.value = "12";
+        pos = 0;
+        displayData();
+        return;
+    } else if (priceLow == '') {
+        priceLow = 0;
+    } else if (priceHigh == '') {
+        priceHigh = 999999999;
+    }
+    for (let i = 0; i < products.length; i++) {
+        productInfo = products[i].split('#');
+        productPrice = parseInt(productInfo[PRICE_INEDX]);
+        if (productPrice >= priceLow && productPrice <= priceHigh) {
+            newText += '<div class="product-box">';
+            newText += '<a href="' + productInfo[LINK_INEDX] + '" target="_blank">';
+            newText += '<img src="' + productInfo[IMAGE_INEDX] + '" alt="' + productInfo[NAME_INEDX] + '">';
+            newText += '</a>';
+            newText += '<p class="product-name">' + productInfo[NAME_INEDX] + '</p>';
+            newText += '<p class="price">Price: R' + productInfo[PRICE_INEDX] + '</p>';
+            newText += '<a class="link" href="' + productInfo[LINK_INEDX] + '" target="_blank">';
+            newText += '<div class="button">';
+            newText += productInfo[AVAILABLE_INDEX];
+            newText += '</div>';
+            newText += '</a>';
+            newText += '<div id="' + productInfo[NAME_INEDX] + '">';
+            newText += '<button onclick="addCompare(\'' + productInfo[NAME_INEDX] + '\', \'' + productInfo[PRICE_INEDX] + '\', \'' + productInfo[AVAILABLE_INDEX] + '\', \'' + productInfo[IMAGE_INEDX] + '\', \'' + productInfo[LINK_INEDX].substr(0, productInfo[LINK_INEDX].length - 1) + '\')" class="button" title="Compare">Compare</button>';
+            newText += '</div>'
+            newText += '</div>';
+            numItems.value = 'max';
+        }
+    }
+    if (newText == '') {
+        newText += '<p>No results</p>';
+    }
+    startPage += '<nav class="pages">';
+    if (priceLow == 0) {
+        startPage += 'Max R' + priceHigh;
+    } else if (priceHigh == 999999999) {
+        startPage += 'Min R' + priceLow;
+    } else {
+        startPage += 'R' + priceLow + ' - R' + priceHigh;
+    }
+    startPage += '</nav>';
+    endPage += startPage;
+    startPage += '<div class="outer-grid">';
+    newText = startPage + newText + endPage;
+    content.innerHTML = newText;
+
+
+
+    priceLowBar.value = '';
+    priceHighBar.value = '';
 }
