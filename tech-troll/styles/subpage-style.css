@@ -20,12 +20,6 @@ header {
     margin: 0 auto;
 }
 
-#logo {
-    height: 100px;
-    width: 100px;
-}
-
-
 nav {
     text-align: center;
     background-color: #ff1100;
@@ -89,7 +83,7 @@ div.controls {
 #logo {
     aspect-ratio: 1/1;
     height: 100%;
-    width: 25%;
+    width: 200px;
 }
 
 .dis-drp {
@@ -282,6 +276,10 @@ footer {
         text-align: center;
         padding: 0 10px 0 10px;
     }
+    
+     #logo {
+        width: 100px;
+     }
     
     .dis-drp {
         grid-column: 1;
