@@ -213,118 +213,116 @@ function displayTopBtn() {
 function searchPage() {
     const content = document.querySelector(".content");
     var searchBar = document.querySelector('#search-bar');
-    var numItems = document.querySelector('#display-list');
-    const keyword = searchBar.value;
-    var productInfo, productName, newText = '',
-        startPage = '',
-        endPage = '</div>';
+    var disItems = document.querySelector('#display-list');
+    var priceLowBar = document.querySelector('#price-low-bar');
+    var priceHighBar = document.querySelector('#price-high-bar');
+    var productInfo, productName, productPrice, newText = '';
+    var keyword = searchBar.value;
+    var priceLow = priceLowBar.value;
+    var priceHigh = priceHighBar.value;
 
-    if (keyword == '') {
-        numItems.value = "12";
+
+    startPage = '',
+    endPage = '</div>';
+    startPage += '<nav class="pages">';
+    
+    if (keyword == '' && priceLow == 0 && priceHigh == 0) {
+        disItems.value = "12";
         pos = 0;
         displayData();
         return;
-    }
-    for (let i = 0; i < products.length; i++) {
-        productInfo = products[i].split('#');
-        productName = productInfo[NAME_INEDX].toLowerCase();
-        if (productName.includes(keyword.toLowerCase())) {
-            newText += '<div class="product-box">';
-            newText += '<a href="' + productInfo[LINK_INEDX] + '" target="_blank">';
-            newText += '<img src="' + productInfo[IMAGE_INEDX] + '" alt="' + productInfo[NAME_INEDX] + '">';
-            newText += '</a>';
-            newText += '<p class="product-name">' + productInfo[NAME_INEDX] + '</p>';
-            newText += '<p class="price">Price: R' + productInfo[PRICE_INEDX] + '</p>';
-            newText += '<a class="link" href="' + productInfo[LINK_INEDX] + '" target="_blank">';
-            newText += '<div class="button">';
-            newText += productInfo[AVAILABLE_INDEX];
-            newText += '</div>';
-            newText += '</a>';
-            newText += '<div id="' + productInfo[NAME_INEDX] + '">';
-            newText += '<button onclick="addCompare(\'' + productInfo[NAME_INEDX] + '\', \'' + productInfo[PRICE_INEDX] + '\', \'' + productInfo[AVAILABLE_INDEX] + '\', \'' + productInfo[IMAGE_INEDX] + '\', \'' + productInfo[LINK_INEDX].substr(0, productInfo[LINK_INEDX].length - 1) + '\')" class="button" title="Compare">Compare</button>';
-            newText += '</div>'
-            newText += '</div>';
-            numItems.value = 'max';
+    } else {
+        
+        for (let i = 0; i < products.length; i++) {
+            productInfo = products[i].split('#');
+            productName = productInfo[NAME_INEDX].toLowerCase();
+            
+            if (priceLow > 0 || priceHigh > 0){
+                productPrice = parseInt(productInfo[PRICE_INEDX]);
+                if (priceLow == 0) {
+                    if (productName.includes(keyword.toLowerCase()) && productPrice <= priceHigh){
+                        newText = filteredProducts(newText, productInfo);
+                    }
+                } else if (priceHigh == 0) {
+                    if (productName.includes(keyword.toLowerCase()) && productPrice >= priceLow){
+                        newText = filteredProducts(newText, productInfo);
+                    }
+                } else {
+                    if (productName.includes(keyword.toLowerCase()) && productPrice >= priceLow && productPrice <= priceHigh) {
+                    newText = filteredProducts(newText, productInfo);
+                    }
+                }
+            } else {
+                if (productName.includes(keyword.toLowerCase())) {
+                    newText = filteredProducts(newText, productInfo);
+                }
+            }
         }
     }
     if (newText == '') {
         newText += '<p>No result for search: ' + keyword + "</p>";
     }
-    startPage += '<nav class="pages">';
-    startPage += 'Search: ' + keyword;
+    
+    if (keyword == '' && (priceLow > 0 || priceHigh > 0)) {
+        if (priceLow == 0) {
+            startPage += 'Max R' + priceHigh;
+        } else if (priceHigh == 0) {
+            startPage += 'Min R' + priceLow;
+        } else {
+            startPage += 'R' + priceLow + ' - R' + priceHigh;
+        }
+    } else if (priceLow > 0 || priceHigh > 0){
+        if (priceLow == 0) {
+            startPage += 'Search: ' + keyword + ', Max R' + priceHigh;
+        } else if (priceHigh == 0) {
+            startPage += 'Search: ' + keyword + ', Min R' + priceLow;
+        } else {
+            startPage += 'Search: ' + keyword + ', R' + priceLow + ' - R' + priceHigh;
+        }
+    } else {
+        startPage += 'Search: ' + keyword;
+    }
     startPage += '</nav>';
     endPage += startPage;
     startPage += '<div class="outer-grid">';
     newText = startPage + newText + endPage;
+    disItems.value = 'max';
     content.innerHTML = newText;
-
-
-
-    searchBar.value = '';
 }
 
-function filterPrice() {
-    const content = document.querySelector(".content");
+function filteredProducts(newText, productInfo){
+    newText += '<div class="product-box">';
+    newText += '<a href="' + productInfo[LINK_INEDX] + '" target="_blank">';
+    newText += '<img src="' + productInfo[IMAGE_INEDX] + '" alt="' + productInfo[NAME_INEDX] + '">';
+    newText += '</a>';
+    newText += '<p class="product-name">' + productInfo[NAME_INEDX] + '</p>';
+    newText += '<p class="price">Price: R' + productInfo[PRICE_INEDX] + '</p>';
+    newText += '<a class="link" href="' + productInfo[LINK_INEDX] + '" target="_blank">';
+    newText += '<div class="button">';
+    newText += productInfo[AVAILABLE_INDEX];
+    newText += '</div>';
+    newText += '</a>';
+    newText += '<div id="' + productInfo[NAME_INEDX] + '">';
+    newText += '<button onclick="addCompare(\'' + productInfo[NAME_INEDX] + '\', \'' + productInfo[PRICE_INEDX] + '\', \'' + productInfo[AVAILABLE_INDEX] + '\', \'' + productInfo[IMAGE_INEDX] + '\', \'' + productInfo[LINK_INEDX].substr(0, productInfo[LINK_INEDX].length - 1) + '\')" class="button" title="Compare">Compare</button>';
+    newText += '</div>'
+    newText += '</div>';
+    numItems.value = 'max';
+
+    return newText;
+}
+
+function clearFilter() {
+    var searchBar = document.querySelector('#search-bar');
+    var disItems = document.querySelector('#display-list');
     var priceLowBar = document.querySelector('#price-low-bar');
     var priceHighBar = document.querySelector('#price-high-bar');
-    var numItems = document.querySelector('#display-list');
-    var priceLow = priceLowBar.value,
-        priceHigh = priceHighBar.value;
-    var productInfo, productPrice, newText = '',
-        startPage = '',
-        endPage = '</div>';
 
-    if (priceLow == '' && priceHigh == '') {
-        numItems.value = "12";
-        pos = 0;
-        displayData();
-        return;
-    } else if (priceLow == '') {
-        priceLow = 0;
-    } else if (priceHigh == '') {
-        priceHigh = 999999999;
-    }
-    for (let i = 0; i < products.length; i++) {
-        productInfo = products[i].split('#');
-        productPrice = parseInt(productInfo[PRICE_INEDX]);
-        if (productPrice >= priceLow && productPrice <= priceHigh) {
-            newText += '<div class="product-box">';
-            newText += '<a href="' + productInfo[LINK_INEDX] + '" target="_blank">';
-            newText += '<img src="' + productInfo[IMAGE_INEDX] + '" alt="' + productInfo[NAME_INEDX] + '">';
-            newText += '</a>';
-            newText += '<p class="product-name">' + productInfo[NAME_INEDX] + '</p>';
-            newText += '<p class="price">Price: R' + productInfo[PRICE_INEDX] + '</p>';
-            newText += '<a class="link" href="' + productInfo[LINK_INEDX] + '" target="_blank">';
-            newText += '<div class="button">';
-            newText += productInfo[AVAILABLE_INDEX];
-            newText += '</div>';
-            newText += '</a>';
-            newText += '<div id="' + productInfo[NAME_INEDX] + '">';
-            newText += '<button onclick="addCompare(\'' + productInfo[NAME_INEDX] + '\', \'' + productInfo[PRICE_INEDX] + '\', \'' + productInfo[AVAILABLE_INDEX] + '\', \'' + productInfo[IMAGE_INEDX] + '\', \'' + productInfo[LINK_INEDX].substr(0, productInfo[LINK_INEDX].length - 1) + '\')" class="button" title="Compare">Compare</button>';
-            newText += '</div>'
-            newText += '</div>';
-            numItems.value = 'max';
-        }
-    }
-    if (newText == '') {
-        newText += '<p>No results</p>';
-    }
-    startPage += '<nav class="pages">';
-    if (priceLow == 0) {
-        startPage += 'Max R' + priceHigh;
-    } else if (priceHigh == 999999999) {
-        startPage += 'Min R' + priceLow;
-    } else {
-        startPage += 'R' + priceLow + ' - R' + priceHigh;
-    }
-    startPage += '</nav>';
-    endPage += startPage;
-    startPage += '<div class="outer-grid">';
-    newText = startPage + newText + endPage;
-    content.innerHTML = newText;
-
-
-
+    searchBar.value = '';
+    disItems.value = '12';
     priceLowBar.value = '';
     priceHighBar.value = '';
+
+    numItems = '12';
+    pos = 0;
+    displayData();
 }
