@@ -44,6 +44,12 @@
                 <input type="text" id="search-bar">
                 <button onclick="searchPage()" id="search-btn">Search</button>
             </div>
+            <div class="filter-price">
+                <p>Filter by price:</p>
+                R<input type="number" class="filter-bar" id="price-low-bar" placeholder="0">
+                -R<input type="number" class="filter-bar" id="price-high-bar" placeholder="10000">
+                <button onclick="filterPrice()" id="filter-btn">Go</button>
+            </div>
         </div>
         <button onclick="topScrollFunction()" id="topBtn" title="Go to top">↑</button>
         <div class="content">
