@@ -160,15 +160,12 @@ main {
     left: 0;
     right: 0;
     padding: .5em;
-    /* make this element invisible until needed */
-    display: none;
     color: #ff1100;
     font-size: 26px;
     line-height: 1.5em;
 }
 
 #no-name, #no-email, #no-msg {
-    display: none;
     color: #ff1100;
 }
 
@@ -255,7 +252,7 @@ footer {
         padding: 15px;
     }
 
-    .outer-grid {
+    #product-grid {
         display: flex;
         flex-wrap: wrap;
         max-width: 900px;
