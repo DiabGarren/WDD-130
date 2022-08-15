@@ -25,12 +25,12 @@
             </div>
             <a href="index.html#info">Contact us</a>
         </nav>
-        <a href="index.html">
-            <img id="logo" src="images/logo.png" alt="logo">
-        </a>
     </header>
     <main>
         <div class="controls">
+            <a href="index.html" class="logo">
+                <img id="logo" src="images/logo.png" alt="logo">
+            </a>
             <div class="dis-drp">
                 <label for="display-list">Number of items:</label>
                 <select id="display-list" onchange="noItems(this);">
@@ -41,14 +41,15 @@
                 </select>
             </div>
             <div class="search">
-                <input type="text" id="search-bar">
+                <input type="text" id="search-bar" placeholder="Search...">
                 <button onclick="searchPage()" id="search-btn">Search</button>
             </div>
             <div class="filter-price">
-                <p>Filter by price:</p>
                 R<input type="number" class="filter-bar" id="price-low-bar" placeholder="0">
                 -R<input type="number" class="filter-bar" id="price-high-bar" placeholder="10000">
-                <button onclick="filterPrice()" id="filter-btn">Go</button>
+            </div>
+            <div class="clear">
+                <button onclick="clearFilter()" id="clear-btn">Clear</button>
             </div>
         </div>
         <button onclick="topScrollFunction()" id="topBtn" title="Go to top">↑</button>
