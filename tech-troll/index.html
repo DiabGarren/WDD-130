@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/index.js"></script>
     <title>Home</title>
 </head>
 
@@ -16,12 +17,10 @@
             <div class="dropbtn">
                 <a>Products</a>
                 <div class="dropdown-content">
-                    <a href="cases.html">Computer Cases</a>
                     <a href="graphics-cards.html">Graphics Cards</a>
-                    <a href="memory.html">Memory</a>
-                    <a href="motherboards.html">Motherboards</a>
-                    <a href="power-supplies.html">Power Supplies</a>
                     <a href="processors.html">Processors</a>
+                    <a href="motherboards.html">Motherboards</a>
+                    <a href="memory.html">Memory</a>
                 </div>
             </div>
             <a OnClick="document.getElementById('user_name').scrollIntoView();">Contact us</a>
@@ -70,25 +69,25 @@
                     Alternatively, you can contact us directly at: <b>support@techtroll.co.za</b></p>
             </div>
             <div id="feedback"></div>
-            <form action="/my-handling-form-page" method="post">
+            <form method="post">
                 <ul>
                     <li>
                         <label for="name">Name:</label>
-                        <input type="text" id="user_name" name="user_name">
-                        <p id="no-name">Please enter your name.</p>
+                        <input type="text" id="user-name">
+                        <p id="no-name"></p>
                     </li>
                     <li>
                         <label for="mail">E-mail:</label>
-                        <input type="email" id="user_email" name="user_email">
-                        <p id="no-email">Please enter your email address.</p>
+                        <input type="email" id="user-email">
+                        <p id="no-email"></p>
                     </li>
                     <li>
                         <label for="msg">Message:</label>
-                        <textarea id="user_msg" name="user_msg"></textarea>
-                        <p id="no-msg">Please enter your message.</p>
+                        <textarea id="user-msg"></textarea>
+                        <p id="no-msg"></p>
                     </li>
                     <li class="button">
-                        <button type="submit">Send your message</button>
+                        <button type="button" onclick="sendMessage()">Send your message</button>
                     </li>
                 </ul>
             </form>
@@ -98,98 +97,6 @@
     <footer>
         <p id="info">Tech Troll &copy; 2022 - Garren Diab - WDD130-14</p>
     </footer>
-
-    <script>
-        // Get the feedback div element so we can do something with it.
-        const response = document.getElementById('feedback');
-        // Get the p elements that hold the response is no data is given.
-        const noName = document.getElementById('no-name');
-        const noEmail = document.getElementById('no-email');
-        const noMsg = document.getElementById('no-msg');
-        // Get the form so we can read what was entered in it.
-        const formElement = document.forms[0];
-
-        // Add the button.
-        topButton = document.getElementById('topBtn');
-
-        // When the user scrolls down, show the button.
-        window.onscroll = function () {
-            scrollFunction()
-        };
-
-        // Funcion to show the button.
-        function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                topButton.style.display = "block"
-            } else {
-                topButton.style.display = "none"
-            }
-        }
-
-        // Function to scroll up when the button is clicked
-        function topScrollFunction() {
-            document.body.scrollTop = 0; // For Safari 
-            document.documentElement.scrollTop = 0;
-        }
-
-        /* 
-        Add a 'listener' to wait for a submission of our form.
-        When that happens run the code below.
-        */
-        formElement.addEventListener('submit', function (e) {
-            // Stop the form from doing the default action.
-            e.preventDefault();
-
-            // If the user_name field is empty.
-            if (formElement.user_name.value == '') {
-                // Show the prompt to enter a name.
-                noName.style.display = "block";
-                // Set focus on the user_name field.
-                document.getElementById('user_name').focus();
-                // Hide the response.
-                response.style.display = "none";
-            } else {
-                // Hide the prompt to enter a name.
-                noName.style.display = "none";
-                // If the user_email field is empty.
-                if (formElement.user_email.value == '') {
-                    // Show the prompt to enter an email.
-                    noEmail.style.display = "block";
-                    // Set focus on the user_email field.
-                    document.getElementById('user_email').focus();
-                    // Hide the response.
-                    response.style.display = "none";
-                } else {
-                    // Hide the prompt to enter an email.
-                    noEmail.style.display = "none";
-                    // If the user_msg field is empty.
-                    if (formElement.user_msg.value == '') {
-                        // Show the prompt to enter a message.
-                        noMsg.style.display = "block";
-                        // Set focus on the user_msg field.
-                        document.getElementById('user_msg').focus();
-                        // Hide the response.
-                        response.style.display = "none";
-                        // If none of the above are true.
-                    } else {
-                        // Hide the prompt to enter a message.
-                        noMsg.style.display = "none";
-                        // Show the response.
-                        response.style.display = "block";
-                        // Set the text of the response message.
-                        response.innerHTML = 'Hello ' + formElement.user_name.value + '! Thank\
-                    you for your message. We will get back to you as soon as possible!';
-
-                        // Clear the form fields
-                        formElement.user_name.value = '';
-                        formElement.user_email.value = '';
-                        formElement.user_msg.value = '';
-                    }
-                }
-            }
-
-        });
-    </script>
 </body>
 
 </html>
