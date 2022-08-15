@@ -31,13 +31,19 @@
     </header>
     <main>
         <div class="controls">
-            <label for="display-list">Number of items:</label>
-            <select id="display-list" onchange="noItems(this);">
-                <option value="12">12</option>
-                <option value="24">24</option>
-                <option value="36">36</option>
-                <option value="max">Max</option>
-            </select>
+            <div class="dis-drp">
+                <label for="display-list">Number of items:</label>
+                <select id="display-list" onchange="noItems(this);">
+                    <option value="12">12</option>
+                    <option value="24">24</option>
+                    <option value="36">36</option>
+                    <option value="max">Max</option>
+                </select>
+            </div>
+            <div class="search">
+                <input type="text" id="search-bar">
+                <button onclick="searchPage()" id="search-btn">Search</button>
+            </div>
         </div>
         <button onclick="topScrollFunction()" id="topBtn" title="Go to top">↑</button>
         <div class="content">
@@ -140,20 +146,6 @@
                 </a>
             </div>
             <div class="product-box">
-                <a href="https://www.evetech.co.za/intel-core-i3-10100f/best-deal/10640.aspx
-" target="_blank">
-                    <img src="https://www.evetech.co.za/repository/components/intel-core-i3-10100f-600px-v2300px.jpg" alt="Intel Core i3 10100F 10th Gen Processor">
-                </a>
-                <p class="product-name">Intel Core i3 10100F 10th Gen Processor</p>
-                <p class="price">Price: R1599.00</p>
-                <a class="link" href="https://www.evetech.co.za/intel-core-i3-10100f/best-deal/10640.aspx
-" target="_blank">
-                    <div class="button">
-                        In Stock with Evetech
-                    </div>
-                </a>
-            </div>
-            <div class="product-box">
                 <a href="https://www.evetech.co.za/amd-ryzen-3-4100-processor/best-deal/14500.aspx
 " target="_blank">
                     <img src="https://www.evetech.co.za/repository/components/amd-ryzen-3-4100-processor-600px-v2300px.jpg" alt="AMD RYZEN 3 4100 Processor">
@@ -238,6 +230,20 @@
                 </a>
             </div>
             <div class="product-box">
+                <a href="https://www.firstshop.co.za/collections/cpu-processors/products/dell-intel-xeon-4208-silver-cpu-8-core-lga-3647-2-1ghz-processor-338-bsvu-95973
+" target="_blank">
+                    <img src="https://cdn.shopify.com/s/files/1/0457/5893/9300/products/338-bsvu-cpu-processors-20740567433380_300x.png?v=1631002849" alt="Dell Intel Xeon 4208 Silver CPU - 8-core LGA 3647 2.1GHz Processor 338-BSVU">
+                </a>
+                <p class="product-name">Dell Intel Xeon 4208 Silver CPU - 8-core LGA 3647 2.1GHz Processor 338-BSVU</p>
+                <p class="price">Price: R2599.00</p>
+                <a class="link" href="https://www.firstshop.co.za/collections/cpu-processors/products/dell-intel-xeon-4208-silver-cpu-8-core-lga-3647-2-1ghz-processor-338-bsvu-95973
+" target="_blank">
+                    <div class="button">
+                        In Stock with FirstShop
+                    </div>
+                </a>
+            </div>
+            <div class="product-box">
                 <a href="https://www.evetech.co.za/amd-ryzen-5-5500-processor/best-deal/14498.aspx
 " target="_blank">
                     <img src="https://www.evetech.co.za/repository/components/amd-ryzen-5-5500-processor-600px-v2300px.jpg" alt="AMD Ryzen 5 5500 Processor">
@@ -248,20 +254,6 @@
 " target="_blank">
                     <div class="button">
                         In Stock with Evetech
-                    </div>
-                </a>
-            </div>
-            <div class="product-box">
-                <a href="https://www.firstshop.co.za/collections/cpu-processors/products/amd-ryzen-5-5500-cpu-6-core-socket-am4-3-6-ghz-processor-100-100000457box-146237
-" target="_blank">
-                    <img src="https://cdn.shopify.com/s/files/1/0457/5893/9300/products/100-100000457box-cpu-processors-33846795698340_300x.png?v=1653549255" alt="AMD Ryzen 5 5500 CPU - 6-core Socket AM4 3.6 GHz Processor 100-100000457BOX">
-                </a>
-                <p class="product-name">AMD Ryzen 5 5500 CPU - 6-core Socket AM4 3.6 GHz Processor 100-100000457BOX</p>
-                <p class="price">Price: R2855.00</p>
-                <a class="link" href="https://www.firstshop.co.za/collections/cpu-processors/products/amd-ryzen-5-5500-cpu-6-core-socket-am4-3-6-ghz-processor-100-100000457box-146237
-" target="_blank">
-                    <div class="button">
-                        In Stock with FirstShop
                     </div>
                 </a>
             </div>
@@ -294,16 +286,16 @@
                 </a>
             </div>
             <div class="product-box">
-                <a href="https://www.evetech.co.za/amd-ryzen-5-5600-processor/best-deal/14497.aspx
+                <a href="https://www.firstshop.co.za/collections/cpu-processors/products/amd-ryzen-5-5500-cpu-6-core-socket-am4-3-6-ghz-processor-100-100000457box-146237
 " target="_blank">
-                    <img src="https://www.evetech.co.za/repository/components/amd-ryzen-5-5600-processor-600px-v2300px.jpg" alt="AMD Ryzen 5 5600 Processor">
+                    <img src="https://cdn.shopify.com/s/files/1/0457/5893/9300/products/100-100000457box-cpu-processors-33846795698340_300x.png?v=1653549255" alt="AMD Ryzen 5 5500 CPU - 6-core Socket AM4 3.6 GHz Processor 100-100000457BOX">
                 </a>
-                <p class="product-name">AMD Ryzen 5 5600 Processor</p>
-                <p class="price">Price: R3399.00</p>
-                <a class="link" href="https://www.evetech.co.za/amd-ryzen-5-5600-processor/best-deal/14497.aspx
+                <p class="product-name">AMD Ryzen 5 5500 CPU - 6-core Socket AM4 3.6 GHz Processor 100-100000457BOX</p>
+                <p class="price">Price: R3499.00</p>
+                <a class="link" href="https://www.firstshop.co.za/collections/cpu-processors/products/amd-ryzen-5-5500-cpu-6-core-socket-am4-3-6-ghz-processor-100-100000457box-146237
 " target="_blank">
                     <div class="button">
-                        In Stock with Evetech
+                        In Stock with FirstShop
                     </div>
                 </a>
             </div>
@@ -315,20 +307,6 @@
                 <p class="product-name">AMD A10 A10-7890K CPU - 4-core Socket FM2+ 4.1GHz Processor AD789KXDJCHBX</p>
                 <p class="price">Price: R3540.00</p>
                 <a class="link" href="https://www.firstshop.co.za/collections/cpu-processors/products/amd-a10-a10-7890k-cpu-4-core-socket-fm2-4-1ghz-processor-ad789kxdjchbx-95926
-" target="_blank">
-                    <div class="button">
-                        In Stock with FirstShop
-                    </div>
-                </a>
-            </div>
-            <div class="product-box">
-                <a href="https://www.firstshop.co.za/collections/cpu-processors/products/amd-ryzen-4650g-cpu-ryzen-5-pro-6-core-socket-am4-3-7ghz-processor-100-100000143mpk-116955
-" target="_blank">
-                    <img src="https://cdn.shopify.com/s/files/1/0457/5893/9300/products/100-100000143mpk-cpu-processors-32809408725156_300x.png?v=1642495649" alt="AMD Ryzen 4650G CPU - Ryzen 5 PRO 6-core Socket AM4 3.7GHz Processor 100-100000143MPK">
-                </a>
-                <p class="product-name">AMD Ryzen 4650G CPU - Ryzen 5 PRO 6-core Socket AM4 3.7GHz Processor 100-100000143MPK</p>
-                <p class="price">Price: R3770.00</p>
-                <a class="link" href="https://www.firstshop.co.za/collections/cpu-processors/products/amd-ryzen-4650g-cpu-ryzen-5-pro-6-core-socket-am4-3-7ghz-processor-100-100000143mpk-116955
 " target="_blank">
                     <div class="button">
                         In Stock with FirstShop
@@ -350,6 +328,20 @@
                 </a>
             </div>
             <div class="product-box">
+                <a href="https://www.firstshop.co.za/collections/cpu-processors/products/amd-ryzen-4650g-cpu-ryzen-5-pro-6-core-socket-am4-3-7ghz-processor-100-100000143mpk-116955
+" target="_blank">
+                    <img src="https://cdn.shopify.com/s/files/1/0457/5893/9300/products/100-100000143mpk-cpu-processors-32809408725156_300x.png?v=1642495649" alt="AMD Ryzen 4650G CPU - Ryzen 5 PRO 6-core Socket AM4 3.7GHz Processor 100-100000143MPK">
+                </a>
+                <p class="product-name">AMD Ryzen 4650G CPU - Ryzen 5 PRO 6-core Socket AM4 3.7GHz Processor 100-100000143MPK</p>
+                <p class="price">Price: R3770.00</p>
+                <a class="link" href="https://www.firstshop.co.za/collections/cpu-processors/products/amd-ryzen-4650g-cpu-ryzen-5-pro-6-core-socket-am4-3-7ghz-processor-100-100000143mpk-116955
+" target="_blank">
+                    <div class="button">
+                        In Stock with FirstShop
+                    </div>
+                </a>
+            </div>
+            <div class="product-box">
                 <a href="https://www.firstshop.co.za/collections/cpu-processors/products/amd-fx-8370-cpu-8-core-socket-am3-4ghz-processor-fd8370frhkhbx-95931
 " target="_blank">
                     <img src="https://cdn.shopify.com/s/files/1/0457/5893/9300/products/fd8370frhkhbx-cpu-processors-20742425772196_300x.png?v=1631977191" alt="AMD FX 8370 CPU - 8-core Socket AM3+ 4GHz Processor FD8370FRHKHBX">
@@ -357,6 +349,20 @@
                 <p class="product-name">AMD FX 8370 CPU - 8-core Socket AM3+ 4GHz Processor FD8370FRHKHBX</p>
                 <p class="price">Price: R3880.00</p>
                 <a class="link" href="https://www.firstshop.co.za/collections/cpu-processors/products/amd-fx-8370-cpu-8-core-socket-am3-4ghz-processor-fd8370frhkhbx-95931
+" target="_blank">
+                    <div class="button">
+                        In Stock with FirstShop
+                    </div>
+                </a>
+            </div>
+            <div class="product-box">
+                <a href="https://www.firstshop.co.za/collections/cpu-processors/products/amd-ryzen-5600g-cpu-amd-ryzen-5-6-core-socket-am4-4-4ghz-processor-100-100000252box-127700
+" target="_blank">
+                    <img src="https://cdn.shopify.com/s/files/1/0457/5893/9300/products/100-100000252box-cpu-processors-32292906500260_300x.png?v=1637762187" alt="AMD Ryzen 5600G CPU - AMD Ryzen 5 6-core Socket AM4 4.4GHz Processor 100-100000252BOX">
+                </a>
+                <p class="product-name">AMD Ryzen 5600G CPU - AMD Ryzen 5 6-core Socket AM4 4.4GHz Processor 100-100000252BOX</p>
+                <p class="price">Price: R3899.00</p>
+                <a class="link" href="https://www.firstshop.co.za/collections/cpu-processors/products/amd-ryzen-5600g-cpu-amd-ryzen-5-6-core-socket-am4-4-4ghz-processor-100-100000252box-127700
 " target="_blank">
                     <div class="button">
                         In Stock with FirstShop
@@ -392,27 +398,13 @@
                 </a>
             </div>
             <div class="product-box">
-                <a href="https://www.firstshop.co.za/collections/cpu-processors/products/amd-ryzen-5600g-cpu-amd-ryzen-5-6-core-socket-am4-4-4ghz-processor-100-100000252box-127700
+                <a href="https://www.evetech.co.za/intel-core-i5-11600/best-deal/13111.aspx
 " target="_blank">
-                    <img src="https://cdn.shopify.com/s/files/1/0457/5893/9300/products/100-100000252box-cpu-processors-32292906500260_300x.png?v=1637762187" alt="AMD Ryzen 5600G CPU - AMD Ryzen 5 6-core Socket AM4 4.4GHz Processor 100-100000252BOX">
+                    <img src="https://www.evetech.co.za/repository/components/intel-core-i5-11600--600px-v1300px.jpg" alt="Intel Core i5 11600 11th Gen OEM Processor">
                 </a>
-                <p class="product-name">AMD Ryzen 5600G CPU - AMD Ryzen 5 6-core Socket AM4 4.4GHz Processor 100-100000252BOX</p>
-                <p class="price">Price: R4090.00</p>
-                <a class="link" href="https://www.firstshop.co.za/collections/cpu-processors/products/amd-ryzen-5600g-cpu-amd-ryzen-5-6-core-socket-am4-4-4ghz-processor-100-100000252box-127700
-" target="_blank">
-                    <div class="button">
-                        In Stock with FirstShop
-                    </div>
-                </a>
-            </div>
-            <div class="product-box">
-                <a href="https://www.evetech.co.za/intel-core-i5-12400-processor/best-deal/13912.aspx
-" target="_blank">
-                    <img src="https://www.evetech.co.za/repository/components/intel-core-i5-12400-processor-600px-v2300px.jpg" alt="Intel Core i5 12400 Processor">
-                </a>
-                <p class="product-name">Intel Core i5 12400 Processor</p>
-                <p class="price">Price: R4159.00</p>
-                <a class="link" href="https://www.evetech.co.za/intel-core-i5-12400-processor/best-deal/13912.aspx
+                <p class="product-name">Intel Core i5 11600 11th Gen OEM Processor</p>
+                <p class="price">Price: R4199.00</p>
+                <a class="link" href="https://www.evetech.co.za/intel-core-i5-11600/best-deal/13111.aspx
 " target="_blank">
                     <div class="button">
                         In Stock with Evetech
@@ -430,20 +422,6 @@
 " target="_blank">
                     <div class="button">
                         In Stock with FirstShop
-                    </div>
-                </a>
-            </div>
-            <div class="product-box">
-                <a href="https://www.evetech.co.za/intel-core-i5-11600/best-deal/13111.aspx
-" target="_blank">
-                    <img src="https://www.evetech.co.za/repository/components/intel-core-i5-11600--600px-v1300px.jpg" alt="Intel Core i5 11600 11th Gen Processor">
-                </a>
-                <p class="product-name">Intel Core i5 11600 11th Gen Processor</p>
-                <p class="price">Price: R4449.00</p>
-                <a class="link" href="https://www.evetech.co.za/intel-core-i5-11600/best-deal/13111.aspx
-" target="_blank">
-                    <div class="button">
-                        In Stock with Evetech
                     </div>
                 </a>
             </div>
@@ -486,20 +464,6 @@
 " target="_blank">
                     <div class="button">
                         In Stock with FirstShop
-                    </div>
-                </a>
-            </div>
-            <div class="product-box">
-                <a href="https://www.evetech.co.za/intel-core-i5-12500-processor/best-deal/14010.aspx
-" target="_blank">
-                    <img src="https://www.evetech.co.za/repository/components/intel-core-i5-12500-processor-600px-v2300px.jpg" alt="Intel Core i5 12500 Processor">
-                </a>
-                <p class="product-name">Intel Core i5 12500 Processor</p>
-                <p class="price">Price: R4549.00</p>
-                <a class="link" href="https://www.evetech.co.za/intel-core-i5-12500-processor/best-deal/14010.aspx
-" target="_blank">
-                    <div class="button">
-                        In Stock with Evetech
                     </div>
                 </a>
             </div>
@@ -574,48 +538,6 @@
                 </a>
             </div>
             <div class="product-box">
-                <a href="https://www.evetech.co.za/amd-ryzen-7-5700x-processor/best-deal/14496.aspx
-" target="_blank">
-                    <img src="https://www.evetech.co.za/repository/components/amd-ryzen-7-5700x-processor-600px-v2300px.jpg" alt="AMD Ryzen 7 5700X Processor">
-                </a>
-                <p class="product-name">AMD Ryzen 7 5700X Processor</p>
-                <p class="price">Price: R5299.00</p>
-                <a class="link" href="https://www.evetech.co.za/amd-ryzen-7-5700x-processor/best-deal/14496.aspx
-" target="_blank">
-                    <div class="button">
-                        In Stock with Evetech
-                    </div>
-                </a>
-            </div>
-            <div class="product-box">
-                <a href="https://www.firstshop.co.za/collections/cpu-processors/products/amd-ryzen-5700x-cpu-amd-ryzen-7-8-core-socket-am4-3-4ghz-processor-100-100000926wof-146238
-" target="_blank">
-                    <img src="https://cdn.shopify.com/s/files/1/0457/5893/9300/products/100-100000926wof-cpu-processors-33763297362084_300x.png?v=1652352795" alt="AMD Ryzen 5700X CPU - AMD Ryzen 7 8-Core Socket AM4 3.4GHz Processor 100-100000926WOF">
-                </a>
-                <p class="product-name">AMD Ryzen 5700X CPU - AMD Ryzen 7 8-Core Socket AM4 3.4GHz Processor 100-100000926WOF</p>
-                <p class="price">Price: R5699.00</p>
-                <a class="link" href="https://www.firstshop.co.za/collections/cpu-processors/products/amd-ryzen-5700x-cpu-amd-ryzen-7-8-core-socket-am4-3-4ghz-processor-100-100000926wof-146238
-" target="_blank">
-                    <div class="button">
-                        In Stock with FirstShop
-                    </div>
-                </a>
-            </div>
-            <div class="product-box">
-                <a href="https://www.firstshop.co.za/collections/cpu-processors/products/intel-xeon-e-2224g-cpu-3-5ghz-8mb-processor-4-core-lga-1151-socket-h4-bx80684e2224g-138072
-" target="_blank">
-                    <img src="https://cdn.shopify.com/s/files/1/0457/5893/9300/products/bx80684e2224g-cpu-processors-33826743058596_300x.png?v=1653312030" alt="Intel Xeon E-2224G CPU 3.5GHz 8MB Processor 4-core LGA 1151 (Socket H4) BX80684E2224G">
-                </a>
-                <p class="product-name">Intel Xeon E-2224G CPU 3.5GHz 8MB Processor 4-core LGA 1151 (Socket H4) BX80684E2224G</p>
-                <p class="price">Price: R5699.00</p>
-                <a class="link" href="https://www.firstshop.co.za/collections/cpu-processors/products/intel-xeon-e-2224g-cpu-3-5ghz-8mb-processor-4-core-lga-1151-socket-h4-bx80684e2224g-138072
-" target="_blank">
-                    <div class="button">
-                        In Stock with FirstShop
-                    </div>
-                </a>
-            </div>
-            <div class="product-box">
                 <a href="https://www.firstshop.co.za/collections/cpu-processors/products/intel-core-i5-11600k-cpu-11th-gen-core-i5-11600k-3-9-ghz-12-mb-processor-bx8070811600k-117360
 " target="_blank">
                     <img src="https://cdn.shopify.com/s/files/1/0457/5893/9300/products/bx8070811600k-cpu-processors-30185139765412_300x.png?v=1631268532" alt="Intel Core i5 11600K CPU - 11th Gen Core i5-11600K 3.9 GHz 12 MB Processor BX8070811600K">
@@ -644,13 +566,27 @@
                 </a>
             </div>
             <div class="product-box">
-                <a href="https://www.firstshop.co.za/collections/cpu-processors/products/intel-core-i5-12600k-cpu-10-core-lga-1700-3-7ghz-processor-bx8071512600k-129140
+                <a href="https://www.firstshop.co.za/collections/cpu-processors/products/amd-ryzen-5700x-cpu-amd-ryzen-7-8-core-socket-am4-3-4ghz-processor-100-100000926wof-146238
 " target="_blank">
-                    <img src="https://cdn.shopify.com/s/files/1/0457/5893/9300/products/bx8071512600k-cpu-processors-31999598035108_300x.png?v=1635685172" alt="Intel Core i5-12600K CPU - 10-Core LGA 1700 3.7GHz Processor BX8071512600K">
+                    <img src="https://cdn.shopify.com/s/files/1/0457/5893/9300/products/100-100000926wof-cpu-processors-33763297362084_300x.png?v=1652352795" alt="AMD Ryzen 5700X CPU - AMD Ryzen 7 8-Core Socket AM4 3.4GHz Processor 100-100000926WOF">
                 </a>
-                <p class="product-name">Intel Core i5-12600K CPU - 10-Core LGA 1700 3.7GHz Processor BX8071512600K</p>
+                <p class="product-name">AMD Ryzen 5700X CPU - AMD Ryzen 7 8-Core Socket AM4 3.4GHz Processor 100-100000926WOF</p>
+                <p class="price">Price: R6599.00</p>
+                <a class="link" href="https://www.firstshop.co.za/collections/cpu-processors/products/amd-ryzen-5700x-cpu-amd-ryzen-7-8-core-socket-am4-3-4ghz-processor-100-100000926wof-146238
+" target="_blank">
+                    <div class="button">
+                        In Stock with FirstShop
+                    </div>
+                </a>
+            </div>
+            <div class="product-box">
+                <a href="https://www.firstshop.co.za/collections/cpu-processors/products/intel-xeon-e-2234-cpu-3-6-ghz-8-mb-smart-cache-processor-bx80684e2234-122204
+" target="_blank">
+                    <img src="https://cdn.shopify.com/s/files/1/0457/5893/9300/products/bx80684e2234-cpu-processors-30185438380196_300x.png?v=1631548612" alt="Intel Xeon E-2234 CPU 3.6 GHz 8 MB Smart Cache Processor BX80684E2234">
+                </a>
+                <p class="product-name">Intel Xeon E-2234 CPU 3.6 GHz 8 MB Smart Cache Processor BX80684E2234</p>
                 <p class="price">Price: R6699.00</p>
-                <a class="link" href="https://www.firstshop.co.za/collections/cpu-processors/products/intel-core-i5-12600k-cpu-10-core-lga-1700-3-7ghz-processor-bx8071512600k-129140
+                <a class="link" href="https://www.firstshop.co.za/collections/cpu-processors/products/intel-xeon-e-2234-cpu-3-6-ghz-8-mb-smart-cache-processor-bx80684e2234-122204
 " target="_blank">
                     <div class="button">
                         In Stock with FirstShop
@@ -693,20 +629,6 @@
                 <p class="product-name">Intel Core i7 11700 CPU - 11th Gen Core i7-11700 2.5 GHz 16 MB Processor BX8070811700</p>
                 <p class="price">Price: R6899.00</p>
                 <a class="link" href="https://www.firstshop.co.za/collections/cpu-processors/products/intel-core-i7-11700-cpu-11th-gen-core-i7-11700-2-5-ghz-16-mb-processor-bx8070811700-117372
-" target="_blank">
-                    <div class="button">
-                        In Stock with FirstShop
-                    </div>
-                </a>
-            </div>
-            <div class="product-box">
-                <a href="https://www.firstshop.co.za/collections/cpu-processors/products/intel-core-i7-11700k-cpu-8-core-socket-fclga1200-3-6ghz-processor-bx8070811700k-117380
-" target="_blank">
-                    <img src="https://cdn.shopify.com/s/files/1/0457/5893/9300/products/bx8070811700k-cpu-processors-30165052391588_300x.png?v=1630973319" alt="Intel Core i7-11700K CPU - 8-core Socket FCLGA1200 3.6GHz Processor BX8070811700K">
-                </a>
-                <p class="product-name">Intel Core i7-11700K CPU - 8-core Socket FCLGA1200 3.6GHz Processor BX8070811700K</p>
-                <p class="price">Price: R7299.00</p>
-                <a class="link" href="https://www.firstshop.co.za/collections/cpu-processors/products/intel-core-i7-11700k-cpu-8-core-socket-fclga1200-3-6ghz-processor-bx8070811700k-117380
 " target="_blank">
                     <div class="button">
                         In Stock with FirstShop
@@ -784,48 +706,6 @@
                 </a>
             </div>
             <div class="product-box">
-                <a href="https://www.firstshop.co.za/collections/cpu-processors/products/dell-intel-xeon-4208-silver-cpu-8-core-lga-3647-2-1ghz-processor-338-bsvu-95973
-" target="_blank">
-                    <img src="https://cdn.shopify.com/s/files/1/0457/5893/9300/products/338-bsvu-cpu-processors-20740567433380_300x.png?v=1631002849" alt="Dell Intel Xeon 4208 Silver CPU - 8-core LGA 3647 2.1GHz Processor 338-BSVU">
-                </a>
-                <p class="product-name">Dell Intel Xeon 4208 Silver CPU - 8-core LGA 3647 2.1GHz Processor 338-BSVU</p>
-                <p class="price">Price: R8299.00</p>
-                <a class="link" href="https://www.firstshop.co.za/collections/cpu-processors/products/dell-intel-xeon-4208-silver-cpu-8-core-lga-3647-2-1ghz-processor-338-bsvu-95973
-" target="_blank">
-                    <div class="button">
-                        In Stock with FirstShop
-                    </div>
-                </a>
-            </div>
-            <div class="product-box">
-                <a href="https://www.evetech.co.za/amd-ryzen-7-5800x3d-processor/best-deal/14495.aspx
-" target="_blank">
-                    <img src="https://www.evetech.co.za/repository/components/amd-ryzen-7-5800x3d-processor-600px-v2300px.jpg" alt="AMD Ryzen 7 5800X3D Processor">
-                </a>
-                <p class="product-name">AMD Ryzen 7 5800X3D Processor</p>
-                <p class="price">Price: R8299.00</p>
-                <a class="link" href="https://www.evetech.co.za/amd-ryzen-7-5800x3d-processor/best-deal/14495.aspx
-" target="_blank">
-                    <div class="button">
-                        In Stock with Evetech
-                    </div>
-                </a>
-            </div>
-            <div class="product-box">
-                <a href="https://www.firstshop.co.za/collections/cpu-processors/products/amd-ryzen-5900x-cpu-amd-ryzen-9-12-core-socket-am4-3-7ghz-processor-100-100000061wof-97175
-" target="_blank">
-                    <img src="https://cdn.shopify.com/s/files/1/0457/5893/9300/products/100-100000061wof-cpu-processors-20741283152036_300x.png?v=1631077369" alt="AMD Ryzen 5900X CPU - AMD Ryzen 9 12-core Socket AM4 3.7GHz Processor 100-100000061WOF">
-                </a>
-                <p class="product-name">AMD Ryzen 5900X CPU - AMD Ryzen 9 12-core Socket AM4 3.7GHz Processor 100-100000061WOF</p>
-                <p class="price">Price: R8799.00</p>
-                <a class="link" href="https://www.firstshop.co.za/collections/cpu-processors/products/amd-ryzen-5900x-cpu-amd-ryzen-9-12-core-socket-am4-3-7ghz-processor-100-100000061wof-97175
-" target="_blank">
-                    <div class="button">
-                        In Stock with FirstShop
-                    </div>
-                </a>
-            </div>
-            <div class="product-box">
                 <a href="https://www.firstshop.co.za/collections/cpu-processors/products/intel-core-i9-11900k-cpu-11th-gen-core-i9-11900k-3-5-ghz-16-mb-processor-bx8070811900k-117403
 " target="_blank">
                     <img src="https://cdn.shopify.com/s/files/1/0457/5893/9300/products/bx8070811900k-cpu-processors-30185194881188_300x.png?v=1631180321" alt="Intel Core i9 11900K CPU - 11th Gen Core i9-11900K 3.5 GHz 16 MB Processor BX8070811900K">
@@ -840,20 +720,6 @@
                 </a>
             </div>
             <div class="product-box">
-                <a href="https://www.firstshop.co.za/collections/cpu-processors/products/amd-ryzen-threadripper-1900x-cpu-second-gen-8-core-socket-tr4-3-8ghz-processor-yd190xa8aewof-95945
-" target="_blank">
-                    <img src="https://cdn.shopify.com/s/files/1/0457/5893/9300/products/yd190xa8aewof-cpu-processors-20742436028580_300x.png?v=1631982401" alt="AMD Ryzen Threadripper 1900X CPU - Second Gen 8-core Socket TR4 3.8GHz Processor YD190XA8AEWOF">
-                </a>
-                <p class="product-name">AMD Ryzen Threadripper 1900X CPU - Second Gen 8-core Socket TR4 3.8GHz Processor YD190XA8AEWOF</p>
-                <p class="price">Price: R8999.00</p>
-                <a class="link" href="https://www.firstshop.co.za/collections/cpu-processors/products/amd-ryzen-threadripper-1900x-cpu-second-gen-8-core-socket-tr4-3-8ghz-processor-yd190xa8aewof-95945
-" target="_blank">
-                    <div class="button">
-                        In Stock with FirstShop
-                    </div>
-                </a>
-            </div>
-            <div class="product-box">
                 <a href="https://www.firstshop.co.za/collections/cpu-processors/products/intel-core-i7-12700k-cpu-12-core-lga-1700-3-6ghz-processor-bx8071512700k-129139
 " target="_blank">
                     <img src="https://cdn.shopify.com/s/files/1/0457/5893/9300/products/bx8071512700k-cpu-processors-31999447597220_300x.png?v=1635684454" alt="Intel Core i7-12700K CPU - 12-Core LGA 1700 3.6GHz Processor BX8071512700K">
@@ -861,6 +727,20 @@
                 <p class="product-name">Intel Core i7-12700K CPU - 12-Core LGA 1700 3.6GHz Processor BX8071512700K</p>
                 <p class="price">Price: R8999.00</p>
                 <a class="link" href="https://www.firstshop.co.za/collections/cpu-processors/products/intel-core-i7-12700k-cpu-12-core-lga-1700-3-6ghz-processor-bx8071512700k-129139
+" target="_blank">
+                    <div class="button">
+                        In Stock with FirstShop
+                    </div>
+                </a>
+            </div>
+            <div class="product-box">
+                <a href="https://www.firstshop.co.za/collections/cpu-processors/products/amd-ryzen-threadripper-1900x-cpu-second-gen-8-core-socket-tr4-3-8ghz-processor-yd190xa8aewof-95945
+" target="_blank">
+                    <img src="https://cdn.shopify.com/s/files/1/0457/5893/9300/products/yd190xa8aewof-cpu-processors-20742436028580_300x.png?v=1631982401" alt="AMD Ryzen Threadripper 1900X CPU - Second Gen 8-core Socket TR4 3.8GHz Processor YD190XA8AEWOF">
+                </a>
+                <p class="product-name">AMD Ryzen Threadripper 1900X CPU - Second Gen 8-core Socket TR4 3.8GHz Processor YD190XA8AEWOF</p>
+                <p class="price">Price: R8999.00</p>
+                <a class="link" href="https://www.firstshop.co.za/collections/cpu-processors/products/amd-ryzen-threadripper-1900x-cpu-second-gen-8-core-socket-tr4-3-8ghz-processor-yd190xa8aewof-95945
 " target="_blank">
                     <div class="button">
                         In Stock with FirstShop
@@ -966,20 +846,6 @@
                 </a>
             </div>
             <div class="product-box">
-                <a href="https://www.evetech.co.za/intel-core-i9-12900-processor/best-deal/14285.aspx
-" target="_blank">
-                    <img src="https://www.evetech.co.za/repository/components/intel-core-i9-12900-processor-600px-v2300px.jpg" alt="Intel Core i9 12900 Processor">
-                </a>
-                <p class="product-name">Intel Core i9 12900 Processor</p>
-                <p class="price">Price: R10749.00</p>
-                <a class="link" href="https://www.evetech.co.za/intel-core-i9-12900-processor/best-deal/14285.aspx
-" target="_blank">
-                    <div class="button">
-                        In Stock with Evetech
-                    </div>
-                </a>
-            </div>
-            <div class="product-box">
                 <a href="https://www.firstshop.co.za/collections/cpu-processors/products/intel-xeon-4208-processor-2-1-ghz-11-mb-127455
 " target="_blank">
                     <img src="https://cdn.shopify.com/s/files/1/0457/5893/9300/products/cd8069503956401-cpu-processors-32352967557284_300x.png?v=1638260789" alt="Intel Xeon 4208 processor 2.1 GHz 11 MB">
@@ -1055,7 +921,7 @@
                     <img src="https://cdn.shopify.com/s/files/1/0457/5893/9300/products/p11147-b21-cpu-processors-30185043853476_300x.png?v=1631226054" alt="HPE Intel Silver 4208 CPU - 8-core LGA 3647 2.1GHz Processor P11147-B21">
                 </a>
                 <p class="product-name">HPE Intel Silver 4208 CPU - 8-core LGA 3647 2.1GHz Processor P11147-B21</p>
-                <p class="price">Price: R11999.00</p>
+                <p class="price">Price: R12499.00</p>
                 <a class="link" href="https://www.firstshop.co.za/collections/cpu-processors/products/hpe-intel-silver-4208-cpu-8-core-lga-3647-2-1ghz-processor-p11147-b21-114701
 " target="_blank">
                     <div class="button">
@@ -1167,7 +1033,7 @@
                     <img src="https://cdn.shopify.com/s/files/1/0457/5893/9300/products/p02492-b21-cpu-processors-20740556947620_300x.png?v=1630442686" alt="HPE Intel Xeon 4210 Silver CPU - 10-core LGA 3647 2.2GHz Processor P02492-B21">
                 </a>
                 <p class="product-name">HPE Intel Xeon 4210 Silver CPU - 10-core LGA 3647 2.2GHz Processor P02492-B21</p>
-                <p class="price">Price: R13599.00</p>
+                <p class="price">Price: R14299.00</p>
                 <a class="link" href="https://www.firstshop.co.za/collections/cpu-processors/products/hpe-intel-xeon-4210-silver-cpu-10-core-lga-3647-2-2ghz-processor-p02492-b21-95982
 " target="_blank">
                     <div class="button">
@@ -1561,20 +1427,6 @@
                 <p class="product-name">Intel Xeon 6248 Gold CPU - 20-core LGA 3647 2.5GHz Processor BX806956248</p>
                 <p class="price">Price: R80299.00</p>
                 <a class="link" href="https://www.firstshop.co.za/collections/cpu-processors/products/intel-xeon-6248-gold-cpu-20-core-lga-3647-2-5ghz-processor-bx806956248-96107
-" target="_blank">
-                    <div class="button">
-                        In Stock with FirstShop
-                    </div>
-                </a>
-            </div>
-            <div class="product-box">
-                <a href="https://www.firstshop.co.za/collections/cpu-processors/products/intel-xeon-6258r-cpu-2-7-ghz-38-5-mb-processor-cd8069504449301-122208
-" target="_blank">
-                    <img src="https://cdn.shopify.com/s/files/1/0457/5893/9300/products/cd8069504449301-cpu-processors-30185547956388_300x.png?v=1631178158" alt="Intel Xeon 6258R CPU 2.7 GHz 38.5 MB Processor CD8069504449301">
-                </a>
-                <p class="product-name">Intel Xeon 6258R CPU 2.7 GHz 38.5 MB Processor CD8069504449301</p>
-                <p class="price">Price: R99699.00</p>
-                <a class="link" href="https://www.firstshop.co.za/collections/cpu-processors/products/intel-xeon-6258r-cpu-2-7-ghz-38-5-mb-processor-cd8069504449301-122208
 " target="_blank">
                     <div class="button">
                         In Stock with FirstShop

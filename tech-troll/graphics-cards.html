@@ -31,13 +31,19 @@
     </header>
     <main>
         <div class="controls">
-            <label for="display-list">Number of items:</label>
-            <select id="display-list" onchange="noItems(this);">
-                <option value="12">12</option>
-                <option value="24">24</option>
-                <option value="36">36</option>
-                <option value="max">Max</option>
-            </select>
+            <div class="dis-drp">
+                <label for="display-list">Number of items:</label>
+                <select id="display-list" onchange="noItems(this);">
+                    <option value="12">12</option>
+                    <option value="24">24</option>
+                    <option value="36">36</option>
+                    <option value="max">Max</option>
+                </select>
+            </div>
+            <div class="search">
+                <input type="text" id="search-bar" placeholder="Search...">
+                <button onclick="searchPage()" id="search-btn">Search</button>
+            </div>
         </div>
         <button onclick="topScrollFunction()" id="topBtn" title="Go to top">↑</button>
         <div class="content">
@@ -56,13 +62,13 @@
                 </a>
             </div>
             <div class="product-box">
-                <a href="https://www.evetech.co.za/gigabyte-gt-1030-low-profile-d4-2gb-ddr4/best-deal/13778.aspx
+                <a href="https://www.evetech.co.za/asus-geforce-gt-1030-2gb-gddr5-graphics-card/best-deal/5119.aspx
 " target="_blank">
-                    <img src="https://www.evetech.co.za/repository/components/gigabyte-gt-1030-low-profile-d4-2gb-ddr4-600px-v2300px.jpg" alt="Gigabyte GT 1030 Low Profile D4 2GB DDR4">
+                    <img src="https://www.evetech.co.za/repository/components/asus-geforce-gt-1030-2gb-gddr5-graphics-card-600px-v2300px.jpg" alt="ASUS GeForce GT 1030 2GB GDDR5 Graphics Card">
                 </a>
-                <p class="product-name">Gigabyte GT 1030 Low Profile D4 2GB DDR4</p>
-                <p class="price">Price: R1399.00</p>
-                <a class="link" href="https://www.evetech.co.za/gigabyte-gt-1030-low-profile-d4-2gb-ddr4/best-deal/13778.aspx
+                <p class="product-name">ASUS GeForce GT 1030 2GB GDDR5 Graphics Card</p>
+                <p class="price">Price: R1199.00</p>
+                <a class="link" href="https://www.evetech.co.za/asus-geforce-gt-1030-2gb-gddr5-graphics-card/best-deal/5119.aspx
 " target="_blank">
                     <div class="button">
                         In Stock with Evetech
@@ -70,13 +76,13 @@
                 </a>
             </div>
             <div class="product-box">
-                <a href="https://www.evetech.co.za/asus-geforce-gt-1030-2gb-gddr5-graphics-card/best-deal/5119.aspx
+                <a href="https://www.evetech.co.za/gigabyte-gt-1030-low-profile-d4-2gb-ddr4/best-deal/13778.aspx
 " target="_blank">
-                    <img src="https://www.evetech.co.za/repository/components/asus-geforce-gt-1030-2gb-gddr5-graphics-card-600px-v2300px.jpg" alt="ASUS GeForce GT 1030 2GB GDDR5 Graphics Card">
+                    <img src="https://www.evetech.co.za/repository/components/gigabyte-gt-1030-low-profile-d4-2gb-ddr4-600px-v2300px.jpg" alt="Gigabyte GT 1030 Low Profile D4 2GB DDR4">
                 </a>
-                <p class="product-name">ASUS GeForce GT 1030 2GB GDDR5 Graphics Card</p>
-                <p class="price">Price: R1489.00</p>
-                <a class="link" href="https://www.evetech.co.za/asus-geforce-gt-1030-2gb-gddr5-graphics-card/best-deal/5119.aspx
+                <p class="product-name">Gigabyte GT 1030 Low Profile D4 2GB DDR4</p>
+                <p class="price">Price: R1399.00</p>
+                <a class="link" href="https://www.evetech.co.za/gigabyte-gt-1030-low-profile-d4-2gb-ddr4/best-deal/13778.aspx
 " target="_blank">
                     <div class="button">
                         In Stock with Evetech
@@ -154,6 +160,34 @@
                 </a>
             </div>
             <div class="product-box">
+                <a href="https://www.incredible.co.za/asus-dual-radeon-rx-6500-xt-overclocked-edition-4gb-graphics-card
+" target="_blank">
+                    <img src="https://www.incredible.co.za/media/catalog/product/cache/74d213abfbc037213e1c69aa712be9b2/d/u/dual_rx6500xt_o4g_vgabox_70d2.png" alt="ASUS Dual Radeon RX 6500 XT Overclocked Edition 4GB Graphics Card">
+                </a>
+                <p class="product-name">ASUS Dual Radeon RX 6500 XT Overclocked Edition 4GB Graphics Card</p>
+                <p class="price">Price: R3999.00</p>
+                <a class="link" href="https://www.incredible.co.za/asus-dual-radeon-rx-6500-xt-overclocked-edition-4gb-graphics-card
+" target="_blank">
+                    <div class="button">
+                        In Stock with IncredibleConnection
+                    </div>
+                </a>
+            </div>
+            <div class="product-box">
+                <a href="https://www.incredible.co.za/gigabyte-amd-rx-6500-xt-eagle-4gb-graphics-card
+" target="_blank">
+                    <img src="https://www.incredible.co.za/media/catalog/product/cache/74d213abfbc037213e1c69aa712be9b2/g/v/gv_r65xteagle_4gd__2__ffaa.png" alt="GIGABYTE AMD RX 6500 XT EAGLE 4GB Graphics Card">
+                </a>
+                <p class="product-name">GIGABYTE AMD RX 6500 XT EAGLE 4GB Graphics Card</p>
+                <p class="price">Price: R3999.00</p>
+                <a class="link" href="https://www.incredible.co.za/gigabyte-amd-rx-6500-xt-eagle-4gb-graphics-card
+" target="_blank">
+                    <div class="button">
+                        In Stock with IncredibleConnection
+                    </div>
+                </a>
+            </div>
+            <div class="product-box">
                 <a href="https://www.evetech.co.za/msi-radeon-rx-6500-xt-mech-2x-4gb-oc-gddr6/best-deal/14483.aspx
 " target="_blank">
                     <img src="https://www.evetech.co.za/repository/components/msi-radeon-rx-6500-xt-mech-2x-4gb-oc-gddr6-600px-v2300px.jpg" alt="MSI Radeon RX 6500 XT MECH 2X 4GB OC GDDR6">
@@ -178,6 +212,20 @@
 " target="_blank">
                     <div class="button">
                         In Stock with Evetech
+                    </div>
+                </a>
+            </div>
+            <div class="product-box">
+                <a href="https://www.incredible.co.za/gigabyte-amd-rx-6500-xt-gaming-4gb-graphics-card
+" target="_blank">
+                    <img src="https://www.incredible.co.za/media/catalog/product/cache/74d213abfbc037213e1c69aa712be9b2/g/v/gv_r65xtgaming_oc_4gd__1__6a85.png" alt="GIGABYTE AMD RX 6500 XT GAMING 4GB Graphics Card">
+                </a>
+                <p class="product-name">GIGABYTE AMD RX 6500 XT GAMING 4GB Graphics Card</p>
+                <p class="price">Price: R4499.00</p>
+                <a class="link" href="https://www.incredible.co.za/gigabyte-amd-rx-6500-xt-gaming-4gb-graphics-card
+" target="_blank">
+                    <div class="button">
+                        In Stock with IncredibleConnection
                     </div>
                 </a>
             </div>
@@ -217,20 +265,6 @@
                 <p class="product-name">Gigabyte Radeon RX 6400 D6 Low Profile 4GB GDDR6 Graphics Card</p>
                 <p class="price">Price: R4550.00</p>
                 <a class="link" href="https://www.firstshop.co.za/collections/graphics-cards/products/gigabyte-radeon-rx-6400-d6-low-profile-4gb-gddr6-graphics-card-151334
-" target="_blank">
-                    <div class="button">
-                        In Stock with FirstShop
-                    </div>
-                </a>
-            </div>
-            <div class="product-box">
-                <a href="https://www.firstshop.co.za/collections/graphics-cards/products/gigabyte-geforce-gtx-1650-oc-4gb-gddr5-graphics-card-gv-n1650oc-4gl-129396
-" target="_blank">
-                    <img src="https://cdn.shopify.com/s/files/1/0457/5893/9300/products/gv-n1650oc-4gl-graphics-cards-33789873422500_300x.png?v=1652797939" alt="Gigabyte GeForce GTX 1650 OC 4GB GDDR5 Graphics Card GV-N1650OC-4GL">
-                </a>
-                <p class="product-name">Gigabyte GeForce GTX 1650 OC 4GB GDDR5 Graphics Card GV-N1650OC-4GL</p>
-                <p class="price">Price: R4550.00</p>
-                <a class="link" href="https://www.firstshop.co.za/collections/graphics-cards/products/gigabyte-geforce-gtx-1650-oc-4gb-gddr5-graphics-card-gv-n1650oc-4gl-129396
 " target="_blank">
                     <div class="button">
                         In Stock with FirstShop
@@ -322,20 +356,6 @@
                 </a>
             </div>
             <div class="product-box">
-                <a href="https://www.firstshop.co.za/collections/graphics-cards/products/gigabyte-amd-radeon-rx-6500-xt-eagle-4g-4gb-gddr6-graphics-card-gv-r65xteagle-4gd-153506
-" target="_blank">
-                    <img src="https://cdn.shopify.com/s/files/1/0457/5893/9300/products/gv-r65xteagle-4gd-graphics-cards-34318333313188_300x.png?v=1657785756" alt="Gigabyte AMD Radeon RX 6500 XT Eagle 4G 4GB GDDR6 Graphics Card GV-R65XTEAGLE-4GD">
-                </a>
-                <p class="product-name">Gigabyte AMD Radeon RX 6500 XT Eagle 4G 4GB GDDR6 Graphics Card GV-R65XTEAGLE-4GD</p>
-                <p class="price">Price: R4870.00</p>
-                <a class="link" href="https://www.firstshop.co.za/collections/graphics-cards/products/gigabyte-amd-radeon-rx-6500-xt-eagle-4g-4gb-gddr6-graphics-card-gv-r65xteagle-4gd-153506
-" target="_blank">
-                    <div class="button">
-                        In Stock with FirstShop
-                    </div>
-                </a>
-            </div>
-            <div class="product-box">
                 <a href="https://www.firstshop.co.za/collections/graphics-cards/products/gigabyte-geforce-gtx-1650-gb-gddr6-graphics-card-gv-n1656oc-4gd-151385
 " target="_blank">
                     <img src="https://cdn.shopify.com/s/files/1/0457/5893/9300/products/gv-n1656oc-4gd-graphics-cards-34211651649700_300x.png?v=1656594669" alt="Gigabyte GeForce GTX 1650 GB GDDR6 Graphics Card GV-N1656OC-4GD">
@@ -350,13 +370,13 @@
                 </a>
             </div>
             <div class="product-box">
-                <a href="https://www.firstshop.co.za/collections/graphics-cards/products/msi-geforce-gtx-1650-d6-ventus-xs-oc-4gb-gddr6-graphics-card-gtx-1650-d6-ventus-xs-oc-122542
+                <a href="https://www.firstshop.co.za/collections/graphics-cards/products/gigabyte-amd-radeon-rx-6500-xt-eagle-4g-4gb-gddr6-graphics-card-gv-r65xteagle-4gd-153506
 " target="_blank">
-                    <img src="https://cdn.shopify.com/s/files/1/0457/5893/9300/products/gtx-1650-d6-ventus-xs-oc-graphics-cards-33057514979492_300x.png?v=1645167030" alt="MSI Geforce GTX 1650 D6 Ventus XS OC 4GB GDDR6 Graphics Card GTX 1650 D6 VENTUS XS OC">
+                    <img src="https://cdn.shopify.com/s/files/1/0457/5893/9300/products/gv-r65xteagle-4gd-graphics-cards-34318333313188_300x.png?v=1657785756" alt="Gigabyte AMD Radeon RX 6500 XT Eagle 4G 4GB GDDR6 Graphics Card GV-R65XTEAGLE-4GD">
                 </a>
-                <p class="product-name">MSI Geforce GTX 1650 D6 Ventus XS OC 4GB GDDR6 Graphics Card GTX 1650 D6 VENTUS XS OC</p>
-                <p class="price">Price: R4880.00</p>
-                <a class="link" href="https://www.firstshop.co.za/collections/graphics-cards/products/msi-geforce-gtx-1650-d6-ventus-xs-oc-4gb-gddr6-graphics-card-gtx-1650-d6-ventus-xs-oc-122542
+                <p class="product-name">Gigabyte AMD Radeon RX 6500 XT Eagle 4G 4GB GDDR6 Graphics Card GV-R65XTEAGLE-4GD</p>
+                <p class="price">Price: R4870.00</p>
+                <a class="link" href="https://www.firstshop.co.za/collections/graphics-cards/products/gigabyte-amd-radeon-rx-6500-xt-eagle-4g-4gb-gddr6-graphics-card-gv-r65xteagle-4gd-153506
 " target="_blank">
                     <div class="button">
                         In Stock with FirstShop
@@ -371,6 +391,20 @@
                 <p class="product-name">MSI GTX 1650 D6 Ventus XS OCV2 Nvidia GeForce GTX 1650 4GB GDDR6 Graphics Card GTX 1650 D6 VENTUS XS OCV</p>
                 <p class="price">Price: R4880.00</p>
                 <a class="link" href="https://www.firstshop.co.za/collections/graphics-cards/products/msi-gtx-1650-d6-ventus-xs-ocv2-nvidia-geforce-gtx-1650-4gb-gddr6-graphics-card-gtx-1650-d6-ventus-xs-ocv-153522
+" target="_blank">
+                    <div class="button">
+                        In Stock with FirstShop
+                    </div>
+                </a>
+            </div>
+            <div class="product-box">
+                <a href="https://www.firstshop.co.za/collections/graphics-cards/products/msi-geforce-gtx-1650-d6-ventus-xs-oc-4gb-gddr6-graphics-card-gtx-1650-d6-ventus-xs-oc-122542
+" target="_blank">
+                    <img src="https://cdn.shopify.com/s/files/1/0457/5893/9300/products/gtx-1650-d6-ventus-xs-oc-graphics-cards-33057514979492_300x.png?v=1645167030" alt="MSI Geforce GTX 1650 D6 Ventus XS OC 4GB GDDR6 Graphics Card GTX 1650 D6 VENTUS XS OC">
+                </a>
+                <p class="product-name">MSI Geforce GTX 1650 D6 Ventus XS OC 4GB GDDR6 Graphics Card GTX 1650 D6 VENTUS XS OC</p>
+                <p class="price">Price: R4880.00</p>
+                <a class="link" href="https://www.firstshop.co.za/collections/graphics-cards/products/msi-geforce-gtx-1650-d6-ventus-xs-oc-4gb-gddr6-graphics-card-gtx-1650-d6-ventus-xs-oc-122542
 " target="_blank">
                     <div class="button">
                         In Stock with FirstShop
@@ -420,16 +454,44 @@
                 </a>
             </div>
             <div class="product-box">
-                <a href="https://www.firstshop.co.za/collections/graphics-cards/products/gigabyte-nvidia-geforce-gtx-1650-4gb-gddr6-graphics-card-gv-n1656oc-4gl-118067
+                <a href="https://www.incredible.co.za/inno3d-geforce-gtx-1660-ti-graphics-card
 " target="_blank">
-                    <img src="https://cdn.shopify.com/s/files/1/0457/5893/9300/products/gv-n1656oc-4gl-graphics-cards-33152569540772_300x.jpg?v=1646203279" alt="Gigabyte NVIDIA GeForce GTX 1650 4GB GDDR6 Graphics Card - GV-N1656OC-4GL">
+                    <img src="https://www.incredible.co.za/media/catalog/product/cache/74d213abfbc037213e1c69aa712be9b2/i/n/inno3d_1660_ecommerce_4e36.png" alt="Inno3d GeForce GTX 1660 Ti Graphics Card">
                 </a>
-                <p class="product-name">Gigabyte NVIDIA GeForce GTX 1650 4GB GDDR6 Graphics Card - GV-N1656OC-4GL</p>
-                <p class="price">Price: R5100.00</p>
-                <a class="link" href="https://www.firstshop.co.za/collections/graphics-cards/products/gigabyte-nvidia-geforce-gtx-1650-4gb-gddr6-graphics-card-gv-n1656oc-4gl-118067
+                <p class="product-name">Inno3d GeForce GTX 1660 Ti Graphics Card</p>
+                <p class="price">Price: R4999.00</p>
+                <a class="link" href="https://www.incredible.co.za/inno3d-geforce-gtx-1660-ti-graphics-card
 " target="_blank">
                     <div class="button">
-                        In Stock with FirstShop
+                        In Stock with IncredibleConnection
+                    </div>
+                </a>
+            </div>
+            <div class="product-box">
+                <a href="https://www.incredible.co.za/gigabyte-geforce-gtx-1660-oc-6gb-graphics-card
+" target="_blank">
+                    <img src="https://www.incredible.co.za/media/catalog/product/cache/74d213abfbc037213e1c69aa712be9b2/8/8/889523016725_1_0_f4f6.jpg" alt="Gigabyte Geforce GTX 1660 OC 6GB Graphics Card">
+                </a>
+                <p class="product-name">Gigabyte Geforce GTX 1660 OC 6GB Graphics Card</p>
+                <p class="price">Price: R4999.00</p>
+                <a class="link" href="https://www.incredible.co.za/gigabyte-geforce-gtx-1660-oc-6gb-graphics-card
+" target="_blank">
+                    <div class="button">
+                        In Stock with IncredibleConnection
+                    </div>
+                </a>
+            </div>
+            <div class="product-box">
+                <a href="https://www.incredible.co.za/gigabyte-geforce-d5-gtx-1660-6gb-graphics-card
+" target="_blank">
+                    <img src="https://www.incredible.co.za/media/catalog/product/cache/74d213abfbc037213e1c69aa712be9b2/g/v/gv_n1660d5_6gd_62b8_1_1__487c.jpg" alt="GIGABYTE GeForce D5 GTX 1660 6GB Graphics Card">
+                </a>
+                <p class="product-name">GIGABYTE GeForce D5 GTX 1660 6GB Graphics Card</p>
+                <p class="price">Price: R4999.00</p>
+                <a class="link" href="https://www.incredible.co.za/gigabyte-geforce-d5-gtx-1660-6gb-graphics-card
+" target="_blank">
+                    <div class="button">
+                        In Stock with IncredibleConnection
                     </div>
                 </a>
             </div>
@@ -462,6 +524,62 @@
                 </a>
             </div>
             <div class="product-box">
+                <a href="https://www.firstshop.co.za/collections/graphics-cards/products/gigabyte-nvidia-geforce-gtx-1650-4gb-gddr6-graphics-card-gv-n1656oc-4gl-118067
+" target="_blank">
+                    <img src="https://cdn.shopify.com/s/files/1/0457/5893/9300/products/gv-n1656oc-4gl-graphics-cards-33152569540772_300x.jpg?v=1646203279" alt="Gigabyte NVIDIA GeForce GTX 1650 4GB GDDR6 Graphics Card - GV-N1656OC-4GL">
+                </a>
+                <p class="product-name">Gigabyte NVIDIA GeForce GTX 1650 4GB GDDR6 Graphics Card - GV-N1656OC-4GL</p>
+                <p class="price">Price: R5100.00</p>
+                <a class="link" href="https://www.firstshop.co.za/collections/graphics-cards/products/gigabyte-nvidia-geforce-gtx-1650-4gb-gddr6-graphics-card-gv-n1656oc-4gl-118067
+" target="_blank">
+                    <div class="button">
+                        In Stock with FirstShop
+                    </div>
+                </a>
+            </div>
+            <div class="product-box">
+                <a href="https://www.incredible.co.za/geforce-inno3d-geforce-rtx-3050-twin-x2-oc
+" target="_blank">
+                    <img src="https://www.incredible.co.za/media/catalog/product/cache/74d213abfbc037213e1c69aa712be9b2/i/n/inno3d_3050_twin_x2oc_set_2cae.jpg" alt="Geforce Inno3d Geforce RTX 3050 Twin X2 OC">
+                </a>
+                <p class="product-name">Geforce Inno3d Geforce RTX 3050 Twin X2 OC</p>
+                <p class="price">Price: R5499.00</p>
+                <a class="link" href="https://www.incredible.co.za/geforce-inno3d-geforce-rtx-3050-twin-x2-oc
+" target="_blank">
+                    <div class="button">
+                        In Stock with IncredibleConnection
+                    </div>
+                </a>
+            </div>
+            <div class="product-box">
+                <a href="https://www.incredible.co.za/asus-tuf-gaming-geforce-gtx-1660-ti-evo-6gb-graphics-card
+" target="_blank">
+                    <img src="https://www.incredible.co.za/media/catalog/product/cache/74d213abfbc037213e1c69aa712be9b2/t/u/tuf_gaming_gtx_1660_ti_evo_box_vga_nv_1085.jpg" alt="ASUS TUF Gaming GeForce GTX 1660 Ti EVO 6GB Graphics Card">
+                </a>
+                <p class="product-name">ASUS TUF Gaming GeForce GTX 1660 Ti EVO 6GB Graphics Card</p>
+                <p class="price">Price: R5499.00</p>
+                <a class="link" href="https://www.incredible.co.za/asus-tuf-gaming-geforce-gtx-1660-ti-evo-6gb-graphics-card
+" target="_blank">
+                    <div class="button">
+                        In Stock with IncredibleConnection
+                    </div>
+                </a>
+            </div>
+            <div class="product-box">
+                <a href="https://www.incredible.co.za/gigabyte-geforce-d6-gtx-1660ti-6gb-graphics-card
+" target="_blank">
+                    <img src="https://www.incredible.co.za/media/catalog/product/cache/74d213abfbc037213e1c69aa712be9b2/g/v/gv_n166td6_6gd_9279.png" alt="GIGABYTE GeForce D6 GTX 1660Ti 6GB Graphics Card">
+                </a>
+                <p class="product-name">GIGABYTE GeForce D6 GTX 1660Ti 6GB Graphics Card</p>
+                <p class="price">Price: R5499.00</p>
+                <a class="link" href="https://www.incredible.co.za/gigabyte-geforce-d6-gtx-1660ti-6gb-graphics-card
+" target="_blank">
+                    <div class="button">
+                        In Stock with IncredibleConnection
+                    </div>
+                </a>
+            </div>
+            <div class="product-box">
                 <a href="https://www.evetech.co.za/palit-geforce-rtx-3050-dual-oc-8gb-graphics-card/best-deal/13985.aspx
 " target="_blank">
                     <img src="https://www.evetech.co.za/repository/components/palit-geforce-rtx-3050-dual-oc-8gb-graphics-card-600px-v4300px.jpg" alt="Palit GeForce RTX 3050 DUAL OC 8GB Graphics Card">
@@ -486,6 +604,34 @@
 " target="_blank">
                     <div class="button">
                         In Stock with Evetech
+                    </div>
+                </a>
+            </div>
+            <div class="product-box">
+                <a href="https://www.incredible.co.za/gigabyte-geforce-gtx-1660ti-oc-6gb-graphics-card
+" target="_blank">
+                    <img src="https://www.incredible.co.za/media/catalog/product/cache/74d213abfbc037213e1c69aa712be9b2/g/v/gv_n166toc_6gd_f47f.png" alt="GIGABYTE GeForce GTX 1660Ti OC 6GB Graphics Card">
+                </a>
+                <p class="product-name">GIGABYTE GeForce GTX 1660Ti OC 6GB Graphics Card</p>
+                <p class="price">Price: R5999.00</p>
+                <a class="link" href="https://www.incredible.co.za/gigabyte-geforce-gtx-1660ti-oc-6gb-graphics-card
+" target="_blank">
+                    <div class="button">
+                        In Stock with IncredibleConnection
+                    </div>
+                </a>
+            </div>
+            <div class="product-box">
+                <a href="https://www.incredible.co.za/inno3d-geforce-rtx-2060-twin-x2-graphics-card-6gb
+" target="_blank">
+                    <img src="https://www.incredible.co.za/media/catalog/product/cache/74d213abfbc037213e1c69aa712be9b2/7/1/71fqc505ul__sl1500___1__96b2.jpg" alt="Inno3d Geforce RTX 2060 Twin X2 Graphics Card 6GB">
+                </a>
+                <p class="product-name">Inno3d Geforce RTX 2060 Twin X2 Graphics Card 6GB</p>
+                <p class="price">Price: R5999.00</p>
+                <a class="link" href="https://www.incredible.co.za/inno3d-geforce-rtx-2060-twin-x2-graphics-card-6gb
+" target="_blank">
+                    <div class="button">
+                        In Stock with IncredibleConnection
                     </div>
                 </a>
             </div>
@@ -560,20 +706,6 @@
                 </a>
             </div>
             <div class="product-box">
-                <a href="https://www.firstshop.co.za/collections/graphics-cards/products/gigabyte-nvidia-geforce-gtx-1660-ti-6gb-gddr6-graphics-card-gv-n166toc-6gd-97288
-" target="_blank">
-                    <img src="https://cdn.shopify.com/s/files/1/0457/5893/9300/products/gv-n166toc-6gd-graphics-cards-20741939953828_300x.png?v=1632031724" alt="Gigabyte NVIDIA GeForce GTX 1660 TI 6GB GDDR6 Graphics Card - GV-N166TOC-6GD">
-                </a>
-                <p class="product-name">Gigabyte NVIDIA GeForce GTX 1660 TI 6GB GDDR6 Graphics Card - GV-N166TOC-6GD</p>
-                <p class="price">Price: R6399.00</p>
-                <a class="link" href="https://www.firstshop.co.za/collections/graphics-cards/products/gigabyte-nvidia-geforce-gtx-1660-ti-6gb-gddr6-graphics-card-gv-n166toc-6gd-97288
-" target="_blank">
-                    <div class="button">
-                        In Stock with FirstShop
-                    </div>
-                </a>
-            </div>
-            <div class="product-box">
                 <a href="https://www.firstshop.co.za/collections/graphics-cards/products/msi-nvidia-geforce-gtx-1660-super-ventus-xs-oc-6gb-gddr6-graphics-card-gtx1660superventusxsoc-153524
 " target="_blank">
                     <img src="https://cdn.shopify.com/s/files/1/0457/5893/9300/products/gtx1660superventusxsoc-graphics-cards-34319138193572_300x.png?v=1657799049" alt="MSI Nvidia GeForce GTX 1660 SUPER VENTUS XS OC 6GB GDDR6 Graphics Card GTX1660SUPERVENTUSXSOC">
@@ -588,16 +720,44 @@
                 </a>
             </div>
             <div class="product-box">
-                <a href="https://www.evetech.co.za/asus-tuf-gaming-geforce-gtx-1660-ti-evo-top-edition-6gb/best-deal/13234.aspx
+                <a href="https://www.firstshop.co.za/collections/graphics-cards/products/gigabyte-nvidia-geforce-gtx-1660-ti-6gb-gddr6-graphics-card-gv-n166toc-6gd-97288
 " target="_blank">
-                    <img src="https://www.evetech.co.za/repository/components/asus-tuf-gaming-geforce-gtx-1660-ti-evo-top-edition-6gb-600px-v3300px.jpg" alt="ASUS TUF Gaming GeForce GTX 1660 Ti EVO TOP Edition 6GB">
+                    <img src="https://cdn.shopify.com/s/files/1/0457/5893/9300/products/gv-n166toc-6gd-graphics-cards-20741939953828_300x.png?v=1632031724" alt="Gigabyte NVIDIA GeForce GTX 1660 TI 6GB GDDR6 Graphics Card - GV-N166TOC-6GD">
                 </a>
-                <p class="product-name">ASUS TUF Gaming GeForce GTX 1660 Ti EVO TOP Edition 6GB</p>
-                <p class="price">Price: R6499.00</p>
-                <a class="link" href="https://www.evetech.co.za/asus-tuf-gaming-geforce-gtx-1660-ti-evo-top-edition-6gb/best-deal/13234.aspx
+                <p class="product-name">Gigabyte NVIDIA GeForce GTX 1660 TI 6GB GDDR6 Graphics Card - GV-N166TOC-6GD</p>
+                <p class="price">Price: R6399.00</p>
+                <a class="link" href="https://www.firstshop.co.za/collections/graphics-cards/products/gigabyte-nvidia-geforce-gtx-1660-ti-6gb-gddr6-graphics-card-gv-n166toc-6gd-97288
 " target="_blank">
                     <div class="button">
-                        In Stock with Evetech
+                        In Stock with FirstShop
+                    </div>
+                </a>
+            </div>
+            <div class="product-box">
+                <a href="https://www.incredible.co.za/asus-dual-geforce-rtx-2060-evo-6gb-graphics-card
+" target="_blank">
+                    <img src="https://www.incredible.co.za/media/catalog/product/cache/74d213abfbc037213e1c69aa712be9b2/r/t/rtx_cbee.png" alt="ASUS Dual GeForce RTX™ 2060 EVO 6GB Graphics Card">
+                </a>
+                <p class="product-name">ASUS Dual GeForce RTX™ 2060 EVO 6GB Graphics Card</p>
+                <p class="price">Price: R6499.00</p>
+                <a class="link" href="https://www.incredible.co.za/asus-dual-geforce-rtx-2060-evo-6gb-graphics-card
+" target="_blank">
+                    <div class="button">
+                        In Stock with IncredibleConnection
+                    </div>
+                </a>
+            </div>
+            <div class="product-box">
+                <a href="https://www.incredible.co.za/asus-dual-geforce-rtx2060-oc-evo-6gb
+" target="_blank">
+                    <img src="https://www.incredible.co.za/media/catalog/product/cache/74d213abfbc037213e1c69aa712be9b2/a/s/asus_dual_geforce_rtx2060_oc_evo_6gb_1_d1be.jpg" alt="ASUS Dual GeForce RTX2060 OC EVO 6GB">
+                </a>
+                <p class="product-name">ASUS Dual GeForce RTX2060 OC EVO 6GB</p>
+                <p class="price">Price: R6499.00</p>
+                <a class="link" href="https://www.incredible.co.za/asus-dual-geforce-rtx2060-oc-evo-6gb
+" target="_blank">
+                    <div class="button">
+                        In Stock with IncredibleConnection
                     </div>
                 </a>
             </div>
@@ -609,6 +769,20 @@
                 <p class="product-name">Palit GeForce RTX 2060 Dual 12GB</p>
                 <p class="price">Price: R6499.00</p>
                 <a class="link" href="https://www.evetech.co.za/palit-geforce-rtx-2060-dual-12gb/best-deal/14556.aspx
+" target="_blank">
+                    <div class="button">
+                        In Stock with Evetech
+                    </div>
+                </a>
+            </div>
+            <div class="product-box">
+                <a href="https://www.evetech.co.za/asus-tuf-gaming-geforce-gtx-1660-ti-evo-top-edition-6gb/best-deal/13234.aspx
+" target="_blank">
+                    <img src="https://www.evetech.co.za/repository/components/asus-tuf-gaming-geforce-gtx-1660-ti-evo-top-edition-6gb-600px-v3300px.jpg" alt="ASUS TUF Gaming GeForce GTX 1660 Ti EVO TOP Edition 6GB">
+                </a>
+                <p class="product-name">ASUS TUF Gaming GeForce GTX 1660 Ti EVO TOP Edition 6GB</p>
+                <p class="price">Price: R6499.00</p>
+                <a class="link" href="https://www.evetech.co.za/asus-tuf-gaming-geforce-gtx-1660-ti-evo-top-edition-6gb/best-deal/13234.aspx
 " target="_blank">
                     <div class="button">
                         In Stock with Evetech
@@ -658,6 +832,20 @@
                 </a>
             </div>
             <div class="product-box">
+                <a href="https://www.firstshop.co.za/collections/graphics-cards/products/asus-phoenix-nvidia-geforce-rtx-3050-8gb-gddr6-graphics-card-90yv0hh2-m0na00-146340
+" target="_blank">
+                    <img src="https://cdn.shopify.com/s/files/1/0457/5893/9300/products/90yv0hh2-m0na00-graphics-cards-33675747098788_300x.png?v=1651224381" alt="Asus Phoenix Nvidia GeForce RTX 3050 8GB GDDR6 Graphics Card 90YV0HH2-M0NA00">
+                </a>
+                <p class="product-name">Asus Phoenix Nvidia GeForce RTX 3050 8GB GDDR6 Graphics Card 90YV0HH2-M0NA00</p>
+                <p class="price">Price: R6999.00</p>
+                <a class="link" href="https://www.firstshop.co.za/collections/graphics-cards/products/asus-phoenix-nvidia-geforce-rtx-3050-8gb-gddr6-graphics-card-90yv0hh2-m0na00-146340
+" target="_blank">
+                    <div class="button">
+                        In Stock with FirstShop
+                    </div>
+                </a>
+            </div>
+            <div class="product-box">
                 <a href="https://www.firstshop.co.za/collections/graphics-cards/products/gigabyte-gv-n166sd6-6gd-nvidia-gtx-1660-super-6gb-gddr6-graphics-card-141219
 " target="_blank">
                     <img src="https://cdn.shopify.com/s/files/1/0457/5893/9300/products/gv-n166sd6-6gd-graphics-cards-32993952039076_300x.png?v=1644416603" alt="Gigabyte GV-N166SD6-6GD Nvidia GTX 1660 SUPER 6GB GDDR6 Graphics Card">
@@ -686,27 +874,13 @@
                 </a>
             </div>
             <div class="product-box">
-                <a href="https://www.incredible.co.za/asus-dual-radeon-rx-6500-xt-overclocked-edition-4gb-graphics-card
+                <a href="https://www.incredible.co.za/gigabyte-amd-rx-6600-eagle-8gb-graphics-card
 " target="_blank">
-                    <img src="https://www.incredible.co.za/media/catalog/product/cache/74d213abfbc037213e1c69aa712be9b2/d/u/dual_rx6500xt_o4g_vgabox_70d2.png" alt="ASUS Dual Radeon RX 6500 XT Overclocked Edition 4GB Graphics Card">
+                    <img src="https://www.incredible.co.za/media/catalog/product/cache/74d213abfbc037213e1c69aa712be9b2/g/v/gv_r66eagle_8gd__6__788d.png" alt="GIGABYTE AMD RX 6600 EAGLE 8GB Graphics Card">
                 </a>
-                <p class="product-name">ASUS Dual Radeon RX 6500 XT Overclocked Edition 4GB Graphics Card</p>
+                <p class="product-name">GIGABYTE AMD RX 6600 EAGLE 8GB Graphics Card</p>
                 <p class="price">Price: R6999.00</p>
-                <a class="link" href="https://www.incredible.co.za/asus-dual-radeon-rx-6500-xt-overclocked-edition-4gb-graphics-card
-" target="_blank">
-                    <div class="button">
-                        In Stock with IncredibleConnection
-                    </div>
-                </a>
-            </div>
-            <div class="product-box">
-                <a href="https://www.incredible.co.za/gigabyte-amd-rx-6500-xt-eagle-4gb-graphics-card
-" target="_blank">
-                    <img src="https://www.incredible.co.za/media/catalog/product/cache/74d213abfbc037213e1c69aa712be9b2/g/v/gv_r65xteagle_4gd__2__ffaa.png" alt="GIGABYTE AMD RX 6500 XT EAGLE 4GB Graphics Card">
-                </a>
-                <p class="product-name">GIGABYTE AMD RX 6500 XT EAGLE 4GB Graphics Card</p>
-                <p class="price">Price: R6999.00</p>
-                <a class="link" href="https://www.incredible.co.za/gigabyte-amd-rx-6500-xt-eagle-4gb-graphics-card
+                <a class="link" href="https://www.incredible.co.za/gigabyte-amd-rx-6600-eagle-8gb-graphics-card
 " target="_blank">
                     <div class="button">
                         In Stock with IncredibleConnection
@@ -756,13 +930,13 @@
                 </a>
             </div>
             <div class="product-box">
-                <a href="https://www.firstshop.co.za/collections/graphics-cards/products/arktek-nvidia-gtx-1660-super-6gb-ddr6-graphics-card-akn1660sd6s6gh1-147436
+                <a href="https://www.firstshop.co.za/collections/graphics-cards/products/asus-dual-nvidia-geforce-rtx-3050-oc-edition-8gb-gddr6-graphics-card-90yv0hh0-m0na00-146339
 " target="_blank">
-                    <img src="https://cdn.shopify.com/s/files/1/0457/5893/9300/products/akn1660sd6s6gh1-graphics-cards-34157377290404_300x.png?v=1656060612" alt="Arktek Nvidia GTX 1660 Super 6GB DDR6 Graphics Card AKN1660SD6S6GH1">
+                    <img src="https://cdn.shopify.com/s/files/1/0457/5893/9300/products/90yv0hh0-m0na00-graphics-cards-33675722096804_300x.png?v=1651224015" alt="Asus Dual Nvidia GeForce RTX 3050 OC Edition 8GB GDDR6 Graphics Card 90YV0HH0-M0NA00">
                 </a>
-                <p class="product-name">Arktek Nvidia GTX 1660 Super 6GB DDR6 Graphics Card AKN1660SD6S6GH1</p>
+                <p class="product-name">Asus Dual Nvidia GeForce RTX 3050 OC Edition 8GB GDDR6 Graphics Card 90YV0HH0-M0NA00</p>
                 <p class="price">Price: R7199.00</p>
-                <a class="link" href="https://www.firstshop.co.za/collections/graphics-cards/products/arktek-nvidia-gtx-1660-super-6gb-ddr6-graphics-card-akn1660sd6s6gh1-147436
+                <a class="link" href="https://www.firstshop.co.za/collections/graphics-cards/products/asus-dual-nvidia-geforce-rtx-3050-oc-edition-8gb-gddr6-graphics-card-90yv0hh0-m0na00-146339
 " target="_blank">
                     <div class="button">
                         In Stock with FirstShop
@@ -770,13 +944,13 @@
                 </a>
             </div>
             <div class="product-box">
-                <a href="https://www.firstshop.co.za/collections/graphics-cards/products/asus-phoenix-nvidia-geforce-rtx-3050-8gb-gddr6-graphics-card-90yv0hh2-m0na00-146340
+                <a href="https://www.firstshop.co.za/collections/graphics-cards/products/arktek-nvidia-gtx-1660-super-6gb-ddr6-graphics-card-akn1660sd6s6gh1-147436
 " target="_blank">
-                    <img src="https://cdn.shopify.com/s/files/1/0457/5893/9300/products/90yv0hh2-m0na00-graphics-cards-33675747098788_300x.png?v=1651224381" alt="Asus Phoenix Nvidia GeForce RTX 3050 8GB GDDR6 Graphics Card 90YV0HH2-M0NA00">
+                    <img src="https://cdn.shopify.com/s/files/1/0457/5893/9300/products/akn1660sd6s6gh1-graphics-cards-34157377290404_300x.png?v=1656060612" alt="Arktek Nvidia GTX 1660 Super 6GB DDR6 Graphics Card AKN1660SD6S6GH1">
                 </a>
-                <p class="product-name">Asus Phoenix Nvidia GeForce RTX 3050 8GB GDDR6 Graphics Card 90YV0HH2-M0NA00</p>
-                <p class="price">Price: R7299.00</p>
-                <a class="link" href="https://www.firstshop.co.za/collections/graphics-cards/products/asus-phoenix-nvidia-geforce-rtx-3050-8gb-gddr6-graphics-card-90yv0hh2-m0na00-146340
+                <p class="product-name">Arktek Nvidia GTX 1660 Super 6GB DDR6 Graphics Card AKN1660SD6S6GH1</p>
+                <p class="price">Price: R7199.00</p>
+                <a class="link" href="https://www.firstshop.co.za/collections/graphics-cards/products/arktek-nvidia-gtx-1660-super-6gb-ddr6-graphics-card-akn1660sd6s6gh1-147436
 " target="_blank">
                     <div class="button">
                         In Stock with FirstShop
@@ -798,16 +972,16 @@
                 </a>
             </div>
             <div class="product-box">
-                <a href="https://www.evetech.co.za/msi-radeon-rx-6600-armor-8gb-v1-gddr6/best-deal/13305.aspx
+                <a href="https://www.incredible.co.za/asus-dual-geforce-rtx-3060-v2-overclocked-edition-12gb-graphics-card
 " target="_blank">
-                    <img src="https://www.evetech.co.za/repository/components/msi-radeon-rx-6600-armor-8gb-v1-gddr6-600px-v2300px.jpg" alt="MSI Radeon RX 6600 ARMOR 8GB V1 GDDR6">
+                    <img src="https://www.incredible.co.za/media/catalog/product/cache/74d213abfbc037213e1c69aa712be9b2/d/u/dual_rtx3060_o12g_box_vga_logo_2400_72be.png" alt="ASUS Dual GeForce RTX 3060 V2 Overclocked Edition 12GB Graphics Card">
                 </a>
-                <p class="product-name">MSI Radeon RX 6600 ARMOR 8GB V1 GDDR6</p>
+                <p class="product-name">ASUS Dual GeForce RTX 3060 V2 Overclocked Edition 12GB Graphics Card</p>
                 <p class="price">Price: R7499.00</p>
-                <a class="link" href="https://www.evetech.co.za/msi-radeon-rx-6600-armor-8gb-v1-gddr6/best-deal/13305.aspx
+                <a class="link" href="https://www.incredible.co.za/asus-dual-geforce-rtx-3060-v2-overclocked-edition-12gb-graphics-card
 " target="_blank">
                     <div class="button">
-                        In Stock with Evetech
+                        In Stock with IncredibleConnection
                     </div>
                 </a>
             </div>
@@ -826,6 +1000,20 @@
                 </a>
             </div>
             <div class="product-box">
+                <a href="https://www.evetech.co.za/msi-radeon-rx-6600-armor-8gb-v1-gddr6/best-deal/13305.aspx
+" target="_blank">
+                    <img src="https://www.evetech.co.za/repository/components/msi-radeon-rx-6600-armor-8gb-v1-gddr6-600px-v2300px.jpg" alt="MSI Radeon RX 6600 ARMOR 8GB V1 GDDR6">
+                </a>
+                <p class="product-name">MSI Radeon RX 6600 ARMOR 8GB V1 GDDR6</p>
+                <p class="price">Price: R7499.00</p>
+                <a class="link" href="https://www.evetech.co.za/msi-radeon-rx-6600-armor-8gb-v1-gddr6/best-deal/13305.aspx
+" target="_blank">
+                    <div class="button">
+                        In Stock with Evetech
+                    </div>
+                </a>
+            </div>
+            <div class="product-box">
                 <a href="https://www.firstshop.co.za/collections/graphics-cards/products/msi-rx-6600-armor-v1-8gb-gddr6-graphic-card-radeon-rx-6600-armor-8g-149428
 " target="_blank">
                     <img src="https://cdn.shopify.com/s/files/1/0457/5893/9300/products/radeon-rx-6600-armor-8g-graphics-cards-33878419177636_300x.png?v=1653900430" alt="MSI RX 6600 Armor V1 8GB GDDR6 Graphic Card Radeon RX 6600 ARMOR 8G">
@@ -836,34 +1024,6 @@
 " target="_blank">
                     <div class="button">
                         In Stock with FirstShop
-                    </div>
-                </a>
-            </div>
-            <div class="product-box">
-                <a href="https://www.firstshop.co.za/collections/graphics-cards/products/asus-dual-nvidia-geforce-rtx-3050-oc-edition-8gb-gddr6-graphics-card-90yv0hh0-m0na00-146339
-" target="_blank">
-                    <img src="https://cdn.shopify.com/s/files/1/0457/5893/9300/products/90yv0hh0-m0na00-graphics-cards-33675722096804_300x.png?v=1651224015" alt="Asus Dual Nvidia GeForce RTX 3050 OC Edition 8GB GDDR6 Graphics Card 90YV0HH0-M0NA00">
-                </a>
-                <p class="product-name">Asus Dual Nvidia GeForce RTX 3050 OC Edition 8GB GDDR6 Graphics Card 90YV0HH0-M0NA00</p>
-                <p class="price">Price: R7999.00</p>
-                <a class="link" href="https://www.firstshop.co.za/collections/graphics-cards/products/asus-dual-nvidia-geforce-rtx-3050-oc-edition-8gb-gddr6-graphics-card-90yv0hh0-m0na00-146339
-" target="_blank">
-                    <div class="button">
-                        In Stock with FirstShop
-                    </div>
-                </a>
-            </div>
-            <div class="product-box">
-                <a href="https://www.incredible.co.za/gigabyte-amd-rx-6500-xt-gaming-4gb-graphics-card
-" target="_blank">
-                    <img src="https://www.incredible.co.za/media/catalog/product/cache/74d213abfbc037213e1c69aa712be9b2/g/v/gv_r65xtgaming_oc_4gd__1__6a85.png" alt="GIGABYTE AMD RX 6500 XT GAMING 4GB Graphics Card">
-                </a>
-                <p class="product-name">GIGABYTE AMD RX 6500 XT GAMING 4GB Graphics Card</p>
-                <p class="price">Price: R7999.00</p>
-                <a class="link" href="https://www.incredible.co.za/gigabyte-amd-rx-6500-xt-gaming-4gb-graphics-card
-" target="_blank">
-                    <div class="button">
-                        In Stock with IncredibleConnection
                     </div>
                 </a>
             </div>
@@ -906,6 +1066,20 @@
 " target="_blank">
                     <div class="button">
                         In Stock with Evetech
+                    </div>
+                </a>
+            </div>
+            <div class="product-box">
+                <a href="https://www.firstshop.co.za/collections/graphics-cards/products/gigabyte-amd-rx6600-eagle-8gb-gddr6-graphics-card-gv-r66eagle-8gd-129405
+" target="_blank">
+                    <img src="https://cdn.shopify.com/s/files/1/0457/5893/9300/products/gv-r66eagle-8gd-graphics-cards-33586710708388_300x.png?v=1650373335" alt="Gigabyte AMD RX6600 Eagle 8GB GDDR6 Graphics Card GV-R66EAGLE-8GD">
+                </a>
+                <p class="product-name">Gigabyte AMD RX6600 Eagle 8GB GDDR6 Graphics Card GV-R66EAGLE-8GD</p>
+                <p class="price">Price: R8199.00</p>
+                <a class="link" href="https://www.firstshop.co.za/collections/graphics-cards/products/gigabyte-amd-rx6600-eagle-8gb-gddr6-graphics-card-gv-r66eagle-8gd-129405
+" target="_blank">
+                    <div class="button">
+                        In Stock with FirstShop
                     </div>
                 </a>
             </div>
@@ -994,20 +1168,6 @@
                 </a>
             </div>
             <div class="product-box">
-                <a href="https://www.firstshop.co.za/collections/graphics-cards/products/gigabyte-geforce-rtx-3060-eagle-oc-lhr-12gb-gddr6-graphics-card-gv-n3060eagle-oc-12gd-148514
-" target="_blank">
-                    <img src="https://cdn.shopify.com/s/files/1/0457/5893/9300/products/gv-n3060eagle-oc-12gd-graphics-cards-33913052823716_300x.png?v=1654257012" alt="Gigabyte GeForce RTX 3060 Eagle OC LHR 12GB GDDR6 Graphics Card GV-N3060EAGLE OC-12GD">
-                </a>
-                <p class="product-name">Gigabyte GeForce RTX 3060 Eagle OC LHR 12GB GDDR6 Graphics Card GV-N3060EAGLE OC-12GD</p>
-                <p class="price">Price: R8999.00</p>
-                <a class="link" href="https://www.firstshop.co.za/collections/graphics-cards/products/gigabyte-geforce-rtx-3060-eagle-oc-lhr-12gb-gddr6-graphics-card-gv-n3060eagle-oc-12gd-148514
-" target="_blank">
-                    <div class="button">
-                        In Stock with FirstShop
-                    </div>
-                </a>
-            </div>
-            <div class="product-box">
                 <a href="https://www.firstshop.co.za/collections/graphics-cards/products/gigabyte-geforce-rtx-3060-gaming-oc-12g-nvidia-12-gb-gddr6-122010
 " target="_blank">
                     <img src="https://cdn.shopify.com/s/files/1/0457/5893/9300/products/gv-n3060gaming-oc-12gd-graphics-cards-31257182404772_300x.png?v=1632481915" alt="Gigabyte GeForce RTX 3060 GAMING OC 12G NVIDIA 12 GB GDDR6">
@@ -1015,6 +1175,20 @@
                 <p class="product-name">Gigabyte GeForce RTX 3060 GAMING OC 12G NVIDIA 12 GB GDDR6</p>
                 <p class="price">Price: R8999.00</p>
                 <a class="link" href="https://www.firstshop.co.za/collections/graphics-cards/products/gigabyte-geforce-rtx-3060-gaming-oc-12g-nvidia-12-gb-gddr6-122010
+" target="_blank">
+                    <div class="button">
+                        In Stock with FirstShop
+                    </div>
+                </a>
+            </div>
+            <div class="product-box">
+                <a href="https://www.firstshop.co.za/collections/graphics-cards/products/gigabyte-geforce-rtx-3060-eagle-oc-lhr-12gb-gddr6-graphics-card-gv-n3060eagle-oc-12gd-148514
+" target="_blank">
+                    <img src="https://cdn.shopify.com/s/files/1/0457/5893/9300/products/gv-n3060eagle-oc-12gd-graphics-cards-33913052823716_300x.png?v=1654257012" alt="Gigabyte GeForce RTX 3060 Eagle OC LHR 12GB GDDR6 Graphics Card GV-N3060EAGLE OC-12GD">
+                </a>
+                <p class="product-name">Gigabyte GeForce RTX 3060 Eagle OC LHR 12GB GDDR6 Graphics Card GV-N3060EAGLE OC-12GD</p>
+                <p class="price">Price: R8999.00</p>
+                <a class="link" href="https://www.firstshop.co.za/collections/graphics-cards/products/gigabyte-geforce-rtx-3060-eagle-oc-lhr-12gb-gddr6-graphics-card-gv-n3060eagle-oc-12gd-148514
 " target="_blank">
                     <div class="button">
                         In Stock with FirstShop
@@ -1050,20 +1224,6 @@
                 </a>
             </div>
             <div class="product-box">
-                <a href="https://www.firstshop.co.za/collections/graphics-cards/products/gigabyte-geforce-rtx-3060-eagle-12g-nvidia-12-gb-gddr6-124132
-" target="_blank">
-                    <img src="https://cdn.shopify.com/s/files/1/0457/5893/9300/products/gv-n3060eagle-12gd-graphics-cards-32118331605156_300x.png?v=1636355144" alt="Gigabyte GeForce RTX 3060 EAGLE 12G NVIDIA 12 GB GDDR6">
-                </a>
-                <p class="product-name">Gigabyte GeForce RTX 3060 EAGLE 12G NVIDIA 12 GB GDDR6</p>
-                <p class="price">Price: R9499.00</p>
-                <a class="link" href="https://www.firstshop.co.za/collections/graphics-cards/products/gigabyte-geforce-rtx-3060-eagle-12g-nvidia-12-gb-gddr6-124132
-" target="_blank">
-                    <div class="button">
-                        In Stock with FirstShop
-                    </div>
-                </a>
-            </div>
-            <div class="product-box">
                 <a href="https://www.firstshop.co.za/collections/graphics-cards/products/asus-dual-geforce-rtx-3060-v2-oc-edition-graphics-card-90yv0gb2-m0na10-142253
 " target="_blank">
                     <img src="https://cdn.shopify.com/s/files/1/0457/5893/9300/products/90yv0gb2-m0na10-graphics-cards-32991118917796_300x.png?v=1644392851" alt="ASUS Dual GeForce RTX 3060 V2 OC Edition Graphics Card 90YV0GB2-M0NA10">
@@ -1074,90 +1234,6 @@
 " target="_blank">
                     <div class="button">
                         In Stock with FirstShop
-                    </div>
-                </a>
-            </div>
-            <div class="product-box">
-                <a href="https://www.incredible.co.za/asus-dual-geforce-rtx2060-oc-evo-6gb
-" target="_blank">
-                    <img src="https://www.incredible.co.za/media/catalog/product/cache/74d213abfbc037213e1c69aa712be9b2/a/s/asus_dual_geforce_rtx2060_oc_evo_6gb_1_d1be.jpg" alt="ASUS Dual GeForce RTX2060 OC EVO 6GB">
-                </a>
-                <p class="product-name">ASUS Dual GeForce RTX2060 OC EVO 6GB</p>
-                <p class="price">Price: R9499.00</p>
-                <a class="link" href="https://www.incredible.co.za/asus-dual-geforce-rtx2060-oc-evo-6gb
-" target="_blank">
-                    <div class="button">
-                        In Stock with IncredibleConnection
-                    </div>
-                </a>
-            </div>
-            <div class="product-box">
-                <a href="https://www.incredible.co.za/geforce-inno3d-geforce-rtx-3050-twin-x2-oc
-" target="_blank">
-                    <img src="https://www.incredible.co.za/media/catalog/product/cache/74d213abfbc037213e1c69aa712be9b2/i/n/inno3d_3050_twin_x2oc_set_2cae.jpg" alt="Geforce Inno3d Geforce RTX 3050 Twin X2 OC">
-                </a>
-                <p class="product-name">Geforce Inno3d Geforce RTX 3050 Twin X2 OC</p>
-                <p class="price">Price: R9999.00</p>
-                <a class="link" href="https://www.incredible.co.za/geforce-inno3d-geforce-rtx-3050-twin-x2-oc
-" target="_blank">
-                    <div class="button">
-                        In Stock with IncredibleConnection
-                    </div>
-                </a>
-            </div>
-            <div class="product-box">
-                <a href="https://www.incredible.co.za/inno3d-geforce-gtx-1660-ti-graphics-card
-" target="_blank">
-                    <img src="https://www.incredible.co.za/media/catalog/product/cache/74d213abfbc037213e1c69aa712be9b2/i/n/inno3d_1660_ecommerce_4e36.png" alt="Inno3d GeForce GTX 1660 Ti Graphics Card">
-                </a>
-                <p class="product-name">Inno3d GeForce GTX 1660 Ti Graphics Card</p>
-                <p class="price">Price: R9999.00</p>
-                <a class="link" href="https://www.incredible.co.za/inno3d-geforce-gtx-1660-ti-graphics-card
-" target="_blank">
-                    <div class="button">
-                        In Stock with IncredibleConnection
-                    </div>
-                </a>
-            </div>
-            <div class="product-box">
-                <a href="https://www.incredible.co.za/gigabyte-geforce-gtx-1660-oc-6gb-graphics-card
-" target="_blank">
-                    <img src="https://www.incredible.co.za/media/catalog/product/cache/74d213abfbc037213e1c69aa712be9b2/8/8/889523016725_1_0_f4f6.jpg" alt="Gigabyte Geforce GTX 1660 OC 6GB Graphics Card">
-                </a>
-                <p class="product-name">Gigabyte Geforce GTX 1660 OC 6GB Graphics Card</p>
-                <p class="price">Price: R9999.00</p>
-                <a class="link" href="https://www.incredible.co.za/gigabyte-geforce-gtx-1660-oc-6gb-graphics-card
-" target="_blank">
-                    <div class="button">
-                        In Stock with IncredibleConnection
-                    </div>
-                </a>
-            </div>
-            <div class="product-box">
-                <a href="https://www.incredible.co.za/gigabyte-geforce-d5-gtx-1660-6gb-graphics-card
-" target="_blank">
-                    <img src="https://www.incredible.co.za/media/catalog/product/cache/74d213abfbc037213e1c69aa712be9b2/g/v/gv_n1660d5_6gd_62b8_1_1__487c.jpg" alt="GIGABYTE GeForce D5 GTX 1660 6GB Graphics Card">
-                </a>
-                <p class="product-name">GIGABYTE GeForce D5 GTX 1660 6GB Graphics Card</p>
-                <p class="price">Price: R9999.00</p>
-                <a class="link" href="https://www.incredible.co.za/gigabyte-geforce-d5-gtx-1660-6gb-graphics-card
-" target="_blank">
-                    <div class="button">
-                        In Stock with IncredibleConnection
-                    </div>
-                </a>
-            </div>
-            <div class="product-box">
-                <a href="https://www.evetech.co.za/asus-dual-radeon-rx-6700-xt-oc-12gb/best-deal/13830.aspx
-" target="_blank">
-                    <img src="https://www.evetech.co.za/repository/components/asus-dual-radeon-rx-6700-xt-oc-12gb-600px-v2300px.jpg" alt="ASUS Dual Radeon RX 6700 XT OC 12GB">
-                </a>
-                <p class="product-name">ASUS Dual Radeon RX 6700 XT OC 12GB</p>
-                <p class="price">Price: R9999.00</p>
-                <a class="link" href="https://www.evetech.co.za/asus-dual-radeon-rx-6700-xt-oc-12gb/best-deal/13830.aspx
-" target="_blank">
-                    <div class="button">
-                        In Stock with Evetech
                     </div>
                 </a>
             </div>
@@ -1176,16 +1252,16 @@
                 </a>
             </div>
             <div class="product-box">
-                <a href="https://www.incredible.co.za/asus-dual-geforce-rtx-2060-evo-6gb-graphics-card
+                <a href="https://www.evetech.co.za/asus-dual-radeon-rx-6700-xt-oc-12gb/best-deal/13830.aspx
 " target="_blank">
-                    <img src="https://www.incredible.co.za/media/catalog/product/cache/74d213abfbc037213e1c69aa712be9b2/r/t/rtx_cbee.png" alt="ASUS Dual GeForce RTX™ 2060 EVO 6GB Graphics Card">
+                    <img src="https://www.evetech.co.za/repository/components/asus-dual-radeon-rx-6700-xt-oc-12gb-600px-v2300px.jpg" alt="ASUS Dual Radeon RX 6700 XT OC 12GB">
                 </a>
-                <p class="product-name">ASUS Dual GeForce RTX™ 2060 EVO 6GB Graphics Card</p>
-                <p class="price">Price: R10199.00</p>
-                <a class="link" href="https://www.incredible.co.za/asus-dual-geforce-rtx-2060-evo-6gb-graphics-card
+                <p class="product-name">ASUS Dual Radeon RX 6700 XT OC 12GB</p>
+                <p class="price">Price: R9999.00</p>
+                <a class="link" href="https://www.evetech.co.za/asus-dual-radeon-rx-6700-xt-oc-12gb/best-deal/13830.aspx
 " target="_blank">
                     <div class="button">
-                        In Stock with IncredibleConnection
+                        In Stock with Evetech
                     </div>
                 </a>
             </div>
@@ -1232,30 +1308,16 @@
                 </a>
             </div>
             <div class="product-box">
-                <a href="https://www.incredible.co.za/inno3d-geforce-rtx-2060-twin-x2-graphics-card-6gb
+                <a href="https://www.firstshop.co.za/collections/graphics-cards/products/msi-amd-radeon-rx-6650-xt-gaming-x-8g-8gb-gddr6-graphics-card-rx-6650-xt-gaming-x-8g-153564
 " target="_blank">
-                    <img src="https://www.incredible.co.za/media/catalog/product/cache/74d213abfbc037213e1c69aa712be9b2/7/1/71fqc505ul__sl1500___1__96b2.jpg" alt="Inno3d Geforce RTX 2060 Twin X2 Graphics Card 6GB">
+                    <img src="https://cdn.shopify.com/s/files/1/0457/5893/9300/products/rx-6650-xt-gaming-x-8g-graphics-cards-34319565914276_300x.png?v=1657804628" alt="MSI AMD Radeon RX 6650 XT Gaming X 8G 8GB GDDR6 Graphics Card RX 6650 XT GAMING X 8G">
                 </a>
-                <p class="product-name">Inno3d Geforce RTX 2060 Twin X2 Graphics Card 6GB</p>
-                <p class="price">Price: R10499.00</p>
-                <a class="link" href="https://www.incredible.co.za/inno3d-geforce-rtx-2060-twin-x2-graphics-card-6gb
+                <p class="product-name">MSI AMD Radeon RX 6650 XT Gaming X 8G 8GB GDDR6 Graphics Card RX 6650 XT GAMING X 8G</p>
+                <p class="price">Price: R10899.00</p>
+                <a class="link" href="https://www.firstshop.co.za/collections/graphics-cards/products/msi-amd-radeon-rx-6650-xt-gaming-x-8g-8gb-gddr6-graphics-card-rx-6650-xt-gaming-x-8g-153564
 " target="_blank">
                     <div class="button">
-                        In Stock with IncredibleConnection
-                    </div>
-                </a>
-            </div>
-            <div class="product-box">
-                <a href="https://www.incredible.co.za/asus-tuf-gaming-geforce-gtx-1660-ti-evo-6gb-graphics-card
-" target="_blank">
-                    <img src="https://www.incredible.co.za/media/catalog/product/cache/74d213abfbc037213e1c69aa712be9b2/t/u/tuf_gaming_gtx_1660_ti_evo_box_vga_nv_1085.jpg" alt="ASUS TUF Gaming GeForce GTX 1660 Ti EVO 6GB Graphics Card">
-                </a>
-                <p class="product-name">ASUS TUF Gaming GeForce GTX 1660 Ti EVO 6GB Graphics Card</p>
-                <p class="price">Price: R10499.00</p>
-                <a class="link" href="https://www.incredible.co.za/asus-tuf-gaming-geforce-gtx-1660-ti-evo-6gb-graphics-card
-" target="_blank">
-                    <div class="button">
-                        In Stock with IncredibleConnection
+                        In Stock with FirstShop
                     </div>
                 </a>
             </div>
@@ -1288,27 +1350,13 @@
                 </a>
             </div>
             <div class="product-box">
-                <a href="https://www.firstshop.co.za/collections/graphics-cards/products/msi-amd-radeon-rx-6650-xt-gaming-x-8g-8gb-gddr6-graphics-card-rx-6650-xt-gaming-x-8g-153564
+                <a href="https://www.firstshop.co.za/collections/graphics-cards/products/gigabyte-amd-rx6600xt-gaming-oc-8gb-gddr6-graphics-card-gv-r66xtgaming-oc-8gd-127722
 " target="_blank">
-                    <img src="https://cdn.shopify.com/s/files/1/0457/5893/9300/products/rx-6650-xt-gaming-x-8g-graphics-cards-34319565914276_300x.png?v=1657804628" alt="MSI AMD Radeon RX 6650 XT Gaming X 8G 8GB GDDR6 Graphics Card RX 6650 XT GAMING X 8G">
+                    <img src="https://cdn.shopify.com/s/files/1/0457/5893/9300/products/gv-r66xtgaming-oc-8gd-graphics-cards-33586880872612_300x.png?v=1650374427" alt="Gigabyte AMD RX6600XT Gaming OC 8GB GDDR6 Graphics Card GV-R66XTGAMING OC-8GD">
                 </a>
-                <p class="product-name">MSI AMD Radeon RX 6650 XT Gaming X 8G 8GB GDDR6 Graphics Card RX 6650 XT GAMING X 8G</p>
-                <p class="price">Price: R10899.00</p>
-                <a class="link" href="https://www.firstshop.co.za/collections/graphics-cards/products/msi-amd-radeon-rx-6650-xt-gaming-x-8g-8gb-gddr6-graphics-card-rx-6650-xt-gaming-x-8g-153564
-" target="_blank">
-                    <div class="button">
-                        In Stock with FirstShop
-                    </div>
-                </a>
-            </div>
-            <div class="product-box">
-                <a href="https://www.firstshop.co.za/collections/graphics-cards/products/gigabyte-geforce-rtx-3060-vision-oc-12g-nvidia-12-gb-gddr6-124133
-" target="_blank">
-                    <img src="https://cdn.shopify.com/s/files/1/0457/5893/9300/products/gv-n3060vision-oc-12gd-graphics-cards-32118332588196_300x.png?v=1636355310" alt="Gigabyte GeForce RTX 3060 VISION OC 12G NVIDIA 12 GB GDDR6">
-                </a>
-                <p class="product-name">Gigabyte GeForce RTX 3060 VISION OC 12G NVIDIA 12 GB GDDR6</p>
+                <p class="product-name">Gigabyte AMD RX6600XT Gaming OC 8GB GDDR6 Graphics Card GV-R66XTGAMING OC-8GD</p>
                 <p class="price">Price: R10999.00</p>
-                <a class="link" href="https://www.firstshop.co.za/collections/graphics-cards/products/gigabyte-geforce-rtx-3060-vision-oc-12g-nvidia-12-gb-gddr6-124133
+                <a class="link" href="https://www.firstshop.co.za/collections/graphics-cards/products/gigabyte-amd-rx6600xt-gaming-oc-8gb-gddr6-graphics-card-gv-r66xtgaming-oc-8gd-127722
 " target="_blank">
                     <div class="button">
                         In Stock with FirstShop
@@ -1330,41 +1378,13 @@
                 </a>
             </div>
             <div class="product-box">
-                <a href="https://www.incredible.co.za/gigabyte-geforce-d6-gtx-1660ti-6gb-graphics-card
+                <a href="https://www.firstshop.co.za/collections/graphics-cards/products/gigabyte-geforce-rtx-3060-vision-oc-12g-nvidia-12-gb-gddr6-124133
 " target="_blank">
-                    <img src="https://www.incredible.co.za/media/catalog/product/cache/74d213abfbc037213e1c69aa712be9b2/g/v/gv_n166td6_6gd_9279.png" alt="GIGABYTE GeForce D6 GTX 1660Ti 6GB Graphics Card">
+                    <img src="https://cdn.shopify.com/s/files/1/0457/5893/9300/products/gv-n3060vision-oc-12gd-graphics-cards-32118332588196_300x.png?v=1636355310" alt="Gigabyte GeForce RTX 3060 VISION OC 12G NVIDIA 12 GB GDDR6">
                 </a>
-                <p class="product-name">GIGABYTE GeForce D6 GTX 1660Ti 6GB Graphics Card</p>
+                <p class="product-name">Gigabyte GeForce RTX 3060 VISION OC 12G NVIDIA 12 GB GDDR6</p>
                 <p class="price">Price: R10999.00</p>
-                <a class="link" href="https://www.incredible.co.za/gigabyte-geforce-d6-gtx-1660ti-6gb-graphics-card
-" target="_blank">
-                    <div class="button">
-                        In Stock with IncredibleConnection
-                    </div>
-                </a>
-            </div>
-            <div class="product-box">
-                <a href="https://www.evetech.co.za/xfx-speedster-swft-309-amd-radeon-rx-6700-xt-12gb-core/best-deal/12191.aspx
-" target="_blank">
-                    <img src="https://www.evetech.co.za/repository/components/xfx-speedster-swft-309-amd-radeon-rx-6700-xt-12gb-core-600px-v2300px.jpg" alt="XFX Speedster SWFT 309 AMD Radeon RX 6700 XT 12GB Core">
-                </a>
-                <p class="product-name">XFX Speedster SWFT 309 AMD Radeon RX 6700 XT 12GB Core</p>
-                <p class="price">Price: R10999.00</p>
-                <a class="link" href="https://www.evetech.co.za/xfx-speedster-swft-309-amd-radeon-rx-6700-xt-12gb-core/best-deal/12191.aspx
-" target="_blank">
-                    <div class="button">
-                        In Stock with Evetech
-                    </div>
-                </a>
-            </div>
-            <div class="product-box">
-                <a href="https://www.firstshop.co.za/collections/graphics-cards/products/gigabyte-amd-rx6600xt-gaming-oc-8gb-gddr6-graphics-card-gv-r66xtgaming-oc-8gd-127722
-" target="_blank">
-                    <img src="https://cdn.shopify.com/s/files/1/0457/5893/9300/products/gv-r66xtgaming-oc-8gd-graphics-cards-33586880872612_300x.png?v=1650374427" alt="Gigabyte AMD RX6600XT Gaming OC 8GB GDDR6 Graphics Card GV-R66XTGAMING OC-8GD">
-                </a>
-                <p class="product-name">Gigabyte AMD RX6600XT Gaming OC 8GB GDDR6 Graphics Card GV-R66XTGAMING OC-8GD</p>
-                <p class="price">Price: R10999.00</p>
-                <a class="link" href="https://www.firstshop.co.za/collections/graphics-cards/products/gigabyte-amd-rx6600xt-gaming-oc-8gb-gddr6-graphics-card-gv-r66xtgaming-oc-8gd-127722
+                <a class="link" href="https://www.firstshop.co.za/collections/graphics-cards/products/gigabyte-geforce-rtx-3060-vision-oc-12g-nvidia-12-gb-gddr6-124133
 " target="_blank">
                     <div class="button">
                         In Stock with FirstShop
@@ -1372,13 +1392,13 @@
                 </a>
             </div>
             <div class="product-box">
-                <a href="https://www.incredible.co.za/gigabyte-amd-rx-6600-eagle-8gb-graphics-card
+                <a href="https://www.incredible.co.za/asus-dual-geforce-rtx-3070-v2-8gb-gddr6-lhr
 " target="_blank">
-                    <img src="https://www.incredible.co.za/media/catalog/product/cache/74d213abfbc037213e1c69aa712be9b2/g/v/gv_r66eagle_8gd__6__788d.png" alt="GIGABYTE AMD RX 6600 EAGLE 8GB Graphics Card">
+                    <img src="https://www.incredible.co.za/media/catalog/product/cache/74d213abfbc037213e1c69aa712be9b2/d/u/dual_rtx3070_8g_lhr_box_vga_logo_nv_0b4e.jpg" alt="ASUS Dual GeForce RTX™️ 3070 V2 8GB GDDR6 - LHR">
                 </a>
-                <p class="product-name">GIGABYTE AMD RX 6600 EAGLE 8GB Graphics Card</p>
-                <p class="price">Price: R11099.00</p>
-                <a class="link" href="https://www.incredible.co.za/gigabyte-amd-rx-6600-eagle-8gb-graphics-card
+                <p class="product-name">ASUS Dual GeForce RTX™️ 3070 V2 8GB GDDR6 - LHR</p>
+                <p class="price">Price: R10999.00</p>
+                <a class="link" href="https://www.incredible.co.za/asus-dual-geforce-rtx-3070-v2-8gb-gddr6-lhr
 " target="_blank">
                     <div class="button">
                         In Stock with IncredibleConnection
@@ -1410,20 +1430,6 @@
 " target="_blank">
                     <div class="button">
                         In Stock with FirstShop
-                    </div>
-                </a>
-            </div>
-            <div class="product-box">
-                <a href="https://www.incredible.co.za/gigabyte-geforce-gtx-1660ti-oc-6gb-graphics-card
-" target="_blank">
-                    <img src="https://www.incredible.co.za/media/catalog/product/cache/74d213abfbc037213e1c69aa712be9b2/g/v/gv_n166toc_6gd_f47f.png" alt="GIGABYTE GeForce GTX 1660Ti OC 6GB Graphics Card">
-                </a>
-                <p class="product-name">GIGABYTE GeForce GTX 1660Ti OC 6GB Graphics Card</p>
-                <p class="price">Price: R11499.00</p>
-                <a class="link" href="https://www.incredible.co.za/gigabyte-geforce-gtx-1660ti-oc-6gb-graphics-card
-" target="_blank">
-                    <div class="button">
-                        In Stock with IncredibleConnection
                     </div>
                 </a>
             </div>
@@ -1484,20 +1490,6 @@
                 </a>
             </div>
             <div class="product-box">
-                <a href="https://www.firstshop.co.za/collections/graphics-cards/products/gigabyte-gv-n3060aorus-e-12gd-graphics-card-nvidia-geforce-rtx-3060-12-gb-gddr6-124131
-" target="_blank">
-                    <img src="https://cdn.shopify.com/s/files/1/0457/5893/9300/products/gv-n3060aorus-e-12gd-graphics-cards-31257223757988_300x.png?v=1632492703" alt="Gigabyte GV-N3060AORUS E-12GD graphics card NVIDIA GeForce RTX 3060 12 GB GDDR6">
-                </a>
-                <p class="product-name">Gigabyte GV-N3060AORUS E-12GD graphics card NVIDIA GeForce RTX 3060 12 GB GDDR6</p>
-                <p class="price">Price: R12199.00</p>
-                <a class="link" href="https://www.firstshop.co.za/collections/graphics-cards/products/gigabyte-gv-n3060aorus-e-12gd-graphics-card-nvidia-geforce-rtx-3060-12-gb-gddr6-124131
-" target="_blank">
-                    <div class="button">
-                        In Stock with FirstShop
-                    </div>
-                </a>
-            </div>
-            <div class="product-box">
                 <a href="https://www.firstshop.co.za/collections/graphics-cards/products/asus-rog-strix-v2-oc-edition-nvidia-geforce-rtx-3060-12gb-ddr6-graphics-card-rog-strix-rtx3060-o12g-v2-gaming-142393
 " target="_blank">
                     <img src="https://cdn.shopify.com/s/files/1/0457/5893/9300/products/rog-strix-rtx3060-o12g-v2-gaming-graphics-cards-33134193049764_300x.png?v=1646030840" alt="ASUS ROG Strix V2 OC Edition Nvidia GeForce RTX 3060 12GB DDR6 Graphics Card ROG-STRIX-RTX3060-O12G-V2-GAMING">
@@ -1512,16 +1504,16 @@
                 </a>
             </div>
             <div class="product-box">
-                <a href="https://www.incredible.co.za/asus-dual-geforce-rtx-3060-v2-overclocked-edition-12gb-graphics-card
+                <a href="https://www.firstshop.co.za/collections/graphics-cards/products/gigabyte-gv-n3060aorus-e-12gd-graphics-card-nvidia-geforce-rtx-3060-12-gb-gddr6-124131
 " target="_blank">
-                    <img src="https://www.incredible.co.za/media/catalog/product/cache/74d213abfbc037213e1c69aa712be9b2/d/u/dual_rtx3060_o12g_box_vga_logo_2400_72be.png" alt="ASUS Dual GeForce RTX 3060 V2 Overclocked Edition 12GB Graphics Card">
+                    <img src="https://cdn.shopify.com/s/files/1/0457/5893/9300/products/gv-n3060aorus-e-12gd-graphics-cards-31257223757988_300x.png?v=1632492703" alt="Gigabyte GV-N3060AORUS E-12GD graphics card NVIDIA GeForce RTX 3060 12 GB GDDR6">
                 </a>
-                <p class="product-name">ASUS Dual GeForce RTX 3060 V2 Overclocked Edition 12GB Graphics Card</p>
-                <p class="price">Price: R12499.00</p>
-                <a class="link" href="https://www.incredible.co.za/asus-dual-geforce-rtx-3060-v2-overclocked-edition-12gb-graphics-card
+                <p class="product-name">Gigabyte GV-N3060AORUS E-12GD graphics card NVIDIA GeForce RTX 3060 12 GB GDDR6</p>
+                <p class="price">Price: R12199.00</p>
+                <a class="link" href="https://www.firstshop.co.za/collections/graphics-cards/products/gigabyte-gv-n3060aorus-e-12gd-graphics-card-nvidia-geforce-rtx-3060-12-gb-gddr6-124131
 " target="_blank">
                     <div class="button">
-                        In Stock with IncredibleConnection
+                        In Stock with FirstShop
                     </div>
                 </a>
             </div>
@@ -1536,6 +1528,34 @@
 " target="_blank">
                     <div class="button">
                         In Stock with FirstShop
+                    </div>
+                </a>
+            </div>
+            <div class="product-box">
+                <a href="https://www.firstshop.co.za/collections/graphics-cards/products/msi-rtx3060-x-gaming-oc-12gb-gddr6-graphic-card-rtx-3060-gaminga-xa-12gb-149431
+" target="_blank">
+                    <img src="https://cdn.shopify.com/s/files/1/0457/5893/9300/products/rtx-3060-gaminga-xa-12gb-graphics-cards-33878316908708_300x.png?v=1653898822" alt="MSI RTX3060 X Gaming OC 12GB GDDR6 Graphic Card RTX 3060 GAMINGA XA 12GB">
+                </a>
+                <p class="product-name">MSI RTX3060 X Gaming OC 12GB GDDR6 Graphic Card RTX 3060 GAMINGA XA 12GB</p>
+                <p class="price">Price: R12799.00</p>
+                <a class="link" href="https://www.firstshop.co.za/collections/graphics-cards/products/msi-rtx3060-x-gaming-oc-12gb-gddr6-graphic-card-rtx-3060-gaminga-xa-12gb-149431
+" target="_blank">
+                    <div class="button">
+                        In Stock with FirstShop
+                    </div>
+                </a>
+            </div>
+            <div class="product-box">
+                <a href="https://www.incredible.co.za/gigabyte-eagle-rtx-3070ti-oc-8gb-graphics-card
+" target="_blank">
+                    <img src="https://www.incredible.co.za/media/catalog/product/cache/74d213abfbc037213e1c69aa712be9b2/g/i/gigabyte_eagle_rtx3070ti_oc8gb_gddr6_1a29.jpg" alt="GIGABYTE EAGLE RTX 3070Ti OC 8GB Graphics Card">
+                </a>
+                <p class="product-name">GIGABYTE EAGLE RTX 3070Ti OC 8GB Graphics Card</p>
+                <p class="price">Price: R12999.00</p>
+                <a class="link" href="https://www.incredible.co.za/gigabyte-eagle-rtx-3070ti-oc-8gb-graphics-card
+" target="_blank">
+                    <div class="button">
+                        In Stock with IncredibleConnection
                     </div>
                 </a>
             </div>
@@ -1561,6 +1581,20 @@
                 <p class="product-name">Gigabyte GeForce RTX 3060 Ti EAGLE OC 8G NVIDIA 8 GB GDDR6</p>
                 <p class="price">Price: R13399.00</p>
                 <a class="link" href="https://www.firstshop.co.za/collections/graphics-cards/products/gigabyte-geforce-rtx-3060-ti-eagle-oc-8g-nvidia-8-gb-gddr6-124134
+" target="_blank">
+                    <div class="button">
+                        In Stock with FirstShop
+                    </div>
+                </a>
+            </div>
+            <div class="product-box">
+                <a href="https://www.firstshop.co.za/collections/graphics-cards/products/msi-ventus-3x-oc-lhr-geforce-rtx-3060-ti-8gb-gddr6-graphics-card-rtx-3060-ti-ventus-3x-8g-oc-lhr-152732
+" target="_blank">
+                    <img src="https://cdn.shopify.com/s/files/1/0457/5893/9300/products/rtx-3060-ti-ventus-3x-8g-oc-lhr-graphics-cards-34211747430564_300x.png?v=1656595390" alt="MSI Ventus 3X OC LHR GeForce RTX 3060 Ti 8GB GDDR6 Graphics Card RTX 3060 Ti VENTUS 3X 8G OC LHR">
+                </a>
+                <p class="product-name">MSI Ventus 3X OC LHR GeForce RTX 3060 Ti 8GB GDDR6 Graphics Card RTX 3060 Ti VENTUS 3X 8G OC LHR</p>
+                <p class="price">Price: R13599.00</p>
+                <a class="link" href="https://www.firstshop.co.za/collections/graphics-cards/products/msi-ventus-3x-oc-lhr-geforce-rtx-3060-ti-8gb-gddr6-graphics-card-rtx-3060-ti-ventus-3x-8g-oc-lhr-152732
 " target="_blank">
                     <div class="button">
                         In Stock with FirstShop
@@ -1638,20 +1672,6 @@
                 </a>
             </div>
             <div class="product-box">
-                <a href="https://www.firstshop.co.za/collections/graphics-cards/products/asus-tuf-gaming-nvidia-geforce-rtx-3070-8gb-gddr6-graphics-card-90yv0fqi-m0na00-151302
-" target="_blank">
-                    <img src="https://cdn.shopify.com/s/files/1/0457/5893/9300/products/90yv0fqi-m0na00-graphics-cards-34383930196132_300x.png?v=1658319986" alt="Asus TUF Gaming Nvidia GeForce RTX 3070 8GB GDDR6 Graphics Card 90YV0FQI-M0NA00">
-                </a>
-                <p class="product-name">Asus TUF Gaming Nvidia GeForce RTX 3070 8GB GDDR6 Graphics Card 90YV0FQI-M0NA00</p>
-                <p class="price">Price: R14599.00</p>
-                <a class="link" href="https://www.firstshop.co.za/collections/graphics-cards/products/asus-tuf-gaming-nvidia-geforce-rtx-3070-8gb-gddr6-graphics-card-90yv0fqi-m0na00-151302
-" target="_blank">
-                    <div class="button">
-                        In Stock with FirstShop
-                    </div>
-                </a>
-            </div>
-            <div class="product-box">
                 <a href="https://www.firstshop.co.za/collections/graphics-cards/products/gigabyte-radeon-rx-6700-xt-gaming-oc-12g-amd-12-gb-gddr6-120755
 " target="_blank">
                     <img src="https://cdn.shopify.com/s/files/1/0457/5893/9300/products/gv-r67xtgaming-oc-12gd-graphics-cards-31257147343012_300x.png?v=1632491808" alt="Gigabyte Radeon RX 6700 XT GAMING OC 12G AMD 12 GB GDDR6">
@@ -1659,6 +1679,20 @@
                 <p class="product-name">Gigabyte Radeon RX 6700 XT GAMING OC 12G AMD 12 GB GDDR6</p>
                 <p class="price">Price: R14599.00</p>
                 <a class="link" href="https://www.firstshop.co.za/collections/graphics-cards/products/gigabyte-radeon-rx-6700-xt-gaming-oc-12g-amd-12-gb-gddr6-120755
+" target="_blank">
+                    <div class="button">
+                        In Stock with FirstShop
+                    </div>
+                </a>
+            </div>
+            <div class="product-box">
+                <a href="https://www.firstshop.co.za/collections/graphics-cards/products/asus-tuf-gaming-nvidia-geforce-rtx-3070-8gb-gddr6-graphics-card-90yv0fqi-m0na00-151302
+" target="_blank">
+                    <img src="https://cdn.shopify.com/s/files/1/0457/5893/9300/products/90yv0fqi-m0na00-graphics-cards-34383930196132_300x.png?v=1658319986" alt="Asus TUF Gaming Nvidia GeForce RTX 3070 8GB GDDR6 Graphics Card 90YV0FQI-M0NA00">
+                </a>
+                <p class="product-name">Asus TUF Gaming Nvidia GeForce RTX 3070 8GB GDDR6 Graphics Card 90YV0FQI-M0NA00</p>
+                <p class="price">Price: R14599.00</p>
+                <a class="link" href="https://www.firstshop.co.za/collections/graphics-cards/products/asus-tuf-gaming-nvidia-geforce-rtx-3070-8gb-gddr6-graphics-card-90yv0fqi-m0na00-151302
 " target="_blank">
                     <div class="button">
                         In Stock with FirstShop
@@ -1708,6 +1742,20 @@
                 </a>
             </div>
             <div class="product-box">
+                <a href="https://www.firstshop.co.za/collections/graphics-cards/products/inno3d-ichill-x4-lhr-rtx-3070-8gb-gddr6-graphics-card-ino-c30704-08d6x-127961
+" target="_blank">
+                    <img src="https://cdn.shopify.com/s/files/1/0457/5893/9300/products/ino-c30704-08d6x-graphics-cards-33587516473508_300x.png?v=1650380356" alt="Inno3D iChill X4 LHR RTX 3070 8GB GDDR6 Graphics Card INO-C30704-08D6X">
+                </a>
+                <p class="product-name">Inno3D iChill X4 LHR RTX 3070 8GB GDDR6 Graphics Card INO-C30704-08D6X</p>
+                <p class="price">Price: R15799.00</p>
+                <a class="link" href="https://www.firstshop.co.za/collections/graphics-cards/products/inno3d-ichill-x4-lhr-rtx-3070-8gb-gddr6-graphics-card-ino-c30704-08d6x-127961
+" target="_blank">
+                    <div class="button">
+                        In Stock with FirstShop
+                    </div>
+                </a>
+            </div>
+            <div class="product-box">
                 <a href="https://www.firstshop.co.za/collections/graphics-cards/products/gigabyte-amd-radeon-rx-6750-xt-gaming-oc-12g-12gb-gddr6-graphics-card-gv-r675xtgaming-oc-12gd-153513
 " target="_blank">
                     <img src="https://cdn.shopify.com/s/files/1/0457/5893/9300/products/gv-r675xtgaming-oc-12gd-graphics-cards-34318989590692_300x.png?v=1657797607" alt="Gigabyte AMD Radeon RX 6750 XT Gaming OC 12G 12GB GDDR6 Graphics Card GV-R675XTGAMING OC-12GD">
@@ -1718,6 +1766,20 @@
 " target="_blank">
                     <div class="button">
                         In Stock with FirstShop
+                    </div>
+                </a>
+            </div>
+            <div class="product-box">
+                <a href="https://www.incredible.co.za/gigabyte-turbo-rtx-3080-10gb-graphics-card
+" target="_blank">
+                    <img src="https://www.incredible.co.za/media/catalog/product/cache/74d213abfbc037213e1c69aa712be9b2/g/i/gigabyte_turbo_rtx3080_10g_gddr6_bb23.jpg" alt="GIGABYTE TURBO RTX 3080 10GB Graphics Card">
+                </a>
+                <p class="product-name">GIGABYTE TURBO RTX 3080 10GB Graphics Card</p>
+                <p class="price">Price: R15999.00</p>
+                <a class="link" href="https://www.incredible.co.za/gigabyte-turbo-rtx-3080-10gb-graphics-card
+" target="_blank">
+                    <div class="button">
+                        In Stock with IncredibleConnection
                     </div>
                 </a>
             </div>
@@ -1736,20 +1798,6 @@
                 </a>
             </div>
             <div class="product-box">
-                <a href="https://www.evetech.co.za/leadtek-geforce-rtx-3080-hurricane-12gb/best-deal/13979.aspx
-" target="_blank">
-                    <img src="https://www.evetech.co.za/repository/components/leadtek-geforce-rtx-3080-hurricane-12gb-600px-v2300px.jpg" alt="Leadtek Geforce RTX 3080 HURRICANE 12GB">
-                </a>
-                <p class="product-name">Leadtek Geforce RTX 3080 HURRICANE 12GB</p>
-                <p class="price">Price: R16399.00</p>
-                <a class="link" href="https://www.evetech.co.za/leadtek-geforce-rtx-3080-hurricane-12gb/best-deal/13979.aspx
-" target="_blank">
-                    <div class="button">
-                        In Stock with Evetech
-                    </div>
-                </a>
-            </div>
-            <div class="product-box">
                 <a href="https://www.evetech.co.za/gainward-geforce-rtx-3080-phoenix-12gb-gddr6x-graphics-card/best-deal/15314.aspx
 " target="_blank">
                     <img src="https://www.evetech.co.za/repository/components/gainward-geforce-rtx-3080-ti-phoenix-12gb-gddr6x-graphics-card-600px-v11300px.jpg" alt="GAINWARD GeForce RTX 3080 Phoenix 12GB GDDR6X Graphics Card">
@@ -1764,16 +1812,16 @@
                 </a>
             </div>
             <div class="product-box">
-                <a href="https://www.firstshop.co.za/collections/graphics-cards/products/gigabyte-nvidia-rtx-3070ti-gaming-oc-8gb-gddr6x-graphics-card-gv-n307tgaming-oc-8gd-129402
+                <a href="https://www.evetech.co.za/leadtek-geforce-rtx-3080-hurricane-12gb/best-deal/13979.aspx
 " target="_blank">
-                    <img src="https://cdn.shopify.com/s/files/1/0457/5893/9300/products/gv-n307tgaming-oc-8gd-graphics-cards-33586609193124_300x.png?v=1650372615" alt="Gigabyte nVidia RTX 3070Ti GAMING OC 8GB GDDR6X Graphics Card GV-N307TGAMING OC-8GD">
+                    <img src="https://www.evetech.co.za/repository/components/leadtek-geforce-rtx-3080-hurricane-12gb-600px-v2300px.jpg" alt="Leadtek Geforce RTX 3080 HURRICANE 12GB">
                 </a>
-                <p class="product-name">Gigabyte nVidia RTX 3070Ti GAMING OC 8GB GDDR6X Graphics Card GV-N307TGAMING OC-8GD</p>
-                <p class="price">Price: R16799.00</p>
-                <a class="link" href="https://www.firstshop.co.za/collections/graphics-cards/products/gigabyte-nvidia-rtx-3070ti-gaming-oc-8gb-gddr6x-graphics-card-gv-n307tgaming-oc-8gd-129402
+                <p class="product-name">Leadtek Geforce RTX 3080 HURRICANE 12GB</p>
+                <p class="price">Price: R16399.00</p>
+                <a class="link" href="https://www.evetech.co.za/leadtek-geforce-rtx-3080-hurricane-12gb/best-deal/13979.aspx
 " target="_blank">
                     <div class="button">
-                        In Stock with FirstShop
+                        In Stock with Evetech
                     </div>
                 </a>
             </div>
@@ -1785,6 +1833,20 @@
                 <p class="product-name">Gigabyte Aorus AMD Radeon RX 6750 XT Elite 12G 12GB GDDR6 Graphics Card GV-R675XTAORUS E-12GD</p>
                 <p class="price">Price: R16799.00</p>
                 <a class="link" href="https://www.firstshop.co.za/collections/graphics-cards/products/gigabyte-aorus-amd-radeon-rx-6750-xt-elite-12g-12gb-gddr6-graphics-card-gv-r675xtaorus-e-12gd-153511
+" target="_blank">
+                    <div class="button">
+                        In Stock with FirstShop
+                    </div>
+                </a>
+            </div>
+            <div class="product-box">
+                <a href="https://www.firstshop.co.za/collections/graphics-cards/products/gigabyte-nvidia-rtx-3070ti-gaming-oc-8gb-gddr6x-graphics-card-gv-n307tgaming-oc-8gd-129402
+" target="_blank">
+                    <img src="https://cdn.shopify.com/s/files/1/0457/5893/9300/products/gv-n307tgaming-oc-8gd-graphics-cards-33586609193124_300x.png?v=1650372615" alt="Gigabyte nVidia RTX 3070Ti GAMING OC 8GB GDDR6X Graphics Card GV-N307TGAMING OC-8GD">
+                </a>
+                <p class="product-name">Gigabyte nVidia RTX 3070Ti GAMING OC 8GB GDDR6X Graphics Card GV-N307TGAMING OC-8GD</p>
+                <p class="price">Price: R16799.00</p>
+                <a class="link" href="https://www.firstshop.co.za/collections/graphics-cards/products/gigabyte-nvidia-rtx-3070ti-gaming-oc-8gb-gddr6x-graphics-card-gv-n307tgaming-oc-8gd-129402
 " target="_blank">
                     <div class="button">
                         In Stock with FirstShop
@@ -1830,20 +1892,6 @@
 " target="_blank">
                     <div class="button">
                         In Stock with FirstShop
-                    </div>
-                </a>
-            </div>
-            <div class="product-box">
-                <a href="https://www.incredible.co.za/asus-dual-geforce-rtx-3070-v2-8gb-gddr6-lhr
-" target="_blank">
-                    <img src="https://www.incredible.co.za/media/catalog/product/cache/74d213abfbc037213e1c69aa712be9b2/d/u/dual_rtx3070_8g_lhr_box_vga_logo_nv_0b4e.jpg" alt="ASUS Dual GeForce RTX™️ 3070 V2 8GB GDDR6 - LHR">
-                </a>
-                <p class="product-name">ASUS Dual GeForce RTX™️ 3070 V2 8GB GDDR6 - LHR</p>
-                <p class="price">Price: R17499.00</p>
-                <a class="link" href="https://www.incredible.co.za/asus-dual-geforce-rtx-3070-v2-8gb-gddr6-lhr
-" target="_blank">
-                    <div class="button">
-                        In Stock with IncredibleConnection
                     </div>
                 </a>
             </div>
@@ -1946,16 +1994,16 @@
                 </a>
             </div>
             <div class="product-box">
-                <a href="https://www.incredible.co.za/gigabyte-eagle-rtx-3070ti-oc-8gb-graphics-card
+                <a href="https://www.evetech.co.za/msi-radeon-rx-6800-xt-gaming-z-trio-16gb/best-deal/14481.aspx
 " target="_blank">
-                    <img src="https://www.incredible.co.za/media/catalog/product/cache/74d213abfbc037213e1c69aa712be9b2/g/i/gigabyte_eagle_rtx3070ti_oc8gb_gddr6_1a29.jpg" alt="GIGABYTE EAGLE RTX 3070Ti OC 8GB Graphics Card">
+                    <img src="https://www.evetech.co.za/repository/components/msi-radeon-rx-6800-xt-gaming-z-trio-16gb-600px-v2300px.jpg" alt="MSI Radeon RX 6800 XT GAMING Z TRIO 16GB">
                 </a>
-                <p class="product-name">GIGABYTE EAGLE RTX 3070Ti OC 8GB Graphics Card</p>
-                <p class="price">Price: R20799.00</p>
-                <a class="link" href="https://www.incredible.co.za/gigabyte-eagle-rtx-3070ti-oc-8gb-graphics-card
+                <p class="product-name">MSI Radeon RX 6800 XT GAMING Z TRIO 16GB</p>
+                <p class="price">Price: R20999.00</p>
+                <a class="link" href="https://www.evetech.co.za/msi-radeon-rx-6800-xt-gaming-z-trio-16gb/best-deal/14481.aspx
 " target="_blank">
                     <div class="button">
-                        In Stock with IncredibleConnection
+                        In Stock with Evetech
                     </div>
                 </a>
             </div>
@@ -1974,13 +2022,13 @@
                 </a>
             </div>
             <div class="product-box">
-                <a href="https://www.evetech.co.za/msi-radeon-rx-6800-xt-gaming-z-trio-16gb/best-deal/14481.aspx
+                <a href="https://www.evetech.co.za/msi-geforce-rtx-3080-gaming-z-trio-12gb-lhr/best-deal/14074.aspx
 " target="_blank">
-                    <img src="https://www.evetech.co.za/repository/components/msi-radeon-rx-6800-xt-gaming-z-trio-16gb-600px-v2300px.jpg" alt="MSI Radeon RX 6800 XT GAMING Z TRIO 16GB">
+                    <img src="https://www.evetech.co.za/repository/components/msi-geforce-rtx-3080-gaming-z-trio-12gb-lhr-600px-v2300px.jpg" alt="MSI GeForce RTX 3080 GAMING Z TRIO 12GB LHR">
                 </a>
-                <p class="product-name">MSI Radeon RX 6800 XT GAMING Z TRIO 16GB</p>
-                <p class="price">Price: R20999.00</p>
-                <a class="link" href="https://www.evetech.co.za/msi-radeon-rx-6800-xt-gaming-z-trio-16gb/best-deal/14481.aspx
+                <p class="product-name">MSI GeForce RTX 3080 GAMING Z TRIO 12GB LHR</p>
+                <p class="price">Price: R21999.00</p>
+                <a class="link" href="https://www.evetech.co.za/msi-geforce-rtx-3080-gaming-z-trio-12gb-lhr/best-deal/14074.aspx
 " target="_blank">
                     <div class="button">
                         In Stock with Evetech
@@ -2016,48 +2064,6 @@
                 </a>
             </div>
             <div class="product-box">
-                <a href="https://www.evetech.co.za/msi-radeon-rx-6900-xt-gaming-x-trio-16gb/best-deal/11983.aspx
-" target="_blank">
-                    <img src="https://www.evetech.co.za/repository/components/msi-radeon-rx-6900-xt-gaming-x-trio-16gb-600px-v2300px.jpg" alt="MSI Radeon RX 6900 XT GAMING X TRIO 16GB">
-                </a>
-                <p class="product-name">MSI Radeon RX 6900 XT GAMING X TRIO 16GB</p>
-                <p class="price">Price: R21999.00</p>
-                <a class="link" href="https://www.evetech.co.za/msi-radeon-rx-6900-xt-gaming-x-trio-16gb/best-deal/11983.aspx
-" target="_blank">
-                    <div class="button">
-                        In Stock with Evetech
-                    </div>
-                </a>
-            </div>
-            <div class="product-box">
-                <a href="https://www.evetech.co.za/msi-geforce-rtx-3080-gaming-z-trio-12gb-lhr/best-deal/14074.aspx
-" target="_blank">
-                    <img src="https://www.evetech.co.za/repository/components/msi-geforce-rtx-3080-gaming-z-trio-12gb-lhr-600px-v2300px.jpg" alt="MSI GeForce RTX 3080 GAMING Z TRIO 12GB LHR">
-                </a>
-                <p class="product-name">MSI GeForce RTX 3080 GAMING Z TRIO 12GB LHR</p>
-                <p class="price">Price: R21999.00</p>
-                <a class="link" href="https://www.evetech.co.za/msi-geforce-rtx-3080-gaming-z-trio-12gb-lhr/best-deal/14074.aspx
-" target="_blank">
-                    <div class="button">
-                        In Stock with Evetech
-                    </div>
-                </a>
-            </div>
-            <div class="product-box">
-                <a href="https://www.firstshop.co.za/collections/graphics-cards/products/pny-nvidia-quadro-rtx-4000-8-gb-gddr6-graphics-card-rtx4000-pb-149575
-" target="_blank">
-                    <img src="https://cdn.shopify.com/s/files/1/0457/5893/9300/products/rtx4000-pb-graphics-cards-33849403506852_300x.png?v=1653572475" alt="PNY NVIDIA Quadro RTX 4000 8 GB GDDR6 Graphics Card RTX4000-PB">
-                </a>
-                <p class="product-name">PNY NVIDIA Quadro RTX 4000 8 GB GDDR6 Graphics Card RTX4000-PB</p>
-                <p class="price">Price: R22199.00</p>
-                <a class="link" href="https://www.firstshop.co.za/collections/graphics-cards/products/pny-nvidia-quadro-rtx-4000-8-gb-gddr6-graphics-card-rtx4000-pb-149575
-" target="_blank">
-                    <div class="button">
-                        In Stock with FirstShop
-                    </div>
-                </a>
-            </div>
-            <div class="product-box">
                 <a href="https://www.firstshop.co.za/collections/graphics-cards/products/gigabyte-nvidia-geforce-rtx-3080-gv-n3080aorus-m-10gd-graphics-card-rtx3080-aorus-10gb-gddr6x-97327
 " target="_blank">
                     <img src="https://cdn.shopify.com/s/files/1/0457/5893/9300/products/gv-n3080aorus-m-10gd-graphics-cards-20742311608484_300x.png?v=1631786742" alt="GIGABYTE Nvidia GeForce RTX 3080 GV-N3080AORUS M-10GD Graphics Card - RTX3080 AORUS 10GB GDDR6X">
@@ -2086,16 +2092,16 @@
                 </a>
             </div>
             <div class="product-box">
-                <a href="https://www.evetech.co.za/msi-radeon-rx-6900-xt-gaming-z-trio-16gb/best-deal/12679.aspx
+                <a href="https://www.incredible.co.za/gigabyte-geforce-rtx-3080-ti-vision-oc-lhr-graphics-card
 " target="_blank">
-                    <img src="https://www.evetech.co.za/repository/components/msi-radeon-rx-6900-xt-gaming-z-trio-16g-600px-v3300px.jpg" alt="MSI Radeon RX 6900 XT GAMING Z TRIO 16GB">
+                    <img src="https://www.incredible.co.za/media/catalog/product/cache/74d213abfbc037213e1c69aa712be9b2/g/v/gv_n308tvision_oc_12gd_ed7c.jpg" alt="Gigabyte GeForce RTX 3080 Ti VISION OC LHR Graphics Card">
                 </a>
-                <p class="product-name">MSI Radeon RX 6900 XT GAMING Z TRIO 16GB</p>
+                <p class="product-name">Gigabyte GeForce RTX 3080 Ti VISION OC LHR Graphics Card</p>
                 <p class="price">Price: R22999.00</p>
-                <a class="link" href="https://www.evetech.co.za/msi-radeon-rx-6900-xt-gaming-z-trio-16gb/best-deal/12679.aspx
+                <a class="link" href="https://www.incredible.co.za/gigabyte-geforce-rtx-3080-ti-vision-oc-lhr-graphics-card
 " target="_blank">
                     <div class="button">
-                        In Stock with Evetech
+                        In Stock with IncredibleConnection
                     </div>
                 </a>
             </div>
@@ -2107,6 +2113,20 @@
                 <p class="product-name">Inno3d GeForce RTX 3080 Ti iChill X4 LHR Graphics Card</p>
                 <p class="price">Price: R22999.00</p>
                 <a class="link" href="https://www.incredible.co.za/inno3d-geforce-rtx-3080-ti-ichill-x4-lhr-graphics-card
+" target="_blank">
+                    <div class="button">
+                        In Stock with IncredibleConnection
+                    </div>
+                </a>
+            </div>
+            <div class="product-box">
+                <a href="https://www.incredible.co.za/gigabyte-gaming-rtx-3080ti-oc-12gb-graphics-card
+" target="_blank">
+                    <img src="https://www.incredible.co.za/media/catalog/product/cache/74d213abfbc037213e1c69aa712be9b2/g/i/gigabyte_gaming_rtx3080ti_oc12gb_gddr6_fd27.jpg" alt="GIGABYTE GAMING RTX 3080Ti OC 12GB Graphics Card">
+                </a>
+                <p class="product-name">GIGABYTE GAMING RTX 3080Ti OC 12GB Graphics Card</p>
+                <p class="price">Price: R22999.00</p>
+                <a class="link" href="https://www.incredible.co.za/gigabyte-gaming-rtx-3080ti-oc-12gb-graphics-card
 " target="_blank">
                     <div class="button">
                         In Stock with IncredibleConnection
@@ -2198,34 +2218,6 @@
                 </a>
             </div>
             <div class="product-box">
-                <a href="https://www.evetech.co.za/asus-rog-strix-lc-rx-6900-xt-16gb-top-gaming/best-deal/12083.aspx
-" target="_blank">
-                    <img src="https://www.evetech.co.za/repository/components/asus-rog-strix-lc-rx-6900-xt-16gb-top-gaming-600px-v2300px.jpg" alt="ASUS ROG Strix LC RX 6900 XT 16GB Top Gaming">
-                </a>
-                <p class="product-name">ASUS ROG Strix LC RX 6900 XT 16GB Top Gaming</p>
-                <p class="price">Price: R23999.00</p>
-                <a class="link" href="https://www.evetech.co.za/asus-rog-strix-lc-rx-6900-xt-16gb-top-gaming/best-deal/12083.aspx
-" target="_blank">
-                    <div class="button">
-                        In Stock with Evetech
-                    </div>
-                </a>
-            </div>
-            <div class="product-box">
-                <a href="https://www.incredible.co.za/gigabyte-turbo-rtx-3080-10gb-graphics-card
-" target="_blank">
-                    <img src="https://www.incredible.co.za/media/catalog/product/cache/74d213abfbc037213e1c69aa712be9b2/g/i/gigabyte_turbo_rtx3080_10g_gddr6_bb23.jpg" alt="GIGABYTE TURBO RTX 3080 10GB Graphics Card">
-                </a>
-                <p class="product-name">GIGABYTE TURBO RTX 3080 10GB Graphics Card</p>
-                <p class="price">Price: R23999.00</p>
-                <a class="link" href="https://www.incredible.co.za/gigabyte-turbo-rtx-3080-10gb-graphics-card
-" target="_blank">
-                    <div class="button">
-                        In Stock with IncredibleConnection
-                    </div>
-                </a>
-            </div>
-            <div class="product-box">
                 <a href="https://www.firstshop.co.za/collections/graphics-cards/products/gigabyte-rtx-3080-ti-eagle-12gb-gddr6x-graphics-card-gv-n308teagle-12gd-133705
 " target="_blank">
                     <img src="https://cdn.shopify.com/s/files/1/0457/5893/9300/products/gv-n308teagle-12gd-graphics-cards-33586869895332_300x.png?v=1650374601" alt="Gigabyte RTX 3080 Ti Eagle 12GB GDDR6X Graphics Card GV-N308TEAGLE-12GD">
@@ -2240,6 +2232,34 @@
                 </a>
             </div>
             <div class="product-box">
+                <a href="https://www.evetech.co.za/msi-radeon-rx-6900-xt-gaming-x-trio-16gb/best-deal/11983.aspx
+" target="_blank">
+                    <img src="https://www.evetech.co.za/repository/components/msi-radeon-rx-6900-xt-gaming-x-trio-16gb-600px-v2300px.jpg" alt="MSI Radeon RX 6900 XT GAMING X TRIO 16GB">
+                </a>
+                <p class="product-name">MSI Radeon RX 6900 XT GAMING X TRIO 16GB</p>
+                <p class="price">Price: R24999.00</p>
+                <a class="link" href="https://www.evetech.co.za/msi-radeon-rx-6900-xt-gaming-x-trio-16gb/best-deal/11983.aspx
+" target="_blank">
+                    <div class="button">
+                        In Stock with Evetech
+                    </div>
+                </a>
+            </div>
+            <div class="product-box">
+                <a href="https://www.evetech.co.za/msi-radeon-rx-6900-xt-gaming-z-trio-16gb/best-deal/12679.aspx
+" target="_blank">
+                    <img src="https://www.evetech.co.za/repository/components/msi-radeon-rx-6900-xt-gaming-z-trio-16g-600px-v3300px.jpg" alt="MSI Radeon RX 6900 XT GAMING Z TRIO 16GB">
+                </a>
+                <p class="product-name">MSI Radeon RX 6900 XT GAMING Z TRIO 16GB</p>
+                <p class="price">Price: R25999.00</p>
+                <a class="link" href="https://www.evetech.co.za/msi-radeon-rx-6900-xt-gaming-z-trio-16gb/best-deal/12679.aspx
+" target="_blank">
+                    <div class="button">
+                        In Stock with Evetech
+                    </div>
+                </a>
+            </div>
+            <div class="product-box">
                 <a href="https://www.evetech.co.za/palit-geforce-rtx-3090-gamingpro-24gb-graphics-card/best-deal/12173.aspx
 " target="_blank">
                     <img src="https://www.evetech.co.za/repository/components/palit-geforce-rtx-3090-gamingpro-24gb-graphics-card-600px-v3300px.jpg" alt="Palit GeForce RTX 3090 GamingPro 24GB Graphics Card">
@@ -2247,6 +2267,20 @@
                 <p class="product-name">Palit GeForce RTX 3090 GamingPro 24GB Graphics Card</p>
                 <p class="price">Price: R26499.00</p>
                 <a class="link" href="https://www.evetech.co.za/palit-geforce-rtx-3090-gamingpro-24gb-graphics-card/best-deal/12173.aspx
+" target="_blank">
+                    <div class="button">
+                        In Stock with Evetech
+                    </div>
+                </a>
+            </div>
+            <div class="product-box">
+                <a href="https://www.evetech.co.za/asus-rog-strix-lc-rx-6900-xt-16gb-top-gaming/best-deal/12083.aspx
+" target="_blank">
+                    <img src="https://www.evetech.co.za/repository/components/asus-rog-strix-lc-rx-6900-xt-16gb-top-gaming-600px-v2300px.jpg" alt="ASUS ROG Strix LC RX 6900 XT 16GB Top Gaming">
+                </a>
+                <p class="product-name">ASUS ROG Strix LC RX 6900 XT 16GB Top Gaming</p>
+                <p class="price">Price: R26999.00</p>
+                <a class="link" href="https://www.evetech.co.za/asus-rog-strix-lc-rx-6900-xt-16gb-top-gaming/best-deal/12083.aspx
 " target="_blank">
                     <div class="button">
                         In Stock with Evetech
@@ -2296,20 +2330,6 @@
                 </a>
             </div>
             <div class="product-box">
-                <a href="https://www.firstshop.co.za/collections/graphics-cards/products/asus-tuf-gaming-amd-radeon-rx-6900-xt-oc-16gb-gddr6-90yv0ge0-m0nm00-125518
-" target="_blank">
-                    <img src="https://cdn.shopify.com/s/files/1/0457/5893/9300/products/90yv0ge0-m0nm00-graphics-cards-32215724621988_300x.png?v=1637084504" alt="ASUS TUF Gaming AMD Radeon RX 6900 XT OC 16GB GDDR6 90YV0GE0-M0NM00">
-                </a>
-                <p class="product-name">ASUS TUF Gaming AMD Radeon RX 6900 XT OC 16GB GDDR6 90YV0GE0-M0NM00</p>
-                <p class="price">Price: R30100.00</p>
-                <a class="link" href="https://www.firstshop.co.za/collections/graphics-cards/products/asus-tuf-gaming-amd-radeon-rx-6900-xt-oc-16gb-gddr6-90yv0ge0-m0nm00-125518
-" target="_blank">
-                    <div class="button">
-                        In Stock with FirstShop
-                    </div>
-                </a>
-            </div>
-            <div class="product-box">
                 <a href="https://www.firstshop.co.za/collections/graphics-cards/products/asus-rog-strix-oc-edition-nvidia-geforce-rtx-3080-12gb-gddr6x-graphics-card-90yv0fac-m0nm00-143778
 " target="_blank">
                     <img src="https://cdn.shopify.com/s/files/1/0457/5893/9300/products/90yv0fac-m0nm00-graphics-cards-33134709145764_300x.png?v=1646036249" alt="ASUS ROG Strix OC Edition Nvidia GeForce RTX 3080 12GB GDDR6X Graphics Card 90YV0FAC-M0NM00">
@@ -2317,6 +2337,20 @@
                 <p class="product-name">ASUS ROG Strix OC Edition Nvidia GeForce RTX 3080 12GB GDDR6X Graphics Card 90YV0FAC-M0NM00</p>
                 <p class="price">Price: R30100.00</p>
                 <a class="link" href="https://www.firstshop.co.za/collections/graphics-cards/products/asus-rog-strix-oc-edition-nvidia-geforce-rtx-3080-12gb-gddr6x-graphics-card-90yv0fac-m0nm00-143778
+" target="_blank">
+                    <div class="button">
+                        In Stock with FirstShop
+                    </div>
+                </a>
+            </div>
+            <div class="product-box">
+                <a href="https://www.firstshop.co.za/collections/graphics-cards/products/asus-tuf-gaming-amd-radeon-rx-6900-xt-oc-16gb-gddr6-90yv0ge0-m0nm00-125518
+" target="_blank">
+                    <img src="https://cdn.shopify.com/s/files/1/0457/5893/9300/products/90yv0ge0-m0nm00-graphics-cards-32215724621988_300x.png?v=1637084504" alt="ASUS TUF Gaming AMD Radeon RX 6900 XT OC 16GB GDDR6 90YV0GE0-M0NM00">
+                </a>
+                <p class="product-name">ASUS TUF Gaming AMD Radeon RX 6900 XT OC 16GB GDDR6 90YV0GE0-M0NM00</p>
+                <p class="price">Price: R30100.00</p>
+                <a class="link" href="https://www.firstshop.co.za/collections/graphics-cards/products/asus-tuf-gaming-amd-radeon-rx-6900-xt-oc-16gb-gddr6-90yv0ge0-m0nm00-125518
 " target="_blank">
                     <div class="button">
                         In Stock with FirstShop
@@ -2366,20 +2400,6 @@
                 </a>
             </div>
             <div class="product-box">
-                <a href="https://www.firstshop.co.za/collections/graphics-cards/products/asus-tuf-gaming-nivida-geforce-rtx-3080-ti-12gb-gddr6x-graphics-card-90yv0gu1-m0nm00-126141
-" target="_blank">
-                    <img src="https://cdn.shopify.com/s/files/1/0457/5893/9300/products/90yv0gu1-m0nm00-graphics-cards-33086230266020_300x.png?v=1645538359" alt="ASUS TUF Gaming Nivida GeForce RTX 3080 TI 12GB GDDR6X Graphics Card 90YV0GU1-M0NM00">
-                </a>
-                <p class="product-name">ASUS TUF Gaming Nivida GeForce RTX 3080 TI 12GB GDDR6X Graphics Card 90YV0GU1-M0NM00</p>
-                <p class="price">Price: R32799.00</p>
-                <a class="link" href="https://www.firstshop.co.za/collections/graphics-cards/products/asus-tuf-gaming-nivida-geforce-rtx-3080-ti-12gb-gddr6x-graphics-card-90yv0gu1-m0nm00-126141
-" target="_blank">
-                    <div class="button">
-                        In Stock with FirstShop
-                    </div>
-                </a>
-            </div>
-            <div class="product-box">
                 <a href="https://www.evetech.co.za/msi-geforce-rtx-3090-gaming-x-trio-24gb/best-deal/9685.aspx
 " target="_blank">
                     <img src="https://www.evetech.co.za/repository/components/msi-geforce-rtx-3090-gaming-x-trio-24gb-600px-v3300px.jpg" alt="MSI GeForce RTX 3090 Gaming X TRIO 24GB">
@@ -2408,20 +2428,6 @@
                 </a>
             </div>
             <div class="product-box">
-                <a href="https://www.incredible.co.za/gigabyte-gaming-rtx-3080ti-oc-12gb-graphics-card
-" target="_blank">
-                    <img src="https://www.incredible.co.za/media/catalog/product/cache/74d213abfbc037213e1c69aa712be9b2/g/i/gigabyte_gaming_rtx3080ti_oc12gb_gddr6_fd27.jpg" alt="GIGABYTE GAMING RTX 3080Ti OC 12GB Graphics Card">
-                </a>
-                <p class="product-name">GIGABYTE GAMING RTX 3080Ti OC 12GB Graphics Card</p>
-                <p class="price">Price: R39399.00</p>
-                <a class="link" href="https://www.incredible.co.za/gigabyte-gaming-rtx-3080ti-oc-12gb-graphics-card
-" target="_blank">
-                    <div class="button">
-                        In Stock with IncredibleConnection
-                    </div>
-                </a>
-            </div>
-            <div class="product-box">
                 <a href="https://www.firstshop.co.za/collections/graphics-cards/products/gigabyte-nvidia-geforce-rtx-3090-gv-n3090gaming-oc-24gd-graphics-card-rtx3090-24gb-gddr6x-gv-n3090gaming-oc-24gd-97337
 " target="_blank">
                     <img src="https://cdn.shopify.com/s/files/1/0457/5893/9300/products/gv-n3090gaming-oc-24gd-graphics-cards-20742205866148_300x.png?v=1632050987" alt="GIGABYTE Nvidia GeForce RTX 3090 GV-N3090Gaming OC-24GD Graphics Card - RTX3090 24GB GDDR6X GV-N3090GAMING OC-24GD">
@@ -2432,20 +2438,6 @@
 " target="_blank">
                     <div class="button">
                         In Stock with FirstShop
-                    </div>
-                </a>
-            </div>
-            <div class="product-box">
-                <a href="https://www.incredible.co.za/gigabyte-geforce-rtx-3080-ti-vision-oc-lhr-graphics-card
-" target="_blank">
-                    <img src="https://www.incredible.co.za/media/catalog/product/cache/74d213abfbc037213e1c69aa712be9b2/g/v/gv_n308tvision_oc_12gd_ed7c.jpg" alt="Gigabyte GeForce RTX 3080 Ti VISION OC LHR Graphics Card">
-                </a>
-                <p class="product-name">Gigabyte GeForce RTX 3080 Ti VISION OC LHR Graphics Card</p>
-                <p class="price">Price: R40899.00</p>
-                <a class="link" href="https://www.incredible.co.za/gigabyte-geforce-rtx-3080-ti-vision-oc-lhr-graphics-card
-" target="_blank">
-                    <div class="button">
-                        In Stock with IncredibleConnection
                     </div>
                 </a>
             </div>
@@ -2474,6 +2466,20 @@
 " target="_blank">
                     <div class="button">
                         In Stock with Evetech
+                    </div>
+                </a>
+            </div>
+            <div class="product-box">
+                <a href="https://www.firstshop.co.za/collections/graphics-cards/products/msi-nvidia-geforce-rtx-3090-ti-suprim-x-24g-24gb-gddr6x-graphics-card-rtx-3090-ti-suprim-x-24g-153563
+" target="_blank">
+                    <img src="https://cdn.shopify.com/s/files/1/0457/5893/9300/products/rtx-3090-ti-suprim-x-24g-graphics-cards-34319556247716_300x.png?v=1657804448" alt="MSI Nvidia GeForce RTX 3090 Ti Suprim X 24G 24GB GDDR6X Graphics Card RTX 3090 Ti SUPRIM X 24G">
+                </a>
+                <p class="product-name">MSI Nvidia GeForce RTX 3090 Ti Suprim X 24G 24GB GDDR6X Graphics Card RTX 3090 Ti SUPRIM X 24G</p>
+                <p class="price">Price: R48100.00</p>
+                <a class="link" href="https://www.firstshop.co.za/collections/graphics-cards/products/msi-nvidia-geforce-rtx-3090-ti-suprim-x-24g-24gb-gddr6x-graphics-card-rtx-3090-ti-suprim-x-24g-153563
+" target="_blank">
+                    <div class="button">
+                        In Stock with FirstShop
                     </div>
                 </a>
             </div>
