@@ -90,6 +90,14 @@ div.controls {
     text-align: right;
 }
 
+div.filter-price p{
+    display: inline;
+}
+
+.filter-bar {
+    width: 6%;
+}
+
 #search-btn {
     font-family: Orbitron;
 }
@@ -212,11 +220,31 @@ footer {
     }
 
     div.controls {
-        width: 100%;
-        display: grid;
-        grid-template-columns: 1fr, 1fr;
         margin-top: 10px;
-        padding-bottom: 5px;
+    }
+
+    .dis-drp {
+        grid-row: 1;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    .search {
+        grid-column: 1;
+        grid-row: 2;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    .filter-price {
+        text-align: center;
+    }
+
+    div.filter-price p{
+        display: none;
+    }
+
+    .filter-bar {
+        width: 15%;
     }
 
     .outer-grid {
