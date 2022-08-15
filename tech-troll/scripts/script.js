@@ -3,7 +3,12 @@ var numItems = "12";
 var pos = 0;
 var forwards = true;
 
-const products = []
+const products = [];
+const NAME_INEDX = 0
+const PRICE_INEDX = 1;
+const AVAILABLE_INDEX = 2;
+const IMAGE_INEDX = 3;
+const LINK_INEDX = 4;
 
 
 function onPageLoad() {
@@ -19,6 +24,7 @@ function stealData() {
     
     var i = 1;
     var productsPos = 0;
+    // Loop through the html and store the data relevant to the products
     while (i < docHTML.length-1) {
         i += 3;
         let image = docHTML[i].split("\"")[1];
@@ -42,9 +48,9 @@ function displayData() {
     const content = document.querySelector(".content");
     
     // Initialize the display content
-    var fileContent = '';
-    const productInfo = []
-    const item = []
+    var newText = '';
+    const productInfo = [];
+    const item = [];
     var displayItems = 0;
     var displayLength = 0;
     
@@ -83,27 +89,27 @@ function displayData() {
     for (let i = pos; i < displayLength; i++) {
         productInfo[i] = products[i].split("#");
         item[i] = {
-            name: productInfo[i][0],
-            price: productInfo[i][1],
-            availability: productInfo[i][2],
-            image: productInfo[i][3],
-            link: productInfo[i][4]
+            name: productInfo[i][NAME_INEDX],
+            price: productInfo[i][PRICE_INEDX],
+            availability: productInfo[i][AVAILABLE_INDEX],
+            image: productInfo[i][IMAGE_INEDX],
+            link: productInfo[i][LINK_INEDX]
         };
-        fileContent += '<div class="product-box">';
-        fileContent += '<a href="' + item[i].link + '" target="_blank">';
-        fileContent += '<img src="' + item[i].image + '" alt="' + item[i].name + '">';
-        fileContent += '</a>';
-        fileContent += '<p class="product-name">' + item[i].name + '</p>';
-        fileContent += '<p class="price">Price: R' + item[i].price + '</p>';
-        fileContent += '<a class="link" href="' + item[i].link + '" target="_blank">';
-        fileContent += '<div class="button">';
-        fileContent += item[i].availability;
-        fileContent += '</div>';
-        fileContent += '</a>';
-        fileContent += '<div id="' + item[i].name + '">';
-        fileContent += '<button onclick="addCompare(\'' + item[i].name + '\', \'' + item[i].price + '\', \'' + item[i].availability + '\', \'' + item[i].image + '\', \'' + item[i].link.substr(0, item[i].link.length - 1) + '\')" class="button" title="Compare">Compare</button>';
-        fileContent += '</div>'
-        fileContent += '</div>';
+        newText += '<div class="product-box">';
+        newText += '<a href="' + item[i].link + '" target="_blank">';
+        newText += '<img src="' + item[i].image + '" alt="' + item[i].name + '">';
+        newText += '</a>';
+        newText += '<p class="product-name">' + item[i].name + '</p>';
+        newText += '<p class="price">Price: R' + item[i].price + '</p>';
+        newText += '<a class="link" href="' + item[i].link + '" target="_blank">';
+        newText += '<div class="button">';
+        newText += item[i].availability;
+        newText += '</div>';
+        newText += '</a>';
+        newText += '<div id="' + item[i].name + '">';
+        newText += '<button onclick="addCompare(\'' + item[i].name + '\', \'' + item[i].price + '\', \'' + item[i].availability + '\', \'' + item[i].image + '\', \'' + item[i].link.substr(0, item[i].link.length - 1) + '\')" class="button" title="Compare">Compare</button>';
+        newText += '</div>'
+        newText += '</div>';
         pos++;
     }
 
@@ -130,9 +136,9 @@ function displayData() {
     }
     endPage += startPage;
     startPage += '<div class="outer-grid">';
-    fileContent = startPage + fileContent + endPage;
+    newText = startPage + newText + endPage;
 
-    content.innerHTML = fileContent;
+    content.innerHTML = newText;
 
 }
 
@@ -155,7 +161,7 @@ function prevPage() {
 function addCompare(name, price, availability, image, link) {
     const fromButton = document.getElementById(name);
     const content = document.querySelector(".outer-grid-compare");
-    var newText = "";
+    var newText = '';
 
     newText += '<div class="product-box" id="' + name + ' compare">';
     newText += '<a href="' + link + '" target="_blank">';
@@ -173,7 +179,7 @@ function addCompare(name, price, availability, image, link) {
 
     content.innerHTML += newText;
 
-    var fromText = '<button onclick="addCompare(\'' + name + '\', \'' + price + '\', \'' + availability + '\', \'' + image + '\', \'' + link + '\')" class="button" title="Compare" disabled>Compare</button>';
+    var fromText = '<button onclick="addCompare(\'' + name + '\', \'' + price + '\', \'' + availability + '\', \'' + image + '\', \'' + link + '\')" class="button" title="Compare" disabled>Comapared</button>';
     fromButton.innerHTML = fromText;
 }
 
@@ -202,4 +208,52 @@ function displayTopBtn() {
     } else {
         topButton.style.display = "none"
     }
+}
+
+function searchPage() {
+    const content = document.querySelector(".content");
+    var searchBar = document.querySelector('#search-bar');
+    var numItems = document.querySelector('#display-list');
+    const keyword = searchBar.value;
+    var productInfo, productName, newText = '', startPage = '', endPage = '</div>'; 
+
+    if (keyword == ''){
+        numItems.value = "12";
+        pos = 0;
+        displayData();
+        return;
+    }else{
+        for (let i = 0; i < products.length; i++) {
+            productInfo = products[i].split('#');
+            productName = productInfo[NAME_INEDX].toLowerCase();
+            if (productName.includes(keyword.toLowerCase())) {
+                newText += '<div class="product-box">';
+                newText += '<a href="' + productInfo[LINK_INEDX] + '" target="_blank">';
+                newText += '<img src="' + productInfo[IMAGE_INEDX] + '" alt="' + productInfo[NAME_INEDX] + '">';
+                newText += '</a>';
+                newText += '<p class="product-name">' + productInfo[NAME_INEDX] + '</p>';
+                newText += '<p class="price">Price: R' + productInfo[PRICE_INEDX] + '</p>';
+                newText += '<a class="link" href="' + productInfo[LINK_INEDX] + '" target="_blank">';
+                newText += '<div class="button">';
+                newText += productInfo[AVAILABLE_INDEX];
+                newText += '</div>';
+                newText += '</a>';
+                newText += '<div id="' + productInfo[NAME_INEDX] + '">';
+                newText += '<button onclick="addCompare(\'' + productInfo[NAME_INEDX] + '\', \'' + productInfo[PRICE_INEDX] + '\', \'' + productInfo[AVAILABLE_INDEX] + '\', \'' + productInfo[IMAGE_INEDX] + '\', \'' + productInfo[LINK_INEDX].substr(0, productInfo[LINK_INEDX].length - 1) + '\')" class="button" title="Compare">Compare</button>';
+                newText += '</div>'
+                newText += '</div>';
+                numItems.value = 'max';
+            }
+        }
+        startPage += '<nav class="pages">';
+        startPage += 'Search: ' + keyword;
+        startPage += '</nav>';
+        endPage += startPage;
+        startPage += '<div class="outer-grid">';
+        newText = startPage + newText + endPage;
+        content.innerHTML = newText;
+    }
+
+
+    searchBar.value = '';
 }
