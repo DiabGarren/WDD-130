@@ -190,3 +190,44 @@ footer {
     font-size: 16px;
     padding-left: 50px;
 }
+
+@media screen and (max-width: 900px) {
+
+    header {
+        position: relative;
+    }
+
+    h1, h2, h3 {
+        font-size: 1em;
+    }
+
+    nav,
+    footer {
+        flex-direction: column;
+    }
+
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+
+    div.controls {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr, 1fr;
+        margin-top: 10px;
+        padding-bottom: 5px;
+    }
+
+    .outer-grid {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 900px;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    footer {
+        margin-top: 25px;
+    }
+}
