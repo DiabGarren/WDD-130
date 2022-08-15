@@ -245,6 +245,9 @@ function searchPage() {
                 numItems.value = 'max';
             }
         }
+        if (newText == '') {
+            newText += '<p>No result for search: ' + keyword + "</p>";
+        }
         startPage += '<nav class="pages">';
         startPage += 'Search: ' + keyword;
         startPage += '</nav>';
